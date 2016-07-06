@@ -1,0 +1,198 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc TOP_LEVEL.ucf -p
+xc4vlx25-ff668-10 TOP_LEVEL_cs.ngc TOP_LEVEL.ngd
+
+Reading NGO file
+"D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL_cs.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "TOP_LEVEL.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_XLXN_12697_0 = PERIOD
+   "XLXN_12697_0" TS_XLXN_12781 HIGH 50%>: Unable to find an active 'TNM'
+   constraint named 'XLXN_12697_0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_XLXN_12783_0 = PERIOD
+   "XLXN_12783_0" TS_XLXN_12781 PHASE 0.666666667 ns HIGH 50%>: Unable to find
+   an active 'TNM' constraint named 'XLXN_12783_0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_XLXN_12930_0 = PERIOD
+   "XLXN_12930_0" TS_XLXN_12781 PHASE 1.333333333 ns HIGH 50%>: Unable to find
+   an active 'TNM' constraint named 'XLXN_12930_0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_XLXN_12931_0 = PERIOD
+   "XLXN_12931_0" TS_XLXN_12781 PHASE 2 ns HIGH 50%>: Unable to find an active
+   'TNM' constraint named 'XLXN_12931_0'.
+
+INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
+   'TS_GEL_RXCLK', was traced into DCM_ADV instance XLXI_3410. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLKFX: <TIMESPEC TS_XLXN_12257 = PERIOD "XLXN_12257" TS_GEL_RXCLK / 1.6 HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
+   'TS_GEL_RXCLK', was traced into DCM_ADV instance XLXI_5949. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLKFX: <TIMESPEC TS_XLXN_12669 = PERIOD "XLXN_12669" TS_GEL_RXCLK / 1.5 HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DN_05S', used in period specification
+   'TS_BUSBHS_02DN_05S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087 = PERIOD "XLXN_15087" TS_BUSBHS_02DN_05S HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DN_05S', used in period specification
+   'TS_BUSBHS_02DN_05S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK180: <TIMESPEC TS_XLXN_15092 = PERIOD "XLXN_15092" TS_BUSBHS_02DN_05S
+   PHASE 2.5 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DP_04S', used in period specification
+   'TS_BUSBHS_02DP_04S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087_0 = PERIOD "XLXN_15087_0" TS_BUSBHS_02DP_04S
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DP_04S', used in period specification
+   'TS_BUSBHS_02DP_04S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK180: <TIMESPEC TS_XLXN_15092_0 = PERIOD "XLXN_15092_0" TS_BUSBHS_02DP_04S
+   PHASE 2.5 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XLXN_12669', used in period specification
+   'TS_XLXN_12669', was traced into DCM_ADV instance XLXI_5953. The following
+   new TNM groups and period specifications were generated at the DCM_ADV
+   output(s): 
+   CLK2X: <TIMESPEC TS_XLXN_12781 = PERIOD "XLXN_12781" TS_XLXN_12669 / 2 HIGH
+   50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_5953".  This does
+   not match the PERIOD constraint value (5.33333333 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (2.66666667)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_5963".  This does
+   not match the PERIOD constraint value (5.33333333 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (2.66666667)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_5963".  This does
+   not match the PERIOD constraint value (2.66666667 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_6199".  This does
+   not match the PERIOD constraint value (5 ns.).  The uncertainty calculation
+   will use the non-default attribute value.  This could result in incorrect
+   uncertainty calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (5.33333333)
+   was detected for the CLKIN_PERIOD attribute on DCM "XLXI_6199".  This does
+   not match the PERIOD constraint value (5 ns.).  The uncertainty calculation
+   will use the non-default attribute value.  This could result in incorrect
+   uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<48>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<49>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<50>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<51>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<52>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<53>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<54>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<55>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<56>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<57>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<58>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<59>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<60>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<61>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<62>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/rx_data<63>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<10>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<11>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<12>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<13>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<14>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<15>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/udp_fwd_port<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_6227/ec_wrapper/user_rx_size_out<9>'
+   has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  52
+
+Total memory usage is 268596 kilobytes
+
+Writing NGD file "TOP_LEVEL.ngd" ...
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   9 sec
+
+Writing NGDBUILD log file "TOP_LEVEL.bld"...

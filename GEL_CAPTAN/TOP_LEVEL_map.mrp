@@ -1,0 +1,767 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'TOP_LEVEL'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc4vlx25-ff668-10 -timing -logic_opt on -ol std -t 1 -register_duplication off
+-global_opt off -ir off -pr off -u -power off -o TOP_LEVEL_map.ncd TOP_LEVEL.ngd TOP_LEVEL.pcf 
+Target Device  : xc4vlx25
+Target Package : ff668
+Target Speed   : -10
+Mapper Version : virtex4 -- $Revision: 1.55 $
+Mapped Date    : Thu Jun 30 16:49:41 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  116
+Logic Utilization:
+  Total Number Slice Registers:       2,507 out of  21,504   11%
+    Number used as Flip Flops:        2,506
+    Number used as Latches:               1
+  Number of 4 input LUTs:             4,795 out of  21,504   22%
+Logic Distribution:
+  Number of occupied Slices:          3,330 out of  10,752   30%
+    Number of Slices containing only related logic:   3,330 out of   3,330 100%
+    Number of Slices containing unrelated logic:          0 out of   3,330   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,061 out of  21,504   23%
+    Number used as logic:             4,248
+    Number used as a route-thru:        266
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     163
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  Number of bonded LOWCAPIOBs              2 out of     112    1%
+  Number of bonded IOBs:                 47 out of     448   10%
+  Number of BUFG/BUFGCTRLs:              13 out of      32   40%
+    Number used as BUFGs:                13
+  Number of FIFO16/RAMB16s:              30 out of      72   41%
+    Number used as RAMB16s:              30
+  Number of DCM_ADVs:                     5 out of       8   62%
+  Number of BSCAN_VIRTEX4s:               1 out of       4   25%
+  Number of IDELAYCTRLs:                  1 out of      16    6%
+
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                3.60
+
+Peak Memory Usage:  610 MB
+Total REAL time to MAP completion:  51 secs 
+Total CPU time to MAP completion:   47 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal BUSB_00DP_00S connected to top level port
+   BUSB_00DP_00S has been removed.
+WARNING:MapLib:701 - Signal BUSB_00DN_01S connected to top level port
+   BUSB_00DN_01S has been removed.
+WARNING:MapLib:701 - Signal BUSB_01DP_02S connected to top level port
+   BUSB_01DP_02S has been removed.
+WARNING:MapLib:701 - Signal BUSB_01DN_03S connected to top level port
+   BUSB_01DN_03S has been removed.
+WARNING:MapLib:701 - Signal BUSB_02DP_04S connected to top level port
+   BUSB_02DP_04S has been removed.
+WARNING:MapLib:701 - Signal BUSB_02DN_05S connected to top level port
+   BUSB_02DN_05S has been removed.
+WARNING:MapLib:701 - Signal BUSB_03DP_06S connected to top level port
+   BUSB_03DP_06S has been removed.
+WARNING:MapLib:701 - Signal BUSB_03DN_07S connected to top level port
+   BUSB_03DN_07S has been removed.
+WARNING:MapLib:701 - Signal BUSB_04DP_08S connected to top level port
+   BUSB_04DP_08S has been removed.
+WARNING:MapLib:701 - Signal BUSB_04DN_09S connected to top level port
+   BUSB_04DN_09S has been removed.
+WARNING:MapLib:701 - Signal BUSB_05DP_10S connected to top level port
+   BUSB_05DP_10S has been removed.
+WARNING:MapLib:701 - Signal BUSB_05DN_11S connected to top level port
+   BUSB_05DN_11S has been removed.
+WARNING:MapLib:701 - Signal BUSB_06DP_12S connected to top level port
+   BUSB_06DP_12S has been removed.
+WARNING:MapLib:701 - Signal BUSB_06DN_13S connected to top level port
+   BUSB_06DN_13S has been removed.
+WARNING:MapLib:701 - Signal BUSB_07DP_14S connected to top level port
+   BUSB_07DP_14S has been removed.
+WARNING:MapLib:701 - Signal BUSB_07DN_15S connected to top level port
+   BUSB_07DN_15S has been removed.
+WARNING:MapLib:701 - Signal BUSA_15DP_30S connected to top level port
+   BUSA_15DP_30S has been removed.
+WARNING:MapLib:701 - Signal BUSA_15DN_31S connected to top level port
+   BUSA_15DN_31S has been removed.
+WARNING:MapLib:701 - Signal BUSA_14DP_28S connected to top level port
+   BUSA_14DP_28S has been removed.
+WARNING:MapLib:701 - Signal BUSA_14DN_29S connected to top level port
+   BUSA_14DN_29S has been removed.
+WARNING:MapLib:701 - Signal BUSA_13DP_26S connected to top level port
+   BUSA_13DP_26S has been removed.
+WARNING:MapLib:701 - Signal BUSA_13DN_27S connected to top level port
+   BUSA_13DN_27S has been removed.
+WARNING:MapLib:701 - Signal BUSA_12DP_24S connected to top level port
+   BUSA_12DP_24S has been removed.
+WARNING:MapLib:701 - Signal BUSA_12DN_25S connected to top level port
+   BUSA_12DN_25S has been removed.
+WARNING:MapLib:701 - Signal BUSA_11DP_22S connected to top level port
+   BUSA_11DP_22S has been removed.
+WARNING:MapLib:701 - Signal BUSA_11DN_23S connected to top level port
+   BUSA_11DN_23S has been removed.
+WARNING:MapLib:701 - Signal BUSA_10DP_20S connected to top level port
+   BUSA_10DP_20S has been removed.
+WARNING:MapLib:701 - Signal BUSA_10DN_21S connected to top level port
+   BUSA_10DN_21S has been removed.
+WARNING:MapLib:701 - Signal BUSA_09DP_18S connected to top level port
+   BUSA_09DP_18S has been removed.
+WARNING:MapLib:701 - Signal BUSA_09DN_19S connected to top level port
+   BUSA_09DN_19S has been removed.
+WARNING:MapLib:701 - Signal BUSA_08DP_16S connected to top level port
+   BUSA_08DP_16S has been removed.
+WARNING:MapLib:701 - Signal BUSA_08DN_17S connected to top level port
+   BUSA_08DN_17S has been removed.
+WARNING:MapLib:701 - Signal BUSB_08DP_16S connected to top level port
+   BUSB_08DP_16S has been removed.
+WARNING:MapLib:701 - Signal BUSB_08DN_17S connected to top level port
+   BUSB_08DN_17S has been removed.
+WARNING:MapLib:701 - Signal BUSB_09DP_18S connected to top level port
+   BUSB_09DP_18S has been removed.
+WARNING:MapLib:701 - Signal BUSB_09DN_19S connected to top level port
+   BUSB_09DN_19S has been removed.
+WARNING:MapLib:701 - Signal BUSB_10DP_20S connected to top level port
+   BUSB_10DP_20S has been removed.
+WARNING:MapLib:701 - Signal BUSB_10DN_21S connected to top level port
+   BUSB_10DN_21S has been removed.
+WARNING:MapLib:701 - Signal BUSB_11DP_22S connected to top level port
+   BUSB_11DP_22S has been removed.
+WARNING:MapLib:701 - Signal BUSB_11DN_23S connected to top level port
+   BUSB_11DN_23S has been removed.
+WARNING:MapLib:701 - Signal BUSB_12DP_24S connected to top level port
+   BUSB_12DP_24S has been removed.
+WARNING:MapLib:701 - Signal BUSB_12DN_25S connected to top level port
+   BUSB_12DN_25S has been removed.
+WARNING:MapLib:701 - Signal BUSB_13DP_26S connected to top level port
+   BUSB_13DP_26S has been removed.
+WARNING:MapLib:701 - Signal BUSB_13DN_27S connected to top level port
+   BUSB_13DN_27S has been removed.
+WARNING:MapLib:701 - Signal BUSB_14DP_28S connected to top level port
+   BUSB_14DP_28S has been removed.
+WARNING:MapLib:701 - Signal BUSB_14DN_29S connected to top level port
+   BUSB_14DN_29S has been removed.
+WARNING:MapLib:701 - Signal BUSB_15DP_30S connected to top level port
+   BUSB_15DP_30S has been removed.
+WARNING:MapLib:701 - Signal BUSB_15DN_31S connected to top level port
+   BUSB_15DN_31S has been removed.
+WARNING:MapLib:701 - Signal BUSA_07DP_14S connected to top level port
+   BUSA_07DP_14S has been removed.
+WARNING:MapLib:701 - Signal BUSA_07DN_15S connected to top level port
+   BUSA_07DN_15S has been removed.
+WARNING:MapLib:701 - Signal BUSA_06DP_12S connected to top level port
+   BUSA_06DP_12S has been removed.
+WARNING:MapLib:701 - Signal BUSA_06DN_13S connected to top level port
+   BUSA_06DN_13S has been removed.
+WARNING:MapLib:701 - Signal BUSA_05DP_10S connected to top level port
+   BUSA_05DP_10S has been removed.
+WARNING:MapLib:701 - Signal BUSA_05DN_11S connected to top level port
+   BUSA_05DN_11S has been removed.
+WARNING:MapLib:701 - Signal BUSA_04DP_08S connected to top level port
+   BUSA_04DP_08S has been removed.
+WARNING:MapLib:701 - Signal BUSA_04DN_09S connected to top level port
+   BUSA_04DN_09S has been removed.
+WARNING:MapLib:701 - Signal BUSA_03DP_06S connected to top level port
+   BUSA_03DP_06S has been removed.
+WARNING:MapLib:701 - Signal BUSA_03DN_07S connected to top level port
+   BUSA_03DN_07S has been removed.
+WARNING:MapLib:701 - Signal BUSA_02DP_04S connected to top level port
+   BUSA_02DP_04S has been removed.
+WARNING:MapLib:701 - Signal BUSA_02DN_05S connected to top level port
+   BUSA_02DN_05S has been removed.
+WARNING:MapLib:701 - Signal BUSA_01DP_02S connected to top level port
+   BUSA_01DP_02S has been removed.
+WARNING:MapLib:701 - Signal BUSA_01DN_03S connected to top level port
+   BUSA_01DN_03S has been removed.
+WARNING:MapLib:701 - Signal BUSA_00DP_00S connected to top level port
+   BUSA_00DP_00S has been removed.
+WARNING:MapLib:701 - Signal BUSA_00DN_01S connected to top level port
+   BUSA_00DN_01S has been removed.
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "XLXI_5952" (output signal=CLK_187_5) has a mix of clock and non-clock loads.
+   The non-clock loads are:
+   Pin I1 of XLXI_6004/I_36_8
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "XLXI_5993" (output signal=CLK_375) has a mix of clock and non-clock loads.
+   The non-clock loads are:
+   Pin I2 of XLXI_6004/I_36_8
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
+   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<21>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<6>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<5>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fifo_rd_data<4>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
+   .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
+   sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D5> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
+   wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
+   .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<22>> is incomplete. The signal does not drive any load pins in
+   the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network icon_control0<10> has no load.
+INFO:LIT:395 - The above info message is repeated 283 more times for the
+   following (max. 5 shown):
+   icon_control0<11>,
+   icon_control0<15>,
+   icon_control0<21>,
+   icon_control0<16>,
+   icon_control0<22>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:797 - Your design is targeting LX/SX Production Step 0/1/ES devices.
+   Please note that there are new specifications for the DCMs to guarantee
+   maximum frequency performance. If the DCM input clock might stop or if the
+   DCM reset might be asserted for an extended time, then use of the dcm_standby
+   macro may be required. Please see Answer Record 21127.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of
+   the DCM_ADV comp XLXI_3410, consult the device Data Sheet.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of
+   the DCM_ADV comp XLXI_5949, consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 124 block(s) removed
+ 118 block(s) optimized away
+  64 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+(ROM) removed.
+Loadless block "XLXI_6074" (IBUFDS) removed.
+ The signal "BUSB_00DP_00S" is loadless and has been removed.
+  Loadless block "BUSB_00DP_00S" (PAD) removed.
+ The signal "BUSB_00DN_01S" is loadless and has been removed.
+  Loadless block "BUSB_00DN_01S" (PAD) removed.
+Loadless block "XLXI_6150" (IBUFDS) removed.
+ The signal "BUSB_01DP_02S" is loadless and has been removed.
+  Loadless block "BUSB_01DP_02S" (PAD) removed.
+ The signal "BUSB_01DN_03S" is loadless and has been removed.
+  Loadless block "BUSB_01DN_03S" (PAD) removed.
+Loadless block "XLXI_6151" (IBUFDS) removed.
+ The signal "BUSB_02DP_04S" is loadless and has been removed.
+  Loadless block "BUSB_02DP_04S" (PAD) removed.
+ The signal "BUSB_02DN_05S" is loadless and has been removed.
+  Loadless block "BUSB_02DN_05S" (PAD) removed.
+Loadless block "XLXI_6152" (IBUFDS) removed.
+ The signal "BUSB_03DP_06S" is loadless and has been removed.
+  Loadless block "BUSB_03DP_06S" (PAD) removed.
+ The signal "BUSB_03DN_07S" is loadless and has been removed.
+  Loadless block "BUSB_03DN_07S" (PAD) removed.
+Loadless block "XLXI_6153" (IBUFDS) removed.
+ The signal "BUSB_04DP_08S" is loadless and has been removed.
+  Loadless block "BUSB_04DP_08S" (PAD) removed.
+ The signal "BUSB_04DN_09S" is loadless and has been removed.
+  Loadless block "BUSB_04DN_09S" (PAD) removed.
+Loadless block "XLXI_6154" (IBUFDS) removed.
+ The signal "BUSB_05DP_10S" is loadless and has been removed.
+  Loadless block "BUSB_05DP_10S" (PAD) removed.
+ The signal "BUSB_05DN_11S" is loadless and has been removed.
+  Loadless block "BUSB_05DN_11S" (PAD) removed.
+Loadless block "XLXI_6155" (IBUFDS) removed.
+ The signal "BUSB_06DP_12S" is loadless and has been removed.
+  Loadless block "BUSB_06DP_12S" (PAD) removed.
+ The signal "BUSB_06DN_13S" is loadless and has been removed.
+  Loadless block "BUSB_06DN_13S" (PAD) removed.
+Loadless block "XLXI_6156" (IBUFDS) removed.
+ The signal "BUSB_07DP_14S" is loadless and has been removed.
+  Loadless block "BUSB_07DP_14S" (PAD) removed.
+ The signal "BUSB_07DN_15S" is loadless and has been removed.
+  Loadless block "BUSB_07DN_15S" (PAD) removed.
+Loadless block "XLXI_6157" (IBUFDS) removed.
+ The signal "BUSA_15DP_30S" is loadless and has been removed.
+  Loadless block "BUSA_15DP_30S" (PAD) removed.
+ The signal "BUSA_15DN_31S" is loadless and has been removed.
+  Loadless block "BUSA_15DN_31S" (PAD) removed.
+Loadless block "XLXI_6158" (IBUFDS) removed.
+ The signal "BUSA_14DP_28S" is loadless and has been removed.
+  Loadless block "BUSA_14DP_28S" (PAD) removed.
+ The signal "BUSA_14DN_29S" is loadless and has been removed.
+  Loadless block "BUSA_14DN_29S" (PAD) removed.
+Loadless block "XLXI_6159" (IBUFDS) removed.
+ The signal "BUSA_13DP_26S" is loadless and has been removed.
+  Loadless block "BUSA_13DP_26S" (PAD) removed.
+ The signal "BUSA_13DN_27S" is loadless and has been removed.
+  Loadless block "BUSA_13DN_27S" (PAD) removed.
+Loadless block "XLXI_6160" (IBUFDS) removed.
+ The signal "BUSA_12DP_24S" is loadless and has been removed.
+  Loadless block "BUSA_12DP_24S" (PAD) removed.
+ The signal "BUSA_12DN_25S" is loadless and has been removed.
+  Loadless block "BUSA_12DN_25S" (PAD) removed.
+Loadless block "XLXI_6161" (IBUFDS) removed.
+ The signal "BUSA_11DP_22S" is loadless and has been removed.
+  Loadless block "BUSA_11DP_22S" (PAD) removed.
+ The signal "BUSA_11DN_23S" is loadless and has been removed.
+  Loadless block "BUSA_11DN_23S" (PAD) removed.
+Loadless block "XLXI_6162" (IBUFDS) removed.
+ The signal "BUSA_10DP_20S" is loadless and has been removed.
+  Loadless block "BUSA_10DP_20S" (PAD) removed.
+ The signal "BUSA_10DN_21S" is loadless and has been removed.
+  Loadless block "BUSA_10DN_21S" (PAD) removed.
+Loadless block "XLXI_6163" (IBUFDS) removed.
+ The signal "BUSA_09DP_18S" is loadless and has been removed.
+  Loadless block "BUSA_09DP_18S" (PAD) removed.
+ The signal "BUSA_09DN_19S" is loadless and has been removed.
+  Loadless block "BUSA_09DN_19S" (PAD) removed.
+Loadless block "XLXI_6164" (IBUFDS) removed.
+ The signal "BUSA_08DP_16S" is loadless and has been removed.
+  Loadless block "BUSA_08DP_16S" (PAD) removed.
+ The signal "BUSA_08DN_17S" is loadless and has been removed.
+  Loadless block "BUSA_08DN_17S" (PAD) removed.
+Loadless block "XLXI_6165" (IBUFDS) removed.
+ The signal "BUSB_08DP_16S" is loadless and has been removed.
+  Loadless block "BUSB_08DP_16S" (PAD) removed.
+ The signal "BUSB_08DN_17S" is loadless and has been removed.
+  Loadless block "BUSB_08DN_17S" (PAD) removed.
+Loadless block "XLXI_6166" (IBUFDS) removed.
+ The signal "BUSB_09DP_18S" is loadless and has been removed.
+  Loadless block "BUSB_09DP_18S" (PAD) removed.
+ The signal "BUSB_09DN_19S" is loadless and has been removed.
+  Loadless block "BUSB_09DN_19S" (PAD) removed.
+Loadless block "XLXI_6167" (IBUFDS) removed.
+ The signal "BUSB_10DP_20S" is loadless and has been removed.
+  Loadless block "BUSB_10DP_20S" (PAD) removed.
+ The signal "BUSB_10DN_21S" is loadless and has been removed.
+  Loadless block "BUSB_10DN_21S" (PAD) removed.
+Loadless block "XLXI_6168" (IBUFDS) removed.
+ The signal "BUSB_11DP_22S" is loadless and has been removed.
+  Loadless block "BUSB_11DP_22S" (PAD) removed.
+ The signal "BUSB_11DN_23S" is loadless and has been removed.
+  Loadless block "BUSB_11DN_23S" (PAD) removed.
+Loadless block "XLXI_6169" (IBUFDS) removed.
+ The signal "BUSB_12DP_24S" is loadless and has been removed.
+  Loadless block "BUSB_12DP_24S" (PAD) removed.
+ The signal "BUSB_12DN_25S" is loadless and has been removed.
+  Loadless block "BUSB_12DN_25S" (PAD) removed.
+Loadless block "XLXI_6170" (IBUFDS) removed.
+ The signal "BUSB_13DP_26S" is loadless and has been removed.
+  Loadless block "BUSB_13DP_26S" (PAD) removed.
+ The signal "BUSB_13DN_27S" is loadless and has been removed.
+  Loadless block "BUSB_13DN_27S" (PAD) removed.
+Loadless block "XLXI_6171" (IBUFDS) removed.
+ The signal "BUSB_14DP_28S" is loadless and has been removed.
+  Loadless block "BUSB_14DP_28S" (PAD) removed.
+ The signal "BUSB_14DN_29S" is loadless and has been removed.
+  Loadless block "BUSB_14DN_29S" (PAD) removed.
+Loadless block "XLXI_6172" (IBUFDS) removed.
+ The signal "BUSB_15DP_30S" is loadless and has been removed.
+  Loadless block "BUSB_15DP_30S" (PAD) removed.
+ The signal "BUSB_15DN_31S" is loadless and has been removed.
+  Loadless block "BUSB_15DN_31S" (PAD) removed.
+Loadless block "XLXI_6173" (IBUFDS) removed.
+ The signal "BUSA_07DP_14S" is loadless and has been removed.
+  Loadless block "BUSA_07DP_14S" (PAD) removed.
+ The signal "BUSA_07DN_15S" is loadless and has been removed.
+  Loadless block "BUSA_07DN_15S" (PAD) removed.
+Loadless block "XLXI_6174" (IBUFDS) removed.
+ The signal "BUSA_06DP_12S" is loadless and has been removed.
+  Loadless block "BUSA_06DP_12S" (PAD) removed.
+ The signal "BUSA_06DN_13S" is loadless and has been removed.
+  Loadless block "BUSA_06DN_13S" (PAD) removed.
+Loadless block "XLXI_6175" (IBUFDS) removed.
+ The signal "BUSA_05DP_10S" is loadless and has been removed.
+  Loadless block "BUSA_05DP_10S" (PAD) removed.
+ The signal "BUSA_05DN_11S" is loadless and has been removed.
+  Loadless block "BUSA_05DN_11S" (PAD) removed.
+Loadless block "XLXI_6176" (IBUFDS) removed.
+ The signal "BUSA_04DP_08S" is loadless and has been removed.
+  Loadless block "BUSA_04DP_08S" (PAD) removed.
+ The signal "BUSA_04DN_09S" is loadless and has been removed.
+  Loadless block "BUSA_04DN_09S" (PAD) removed.
+Loadless block "XLXI_6177" (IBUFDS) removed.
+ The signal "BUSA_03DP_06S" is loadless and has been removed.
+  Loadless block "BUSA_03DP_06S" (PAD) removed.
+ The signal "BUSA_03DN_07S" is loadless and has been removed.
+  Loadless block "BUSA_03DN_07S" (PAD) removed.
+Loadless block "XLXI_6178" (IBUFDS) removed.
+ The signal "BUSA_02DP_04S" is loadless and has been removed.
+  Loadless block "BUSA_02DP_04S" (PAD) removed.
+ The signal "BUSA_02DN_05S" is loadless and has been removed.
+  Loadless block "BUSA_02DN_05S" (PAD) removed.
+Loadless block "XLXI_6179" (IBUFDS) removed.
+ The signal "BUSA_01DP_02S" is loadless and has been removed.
+  Loadless block "BUSA_01DP_02S" (PAD) removed.
+ The signal "BUSA_01DN_03S" is loadless and has been removed.
+  Loadless block "BUSA_01DN_03S" (PAD) removed.
+Loadless block "XLXI_6180" (IBUFDS) removed.
+ The signal "BUSA_00DP_00S" is loadless and has been removed.
+  Loadless block "BUSA_00DP_00S" (PAD) removed.
+ The signal "BUSA_00DN_01S" is loadless and has been removed.
+  Loadless block "BUSA_00DN_01S" (PAD) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_FIFO/VCC" (ONE) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/GND" (ZERO) removed.
+Unused block "XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		FADC_MEM_FALL_VECTOR_0/XST_GND
+VCC 		FADC_MEM_FALL_VECTOR_0/XST_VCC
+GND 		FADC_MEM_FALL_VECTOR_1/XST_GND
+VCC 		FADC_MEM_FALL_VECTOR_1/XST_VCC
+GND 		FADC_MEM_FALL_VECTOR_2/XST_GND
+VCC 		FADC_MEM_FALL_VECTOR_2/XST_VCC
+GND 		FADC_MEM_FALL_VECTOR_3/XST_GND
+VCC 		FADC_MEM_FALL_VECTOR_3/XST_VCC
+GND 		FADC_MEM_RISE_VECTOR_0/XST_GND
+VCC 		FADC_MEM_RISE_VECTOR_0/XST_VCC
+GND 		FADC_MEM_RISE_VECTOR_1/XST_GND
+VCC 		FADC_MEM_RISE_VECTOR_1/XST_VCC
+GND 		FADC_MEM_RISE_VECTOR_2/XST_GND
+VCC 		FADC_MEM_RISE_VECTOR_2/XST_VCC
+GND 		FADC_MEM_RISE_VECTOR_3/XST_GND
+VCC 		FADC_MEM_RISE_VECTOR_3/XST_VCC
+GND 		U_icon_pro/XST_GND
+VCC 		U_icon_pro/XST_VCC
+LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+   optimized to 0
+GND 		U_ila_pro_0/XST_GND
+VCC 		U_ila_pro_0/XST_VCC
+GND 		XLXI_4359/XST_GND
+VCC 		XLXI_4359/XST_VCC
+GND 		XLXI_5338/XST_GND
+GND 		XLXI_6047/XST_GND
+VCC 		XLXI_6047/XST_VCC
+GND 		XLXI_6050/XST_GND
+VCC 		XLXI_6050/XST_VCC
+GND 		XLXI_6185/XST_GND
+VCC 		XLXI_6185/XST_VCC
+GND 		XLXI_6227/XST_GND
+VCC 		XLXI_6227/XST_VCC
+GND 		XLXI_6227/burst_traffic_controller_blk/XST_GND
+VCC 		XLXI_6227/burst_traffic_controller_blk/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_RX_CTRL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_GND
+VCC 		XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RAM_COMM_DEC/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND
+VCC 		XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_VCC
+GND 		XLXI_6227/data_manager_blk/burst_controller_sm/XST_GND
+GND 		XLXI_6227/ec_wrapper/crcSplice/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/AddressContainer/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingChecksumCalcBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingChecksumCalcBlock/XST_VCC
+GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_GND
+VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_VCC
+GND 		XLXI_6227/reset_mgr/XST_GND
+VCC 		XLXI_6227/reset_mgr/XST_VCC
+GND 		XLXI_6228
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUSA_26DN_53S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_26DP_52S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_28DN_57S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_28DP_56S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_29DN_59S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_29DP_58S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_30DN_61S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSA_30DP_60S                      | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSBHS_02DN_05S                    | LOWCAPIOB        | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| BUSBHS_02DP_04S                    | LOWCAPIOB        | INPUT     | LVDS_25              | TRUE  |          |      |              |          | 0        |
+| BUSBHS_03DN_07S                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSBHS_03DP_06S                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSC_14DN_29S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_14DP_28S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_15DN_31S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_15DP_30S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_16DN_33S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_16DP_32S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_17DN_35S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_17DP_34S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_18DN_37S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_18DP_36S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_19DN_39S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_19DP_38S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_20DN_41S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_20DP_40S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSC_21DN_43S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_24DN_49S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_24DP_48S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_25DN_51S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_25DP_50S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_26DN_53S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_27DN_55S                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BUSC_27DP_54S                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BUSDD_00DP_00S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_01DP_02S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_02DP_04S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_03DP_06S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_04DP_08S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| BUSDD_05DP_10S                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | FAST |              |          |          |
+| GEL_RXCLK                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| GENERAL_12DN_25S                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GENERAL_12DP_24S                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INTERNAL_08DN_17S                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| INTERNAL_08DP_16S                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SECONDARY_CLK                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| U10_1                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| U10_2                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| U10_3                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.U
+_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
+SRL16.U_GANDX_SRL16_MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
