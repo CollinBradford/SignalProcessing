@@ -16,7 +16,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../ipcore_dir"  }
+-sd {"../ipcore_dir" "ipcore_dir"  }
 -write_timing_constraints YES
 -cross_clock_analysis YES
 -hierarchy_separator /

@@ -25,22 +25,6 @@
 <arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_12669 = PERIOD &quot;XLXN_12669&quot; TS_GEL_RXCLK / 1.5 HIGH 50%&gt;</arg>
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">BUSBHS_02DN_05S</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_BUSBHS_02DN_05S</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_6199</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_15087 = PERIOD &quot;XLXN_15087&quot; TS_BUSBHS_02DN_05S HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">BUSBHS_02DN_05S</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_BUSBHS_02DN_05S</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_6199</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLK180</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_15092 = PERIOD &quot;XLXN_15092&quot; TS_BUSBHS_02DN_05S PHASE 2.5 ns HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">BUSBHS_02DP_04S</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_BUSBHS_02DP_04S</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_6199</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_15087_0 = PERIOD &quot;XLXN_15087_0&quot; TS_BUSBHS_02DP_04S HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">BUSBHS_02DP_04S</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_BUSBHS_02DP_04S</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_6199</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLK180</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_15092_0 = PERIOD &quot;XLXN_15092_0&quot; TS_BUSBHS_02DP_04S PHASE 2.5 ns HIGH 50%&gt;</arg>
-</msg>
-
 <msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">XLXN_12669</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_XLXN_12669</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">XLXI_5953</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLK2X</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_XLXN_12781 = PERIOD &quot;XLXN_12781&quot; TS_XLXN_12669 / 2 HIGH 50%&gt;</arg>
 </msg>

@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : icon_pro.vhd
--- /___/   /\     Timestamp  : Thu Jun 30 16:30:59 Central Daylight Time 2016
+-- /___/   /\     Timestamp  : Wed Jul 13 15:15:47 Central Daylight Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
