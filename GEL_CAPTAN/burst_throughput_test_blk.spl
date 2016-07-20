@@ -1,7 +1,0 @@
-[Inputs]
-write_clk
-reset_n
-[Outputs]
-we_out
-=data_out[63:0]=
-[BiDir]
