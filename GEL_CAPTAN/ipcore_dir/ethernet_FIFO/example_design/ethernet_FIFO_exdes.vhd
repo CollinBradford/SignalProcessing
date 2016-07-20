@@ -75,11 +75,12 @@ entity ethernet_FIFO_exdes is
    PORT (
            WR_CLK                    : IN  std_logic;
      	   RD_CLK                    : IN  std_logic;
+           VALID                     : OUT std_logic;
            RST                       : IN  std_logic;
            OVERFLOW                  : OUT std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(128-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(256-1 DOWNTO 0);
            DOUT                      : OUT std_logic_vector(64-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
@@ -99,11 +100,12 @@ architecture xilinx of ethernet_FIFO_exdes is
    PORT (
            WR_CLK                    : IN  std_logic;
      	   RD_CLK                    : IN  std_logic;
+           VALID                     : OUT std_logic;
            RST                       : IN  std_logic;
            OVERFLOW                  : OUT std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(128-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(256-1 DOWNTO 0);
            DOUT                      : OUT std_logic_vector(64-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
@@ -130,6 +132,7 @@ begin
     PORT MAP (
            WR_CLK                    => wr_clk_i,
            RD_CLK                    => rd_clk_i,
+           VALID                     => valid,
            RST                       => rst,
            OVERFLOW                  => overflow,
            WR_EN 		     => wr_en,

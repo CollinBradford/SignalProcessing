@@ -31,6 +31,7 @@ vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\oei\ethernet_interfac
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\VERSION_BLK.vhd"
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\trigger_recv_blk.vhd"
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\Pulser.vhd"
+vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\psudoData.vhd"
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\PeakFinder.vhd"
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\MUX64_8.vhd"
 vhdl work "D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\FIFO_SIM.vhd"

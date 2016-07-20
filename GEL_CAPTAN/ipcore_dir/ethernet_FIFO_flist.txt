@@ -1,4 +1,5 @@
 # Output products list for <ethernet_FIFO>
+_xmsgs\pn_parser.xmsgs
 ethernet_FIFO.asy
 ethernet_FIFO.gise
 ethernet_FIFO.ngc

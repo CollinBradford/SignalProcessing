@@ -60,13 +60,14 @@ COMPONENT ethernet_FIFO
     rst : IN STD_LOGIC;
     wr_clk : IN STD_LOGIC;
     rd_clk : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
+    din : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
     wr_en : IN STD_LOGIC;
     rd_en : IN STD_LOGIC;
     dout : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
     full : OUT STD_LOGIC;
     overflow : OUT STD_LOGIC;
-    empty : OUT STD_LOGIC
+    empty : OUT STD_LOGIC;
+    valid : OUT STD_LOGIC
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -86,7 +87,8 @@ your_instance_name : ethernet_FIFO
     dout => dout,
     full => full,
     overflow => overflow,
-    empty => empty
+    empty => empty,
+    valid => valid
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ------------
 

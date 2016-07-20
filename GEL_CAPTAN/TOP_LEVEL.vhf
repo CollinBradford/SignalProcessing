@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/13/2016 15:13:20
+-- /___/   /\     Timestamp : 07/18/2016 15:12:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,93 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity FD8RE_MXILINX_TOP_LEVEL is
+   port ( C  : in    std_logic; 
+          CE : in    std_logic; 
+          D  : in    std_logic_vector (7 downto 0); 
+          R  : in    std_logic; 
+          Q  : out   std_logic_vector (7 downto 0));
+end FD8RE_MXILINX_TOP_LEVEL;
+
+architecture BEHAVIORAL of FD8RE_MXILINX_TOP_LEVEL is
+   attribute BOX_TYPE   : string ;
+   component FDRE
+      generic( INIT : bit :=  '0');
+      port ( C  : in    std_logic; 
+             CE : in    std_logic; 
+             D  : in    std_logic; 
+             R  : in    std_logic; 
+             Q  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
+   
+begin
+   I_Q0 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(0),
+                R=>R,
+                Q=>Q(0));
+   
+   I_Q1 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(1),
+                R=>R,
+                Q=>Q(1));
+   
+   I_Q2 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(2),
+                R=>R,
+                Q=>Q(2));
+   
+   I_Q3 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(3),
+                R=>R,
+                Q=>Q(3));
+   
+   I_Q4 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(4),
+                R=>R,
+                Q=>Q(4));
+   
+   I_Q5 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(5),
+                R=>R,
+                Q=>Q(5));
+   
+   I_Q6 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(6),
+                R=>R,
+                Q=>Q(6));
+   
+   I_Q7 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(7),
+                R=>R,
+                Q=>Q(7));
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -157,93 +244,6 @@ begin
                 D=>D(15),
                 R=>R,
                 Q=>Q(15));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FD8RE_MXILINX_TOP_LEVEL is
-   port ( C  : in    std_logic; 
-          CE : in    std_logic; 
-          D  : in    std_logic_vector (7 downto 0); 
-          R  : in    std_logic; 
-          Q  : out   std_logic_vector (7 downto 0));
-end FD8RE_MXILINX_TOP_LEVEL;
-
-architecture BEHAVIORAL of FD8RE_MXILINX_TOP_LEVEL is
-   attribute BOX_TYPE   : string ;
-   component FDRE
-      generic( INIT : bit :=  '0');
-      port ( C  : in    std_logic; 
-             CE : in    std_logic; 
-             D  : in    std_logic; 
-             R  : in    std_logic; 
-             Q  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
-   
-begin
-   I_Q0 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(0),
-                R=>R,
-                Q=>Q(0));
-   
-   I_Q1 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(1),
-                R=>R,
-                Q=>Q(1));
-   
-   I_Q2 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(2),
-                R=>R,
-                Q=>Q(2));
-   
-   I_Q3 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(3),
-                R=>R,
-                Q=>Q(3));
-   
-   I_Q4 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(4),
-                R=>R,
-                Q=>Q(4));
-   
-   I_Q5 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(5),
-                R=>R,
-                Q=>Q(5));
-   
-   I_Q6 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(6),
-                R=>R,
-                Q=>Q(6));
-   
-   I_Q7 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(7),
-                R=>R,
-                Q=>Q(7));
    
 end BEHAVIORAL;
 
@@ -670,113 +670,122 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute SLEW                  : string ;
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
-   signal b_data                        : std_logic_vector (63 downto 0);
-   signal b_data_we                     : std_logic;
-   signal b_enable                      : std_logic;
-   signal b_end_packet                  : std_logic;
-   signal CLK_MUX                       : std_logic;
-   signal CLK_187_5                     : std_logic;
-   signal CLK_375                       : std_logic;
-   signal clock_5mhz                    : std_logic;
-   signal dcm_mux_sel                   : std_logic;
-   signal DCM_RESET_MAP                 : std_logic;
-   signal dcm_reset_0                   : std_logic;
-   signal dcm_reset_1                   : std_logic;
-   signal dcm_reset_2                   : std_logic;
-   signal ethernet_fifo_overflow        : std_logic;
-   signal ethernet_overflow             : std_logic;
-   signal FADC_CAL                      : std_logic;
-   signal fadc_clk_in_reset             : std_logic;
-   signal FADC_CLK_N                    : std_logic;
-   signal FADC_CLK_P                    : std_logic;
-   signal fadc_ctrl_data                : std_logic_vector (15 downto 0);
-   signal FADC_CTRL_MAP                 : std_logic;
-   signal fadc_data_del_ce              : std_logic;
-   signal fadc_data_del_rst             : std_logic;
-   signal fadc_data_in                  : std_logic_vector (31 downto 0);
-   signal FADC_DCLK                     : std_logic;
-   signal fadc_dclk_in                  : std_logic;
-   signal FADC_DCLK_INV                 : std_logic;
-   signal fadc_debug                    : std_logic_vector (63 downto 0);
-   signal FADC_DELAY_MAP                : std_logic;
-   signal fadc_done                     : std_logic;
-   signal FADC_MAP                      : std_logic;
-   signal fadc_raddr                    : std_logic_vector (9 downto 0);
-   signal fadc_rdy_for_trigger          : std_logic;
-   signal FADC_RST                      : std_logic;
-   signal fadc_trigger                  : std_logic;
-   signal fadc_waddr_rise               : std_logic_vector (9 downto 0);
-   signal fadc_wctrl_done               : std_logic;
-   signal GLOBAL_RESET_MAP              : std_logic;
-   signal GMII_RXD_0_sig                : std_logic_vector (7 downto 0);
-   signal GMII_RX_DV_0_sig              : std_logic;
-   signal GMII_RX_ER_0_sig              : std_logic;
-   signal GTX_CLK_0_sig                 : std_logic;
-   signal MASTER_CLK                    : std_logic;
-   signal PHY_TXD_sig                   : std_logic_vector (7 downto 0);
-   signal PHY_TXEN_sig                  : std_logic;
-   signal PHY_TXER_sig                  : std_logic;
-   signal psi_status                    : std_logic_vector (63 downto 0);
-   signal pulse                         : std_logic;
-   signal read_size                     : std_logic_vector (15 downto 0);
-   signal reset                         : std_logic;
-   signal rx_addr                       : std_logic_vector (31 downto 0);
-   signal rx_data                       : std_logic_vector (63 downto 0);
-   signal rx_wren                       : std_logic;
-   signal scin_0                        : std_logic;
-   signal scin_1                        : std_logic;
-   signal scin_2                        : std_logic;
-   signal scin_3                        : std_logic;
-   signal threshold                     : std_logic_vector (7 downto 0);
-   signal trigger                       : std_logic;
-   signal TRIG_ATTRIBUTES_MAP           : std_logic;
-   signal trig_debug                    : std_logic_vector (63 downto 0);
-   signal TRIG_MAP                      : std_logic;
-   signal trig_reset                    : std_logic;
-   signal trig_scin0_sel                : std_logic;
-   signal tx_data                       : std_logic_vector (63 downto 0);
-   signal XLXN_12220                    : std_logic;
-   signal XLXN_12229                    : std_logic;
-   signal XLXN_12257                    : std_logic;
-   signal XLXN_12617                    : std_logic;
-   signal XLXN_12660                    : std_logic;
-   signal XLXN_12661                    : std_logic;
-   signal XLXN_12669                    : std_logic;
-   signal XLXN_12671                    : std_logic;
-   signal XLXN_12672                    : std_logic;
-   signal XLXN_12697                    : std_logic;
-   signal XLXN_12781                    : std_logic;
-   signal XLXN_12783                    : std_logic;
-   signal XLXN_12809                    : std_logic;
-   signal XLXN_12923                    : std_logic;
-   signal XLXN_12930                    : std_logic;
-   signal XLXN_12931                    : std_logic;
-   signal XLXN_15064                    : std_logic;
-   signal XLXN_15075                    : std_logic;
-   signal XLXN_15077                    : std_logic;
-   signal XLXN_15087                    : std_logic;
-   signal XLXN_15092                    : std_logic;
-   signal XLXN_15130                    : std_logic;
-   signal XLXN_15140                    : std_logic;
-   signal XLXN_15150                    : std_logic;
-   signal XLXN_15170                    : std_logic;
-   signal XLXN_15171                    : std_logic;
-   signal XLXN_15172                    : std_logic;
-   signal XLXN_15193                    : std_logic_vector (31 downto 0);
-   signal XLXN_15197                    : std_logic;
-   signal XLXN_15199                    : std_logic_vector (127 downto 0);
-   signal XLXN_15200                    : std_logic;
-   signal XLXN_15202                    : std_logic;
-   signal XLXN_15203                    : std_logic_vector (127 downto 0);
-   signal XLXN_15205                    : std_logic;
-   signal XLXN_15223                    : std_logic;
-   signal XLXN_15227                    : std_logic_vector (63 downto 0);
-   signal XLXI_5338_in3_openSignal      : std_logic_vector (63 downto 0);
-   signal XLXI_5338_in4_openSignal      : std_logic_vector (63 downto 0);
-   signal XLXI_5338_in5_openSignal      : std_logic_vector (63 downto 0);
-   signal XLXI_5338_in6_openSignal      : std_logic_vector (63 downto 0);
-   signal XLXI_5338_in7_openSignal      : std_logic_vector (63 downto 0);
-   signal XLXI_6253_throttle_openSignal : std_logic;
+   signal adc_fifo_f_empty          : std_logic;
+   signal adc_fifo_r_empty          : std_logic;
+   signal b_data                    : std_logic_vector (63 downto 0);
+   signal b_data_we                 : std_logic;
+   signal b_enable                  : std_logic;
+   signal b_end_packet              : std_logic;
+   signal CLK_MUX                   : std_logic;
+   signal CLK_187_5                 : std_logic;
+   signal CLK_375                   : std_logic;
+   signal clock_5mhz                : std_logic;
+   signal dcm_mux_sel               : std_logic;
+   signal DCM_RESET_MAP             : std_logic;
+   signal dcm_reset_0               : std_logic;
+   signal dcm_reset_1               : std_logic;
+   signal dcm_reset_2               : std_logic;
+   signal ethernet_data_out         : std_logic_vector (63 downto 0);
+   signal ethernet_fifo_din         : std_logic_vector (255 downto 0);
+   signal ethernet_fifo_empty       : std_logic;
+   signal ethernet_fifo_in_en       : std_logic;
+   signal ethernet_overflow         : std_logic;
+   signal FADC_CAL                  : std_logic;
+   signal fadc_clk_in_reset         : std_logic;
+   signal FADC_CLK_N                : std_logic;
+   signal FADC_CLK_P                : std_logic;
+   signal fadc_ctrl_data            : std_logic_vector (15 downto 0);
+   signal FADC_CTRL_MAP             : std_logic;
+   signal fadc_data_del_ce          : std_logic;
+   signal fadc_data_del_rst         : std_logic;
+   signal fadc_data_in              : std_logic_vector (31 downto 0);
+   signal FADC_DCLK                 : std_logic;
+   signal fadc_dclk_in              : std_logic;
+   signal FADC_DCLK_INV             : std_logic;
+   signal fadc_debug                : std_logic_vector (63 downto 0);
+   signal FADC_DELAY_MAP            : std_logic;
+   signal fadc_done                 : std_logic;
+   signal FADC_MAP                  : std_logic;
+   signal fadc_raddr                : std_logic_vector (9 downto 0);
+   signal fadc_rdy_for_trigger      : std_logic;
+   signal FADC_RST                  : std_logic;
+   signal fadc_trigger              : std_logic;
+   signal fadc_waddr_rise           : std_logic_vector (9 downto 0);
+   signal fadc_wctrl_done           : std_logic;
+   signal GLOBAL_RESET_MAP          : std_logic;
+   signal GMII_RXD_0_sig            : std_logic_vector (7 downto 0);
+   signal GMII_RX_DV_0_sig          : std_logic;
+   signal GMII_RX_ER_0_sig          : std_logic;
+   signal GTX_CLK_0_sig             : std_logic;
+   signal MASTER_CLK                : std_logic;
+   signal peak_finder_din           : std_logic_vector (255 downto 0);
+   signal PHY_TXD_sig               : std_logic_vector (7 downto 0);
+   signal PHY_TXEN_sig              : std_logic;
+   signal PHY_TXER_sig              : std_logic;
+   signal psi_status                : std_logic_vector (63 downto 0);
+   signal psudo_falling             : std_logic_vector (31 downto 0);
+   signal psudo_rising              : std_logic_vector (31 downto 0);
+   signal pulse                     : std_logic;
+   signal pulse_finder_in_en        : std_logic;
+   signal read_size                 : std_logic_vector (15 downto 0);
+   signal reset                     : std_logic;
+   signal rx_addr                   : std_logic_vector (31 downto 0);
+   signal rx_data                   : std_logic_vector (63 downto 0);
+   signal rx_wren                   : std_logic;
+   signal scin_0                    : std_logic;
+   signal scin_1                    : std_logic;
+   signal scin_2                    : std_logic;
+   signal scin_3                    : std_logic;
+   signal threshold                 : std_logic_vector (7 downto 0);
+   signal trigger                   : std_logic;
+   signal TRIG_ATTRIBUTES_MAP       : std_logic;
+   signal trig_debug                : std_logic_vector (63 downto 0);
+   signal TRIG_MAP                  : std_logic;
+   signal trig_reset                : std_logic;
+   signal trig_scin0_sel            : std_logic;
+   signal tx_data                   : std_logic_vector (63 downto 0);
+   signal XLXN_12220                : std_logic;
+   signal XLXN_12229                : std_logic;
+   signal XLXN_12257                : std_logic;
+   signal XLXN_12617                : std_logic;
+   signal XLXN_12660                : std_logic;
+   signal XLXN_12661                : std_logic;
+   signal XLXN_12669                : std_logic;
+   signal XLXN_12671                : std_logic;
+   signal XLXN_12672                : std_logic;
+   signal XLXN_12697                : std_logic;
+   signal XLXN_12781                : std_logic;
+   signal XLXN_12783                : std_logic;
+   signal XLXN_12809                : std_logic;
+   signal XLXN_12923                : std_logic;
+   signal XLXN_12930                : std_logic;
+   signal XLXN_12931                : std_logic;
+   signal XLXN_15064                : std_logic;
+   signal XLXN_15075                : std_logic;
+   signal XLXN_15077                : std_logic;
+   signal XLXN_15087                : std_logic;
+   signal XLXN_15092                : std_logic;
+   signal XLXN_15130                : std_logic;
+   signal XLXN_15140                : std_logic;
+   signal XLXN_15150                : std_logic;
+   signal XLXN_15172                : std_logic;
+   signal XLXN_15351                : std_logic;
+   signal XLXN_15352                : std_logic;
+   signal XLXN_15355                : std_logic;
+   signal XLXN_15364                : std_logic;
+   signal XLXN_15378                : std_logic;
+   signal XLXN_15380                : std_logic;
+   signal XLXN_15385                : std_logic;
+   signal XLXN_15389                : std_logic;
+   signal XLXN_15390                : std_logic;
+   signal XLXN_15394                : std_logic_vector (7 downto 0);
+   signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in6_openSignal  : std_logic_vector (63 downto 0);
+   signal XLXI_5338_in7_openSignal  : std_logic_vector (63 downto 0);
+   signal XLXI_6245_clk_openSignal  : std_logic;
+   signal XLXI_6245_full_openSignal : std_logic;
    component ADC_FIFO
       port ( wr_clk   : in    std_logic; 
              din      : in    std_logic_vector (31 downto 0); 
@@ -1091,14 +1100,15 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component ethernet_FIFO
       port ( rst      : in    std_logic; 
              wr_clk   : in    std_logic; 
-             din      : in    std_logic_vector (127 downto 0); 
+             din      : in    std_logic_vector (255 downto 0); 
              wr_en    : in    std_logic; 
              full     : out   std_logic; 
              overflow : out   std_logic; 
              rd_clk   : in    std_logic; 
              dout     : out   std_logic_vector (63 downto 0); 
              rd_en    : in    std_logic; 
-             empty    : out   std_logic);
+             empty    : out   std_logic; 
+             valid    : out   std_logic);
    end component;
    
    component PeakFinder
@@ -1106,12 +1116,12 @@ architecture BEHAVIORAL of TOP_LEVEL is
              reset                   : in    std_logic; 
              empty                   : in    std_logic; 
              data_valid              : in    std_logic; 
-             data_in                 : in    std_logic_vector (127 downto 0); 
+             data_in                 : in    std_logic_vector (255 downto 0); 
              signal_threshold        : in    std_logic_vector (7 downto 0); 
              user_samples_after_trig : in    std_logic_vector (15 downto 0); 
              out_enable              : out   std_logic; 
              in_enable               : out   std_logic; 
-             data_out                : out   std_logic_vector (127 downto 0));
+             data_out                : out   std_logic_vector (255 downto 0));
    end component;
    
    component data_send
@@ -1123,6 +1133,26 @@ architecture BEHAVIORAL of TOP_LEVEL is
              din       : in    std_logic_vector (63 downto 0); 
              b_data_we : out   std_logic; 
              b_data    : out   std_logic_vector (63 downto 0));
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component psudoData
+      port ( clk          : in    std_logic; 
+             reset        : in    std_logic; 
+             delay        : out   std_logic_vector (7 downto 0); 
+             rising_data  : out   std_logic_vector (31 downto 0); 
+             falling_data : out   std_logic_vector (31 downto 0));
    end component;
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
@@ -1192,20 +1222,32 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DLL_FREQUENCY_MODE of XLXI_6199 : label is "HIGH";
    attribute DFS_FREQUENCY_MODE of XLXI_6199 : label is "HIGH";
    attribute CLKIN_PERIOD of XLXI_6199 : label is "5.33333333";
-   attribute HU_SET of XLXI_6247 : label is "XLXI_6247_5";
-   attribute HU_SET of XLXI_6251 : label is "XLXI_6251_6";
+   attribute HU_SET of XLXI_6247 : label is "XLXI_6247_6";
+   attribute HU_SET of XLXI_6251 : label is "XLXI_6251_5";
 begin
-   ADC_FIFO_R : ADC_FIFO
-      port map (din(31 downto 0)=>XLXN_15193(31 downto 0),
+   ADC_FIFO_F : ADC_FIFO
+      port map (din(31 downto 0)=>psudo_falling(31 downto 0),
                 rd_clk=>MASTER_CLK,
-                rd_en=>XLXN_15205,
+                rd_en=>pulse_finder_in_en,
                 wr_clk=>MASTER_CLK,
-                wr_en=>XLXN_15171,
-                dout(127 downto 0)=>XLXN_15199(127 downto 0),
-                empty=>XLXN_15197,
-                full=>XLXN_15170,
+                wr_en=>XLXN_15352,
+                dout(127 downto 0)=>peak_finder_din(255 downto 128),
+                empty=>adc_fifo_f_empty,
+                full=>open,
                 overflow=>open,
-                valid=>XLXN_15200);
+                valid=>XLXN_15389);
+   
+   ADC_FIFO_R : ADC_FIFO
+      port map (din(31 downto 0)=>psudo_rising(31 downto 0),
+                rd_clk=>MASTER_CLK,
+                rd_en=>pulse_finder_in_en,
+                wr_clk=>MASTER_CLK,
+                wr_en=>XLXN_15351,
+                dout(127 downto 0)=>peak_finder_din(127 downto 0),
+                empty=>adc_fifo_r_empty,
+                full=>open,
+                overflow=>open,
+                valid=>XLXN_15385);
    
    XLXI_3405 : IDELAY
    -- synopsys translate_off
@@ -2041,13 +2083,13 @@ begin
                 O=>U10_3);
    
    XLXI_6245 : FIFO_SIM
-      port map (clk=>MASTER_CLK,
-                full=>XLXN_15170,
+      port map (clk=>XLXI_6245_clk_openSignal,
+                full=>XLXI_6245_full_openSignal,
                 rst=>reset,
-                data_out(31 downto 0)=>XLXN_15193(31 downto 0),
+                data_out=>open,
                 FIFO_RESET=>XLXN_15172,
                 threshold=>open,
-                wr_en=>XLXN_15171);
+                wr_en=>open);
    
    XLXI_6247 : FD8RE_MXILINX_TOP_LEVEL
       port map (C=>MASTER_CLK,
@@ -2057,28 +2099,29 @@ begin
                 Q(7 downto 0)=>threshold(7 downto 0));
    
    XLXI_6248 : ethernet_FIFO
-      port map (din(127 downto 0)=>XLXN_15203(127 downto 0),
+      port map (din(255 downto 0)=>ethernet_fifo_din(255 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>b_data_we,
                 rst=>reset,
                 wr_clk=>MASTER_CLK,
-                wr_en=>XLXN_15202,
-                dout(63 downto 0)=>XLXN_15227(63 downto 0),
-                empty=>XLXN_15223,
-                full=>open,
-                overflow=>ethernet_fifo_overflow);
+                wr_en=>ethernet_fifo_in_en,
+                dout(63 downto 0)=>ethernet_data_out(63 downto 0),
+                empty=>ethernet_fifo_empty,
+                full=>XLXN_15364,
+                overflow=>ethernet_overflow,
+                valid=>open);
    
    XLXI_6249 : PeakFinder
       port map (clk=>MASTER_CLK,
-                data_in(127 downto 0)=>XLXN_15199(127 downto 0),
-                data_valid=>XLXN_15200,
-                empty=>XLXN_15197,
+                data_in(255 downto 0)=>peak_finder_din(255 downto 0),
+                data_valid=>XLXN_15378,
+                empty=>XLXN_15380,
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),
-                data_out(127 downto 0)=>XLXN_15203(127 downto 0),
-                in_enable=>XLXN_15205,
-                out_enable=>XLXN_15202);
+                data_out(255 downto 0)=>ethernet_fifo_din(255 downto 0),
+                in_enable=>pulse_finder_in_en,
+                out_enable=>ethernet_fifo_in_en);
    
    XLXI_6251 : FD16RE_MXILINX_TOP_LEVEL
       port map (C=>MASTER_CLK,
@@ -2090,16 +2133,38 @@ begin
    XLXI_6253 : data_send
       port map (b_enable=>b_enable,
                 clk=>MASTER_CLK,
-                din(63 downto 0)=>XLXN_15227(63 downto 0),
-                empty=>XLXN_15223,
+                din(63 downto 0)=>ethernet_data_out(63 downto 0),
+                empty=>ethernet_fifo_empty,
                 rst=>reset,
-                throttle=>XLXI_6253_throttle_openSignal,
+                throttle=>XLXN_15355,
                 b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we);
    
-   XLXI_6254 : OBUF
-      port map (I=>ethernet_fifo_overflow,
-                O=>ethernet_overflow);
+   XLXI_6285 : VCC
+      port map (P=>XLXN_15351);
+   
+   XLXI_6286 : VCC
+      port map (P=>XLXN_15352);
+   
+   XLXI_6289 : OR2
+      port map (I0=>adc_fifo_f_empty,
+                I1=>adc_fifo_r_empty,
+                O=>XLXN_15390);
+   
+   XLXI_6290 : INV
+      port map (I=>XLXN_15390,
+                O=>XLXN_15380);
+   
+   XLXI_6291 : OBUF
+      port map (I=>ethernet_overflow,
+                O=>open);
+   
+   XLXI_6292 : psudoData
+      port map (clk=>MASTER_CLK,
+                reset=>reset,
+                delay(7 downto 0)=>XLXN_15394(7 downto 0),
+                falling_data(31 downto 0)=>psudo_falling(31 downto 0),
+                rising_data(31 downto 0)=>psudo_rising(31 downto 0));
    
 end BEHAVIORAL;
 

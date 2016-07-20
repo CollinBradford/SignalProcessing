@@ -1,0 +1,8 @@
+select figure at 3742 2460 8 -wires -sn=3
+select figure at 416 1434 8 -wires -sn=3
+select figure at 1395 4708 8 -wires -sn=3
+select all in 6 4708 1395 5457 -wires -enclosed -sn=3
+select figure at 589 4779 8 -wires -extend -sn=3
+select figure at 4024 1777 8 -wires -sn=3
+select figure at 4020 2314 8 -wires -sn=3
+select figure at 515 1507 8 -wires -sn=3
