@@ -1,5 +1,0 @@
-set -tmpdir "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/xst/projnav.tmp"
-set -xsthdpdir "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/xst"
-elaborate
--ifn psudoData.prj
--ifmt mixed

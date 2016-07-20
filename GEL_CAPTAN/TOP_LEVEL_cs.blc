@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: ngcbuild.exe -dd
 D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/_ngo -sd
-../ipcore_dir -sd ipcore_dir -p xc4vlx25-ff668-10 -i
+../ipcore_dir -p xc4vlx25-ff668-10 -i
 D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\TOP_LEVEL.ngc
 D:\cbradford\WorkingExampleCollinDebug\GPS_ADC_\GEL_CAPTAN\TOP_LEVEL_cs.ngc
 
@@ -14,8 +14,8 @@ Loading design module
 Loading design module
 "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/INFO_FIFO_0.ngc"...
 Loading design module "../ipcore_dir/ADDR_FIFO.ngc"...
-Loading design module "ipcore_dir/ADC_FIFO.ngc"...
-Loading design module "ipcore_dir/ethernet_FIFO.ngc"...
+Loading design module
+"D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/fadc_mem.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -28,7 +28,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 201852 kilobytes
+Total memory usage is 198716 kilobytes
 
 Writing NGC file
 "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL_cs.ngc"

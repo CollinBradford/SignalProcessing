@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -102,7 +102,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../ipcore_dir" "ipcore_dir"  }
+Cores Search Directories           : {"../ipcore_dir"  }
 
 =========================================================================
 
@@ -111,94 +111,125 @@ Cores Search Directories           : {"../ipcore_dir" "ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/params_package.vhd" in Library work.
-Architecture params_package of Entity params_package is up to date.
+Package <params_package> compiled.
+Package body <params_package> compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/address_container.vhd" in Library work.
-Architecture arch of Entity address_container is up to date.
+Entity <address_container> compiled.
+Entity <address_container> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/arp_reply.vhd" in Library work.
-Architecture arp_reply_arch of Entity arp_reply is up to date.
+Entity <arp_reply> compiled.
+Entity <arp_reply> (Architecture <arp_reply_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/or33.vhd" in Library work.
-Architecture or33_arch of Entity or33 is up to date.
+Entity <or33> compiled.
+Entity <or33> (Architecture <or33_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ip_checksum_calc.vhd" in Library work.
-Architecture arch of Entity ip_checksum_calc is up to date.
+Entity <ip_checksum_calc> compiled.
+Entity <ip_checksum_calc> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/create_packet.vhd" in Library work.
-Architecture create_packet_arch of Entity create_packet is up to date.
+Entity <create_packet> compiled.
+Entity <create_packet> (Architecture <create_packet_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/dataout_mux.vhd" in Library work.
-Architecture dataout_mux_arch of Entity dataout_mux is up to date.
+Entity <dataout_mux> compiled.
+Entity <dataout_mux> (Architecture <dataout_mux_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/decipherer.vhd" in Library work.
-Architecture decipherer_arch of Entity decipherer is up to date.
+Entity <decipherer> compiled.
+Entity <decipherer> (Architecture <decipherer_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/filter_data_out.vhd" in Library work.
-Architecture filter_data_out_arch of Entity filter_data_out is up to date.
+Entity <filter_data_out> compiled.
+Entity <filter_data_out> (Architecture <filter_data_out_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/icmp_ping_checksum_calc.vhd" in Library work.
-Architecture icmp_ping_checksum_calc_arch of Entity icmp_ping_checksum_calc is up to date.
+Entity <icmp_ping_checksum_calc> compiled.
+Entity <icmp_ping_checksum_calc> (Architecture <icmp_ping_checksum_calc_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/icmp_ping_shift_reg.vhd" in Library work.
-Architecture arch of Entity icmp_ping_shift_reg is up to date.
+Entity <icmp_ping_shift_reg> compiled.
+Entity <icmp_ping_shift_reg> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/udp_data_splicer.vhd" in Library work.
-Architecture udp_data_splicer_arch of Entity udp_data_splicer is up to date.
+Entity <udp_data_splicer> compiled.
+Entity <udp_data_splicer> (Architecture <udp_data_splicer_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/user_addrs_mux.vhd" in Library work.
-Architecture user_addrs_mux_arch of Entity user_addrs_mux is up to date.
+Entity <user_addrs_mux> compiled.
+Entity <user_addrs_mux> (Architecture <user_addrs_mux_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
-Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
+Entity <DATA_FIFO_0> compiled.
+Entity <DATA_FIFO_0> (Architecture <DATA_FIFO_0_a>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
-Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
+Entity <INFO_FIFO_0> compiled.
+Entity <INFO_FIFO_0> (Architecture <INFO_FIFO_0_a>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/ipcore_dir/ADDR_FIFO.vhd" in Library work.
-Architecture addr_fifo_a of Entity addr_fifo is up to date.
+Entity <ADDR_FIFO> compiled.
+Entity <ADDR_FIFO> (Architecture <ADDR_FIFO_a>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/burst_controller_sm.vhd" in Library work.
-Architecture burst_controller_sm_arch of Entity burst_controller_sm is up to date.
+Entity <burst_controller_sm> compiled.
+Entity <burst_controller_sm> (Architecture <burst_controller_sm_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/rx_ctl.vhd" in Library work.
-Architecture arch of Entity rx_ctl is up to date.
+Entity <rx_ctl> compiled.
+Entity <rx_ctl> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ram_comm_dec.vhd" in Library work.
-Architecture arch of Entity ram_comm_dec is up to date.
+Entity <ram_comm_dec> compiled.
+Entity <ram_comm_dec> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/tx_seq_ctl.vhd" in Library work.
-Architecture arch of Entity tx_seq_ctl is up to date.
+Entity <tx_seq_ctl> compiled.
+Entity <tx_seq_ctl> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ethernet_controller.vhd" in Library work.
-Architecture arch of Entity ethernet_controller is up to date.
+Entity <ethernet_controller> compiled.
+Entity <ethernet_controller> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/xmii_handler.vhd" in Library work.
-Architecture arch of Entity mii_100_1000_handler is up to date.
+Entity <MII_100_1000_handler> compiled.
+Entity <MII_100_1000_handler> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/crc_splice.vhd" in Library work.
-Architecture arch of Entity crc_splice is up to date.
+Entity <crc_splice> compiled.
+Entity <crc_splice> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ethernet_controller_wrapper.vhd" in Library work.
-Architecture arch of Entity ethernet_controller_wrapper is up to date.
+Entity <ethernet_controller_wrapper> compiled.
+Entity <ethernet_controller_wrapper> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/data_manager.vhd" in Library work.
-Architecture behavioral of Entity data_manager is up to date.
+Entity <data_manager> compiled.
+Entity <data_manager> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/burst_traffic_controller.vhd" in Library work.
-Architecture burst_traffic_controller_arch of Entity burst_traffic_controller is up to date.
+Entity <burst_traffic_controller> compiled.
+Entity <burst_traffic_controller> (Architecture <burst_traffic_controller_arch>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/reset_mgr.vhd" in Library work.
-Architecture behavioral of Entity reset_mgr is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
-Architecture adc_fifo_a of Entity adc_fifo is up to date.
+Entity <reset_mgr> compiled.
+Entity <reset_mgr> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/fadc_params_package.vhd" in Library work.
+Package <fadc_params_package> compiled.
+Package body <fadc_params_package> compiled.
+Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/fadc_mem.vhd" in Library work.
+Entity <fadc_mem> compiled.
+Entity <fadc_mem> (Architecture <fadc_mem_a>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
-Architecture behavioral of Entity version_blk is up to date.
+Entity <VERSION_BLK> compiled.
+Entity <VERSION_BLK> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/MUX64_8.vhd" in Library work.
-Architecture behavioral of Entity mux64_8 is up to date.
+Entity <MUX64_8> compiled.
+Entity <MUX64_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FADC_WRITE_CTRL.vhd" in Library work.
+Entity <FADC_WRITE_CTRL> compiled.
+Entity <FADC_WRITE_CTRL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FADC_READ_CTRL.vhd" in Library work.
+Entity <FADC_READ_CTRL> compiled.
+Entity <FADC_READ_CTRL> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
-Architecture behavioral of Entity buffer_10bit is up to date.
+Entity <buffer_10bit> compiled.
+Entity <buffer_10bit> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
-Architecture behavioral of Entity trigger_recv_blk is up to date.
+Entity <trigger_recv_blk> compiled.
+Entity <trigger_recv_blk> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ethernet_interface.vhd" in Library work.
-Architecture behavioral of Entity ethernet_interface is up to date.
+Entity <ethernet_interface> compiled.
+Entity <ethernet_interface> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/Pulser.vhd" in Library work.
-Architecture behavioral of Entity pulser is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FIFO_SIM.vhd" in Library work.
-Architecture behavioral of Entity fifo_sim is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd" in Library work.
-Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Architecture behavioral of Entity peakfinder is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/data_send.vhd" in Library work.
-Architecture behavioral of Entity data_send is up to date.
-Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/psudoData.vhd" in Library work.
-Architecture behavioral of Entity psudodata is up to date.
+Entity <Pulser> compiled.
+Entity <Pulser> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16re_mxilinx_top_level> compiled.
-Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_top_level> compiled.
-Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_top_level> compiled.
-Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <top_level> compiled.
-Entity <top_level> (Architecture <behavioral>) compiled.
+Entity <M2_1_MXILINX_TOP_LEVEL> compiled.
+Entity <M2_1_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD16RE_MXILINX_TOP_LEVEL> compiled.
+Entity <FD16RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <D4_16E_MXILINX_TOP_LEVEL> compiled.
+Entity <D4_16E_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <TOP_LEVEL> compiled.
+Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -210,35 +241,29 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <FADC_WRITE_CTRL> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <FADC_READ_CTRL> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <Pulser> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <FIFO_SIM> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <data_send> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <psudoData> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <Pulser> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -294,13 +319,15 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1228: Unconnected output port 'full' of component 'ADC_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1228: Unconnected output port 'overflow' of component 'ADC_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1228: Instantiating black box module <ADC_FIFO>.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1240: Unconnected output port 'full' of component 'ADC_FIFO'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1240: Unconnected output port 'overflow' of component 'ADC_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1240: Instantiating black box module <ADC_FIFO>.
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1067: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1076: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1085: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1094: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1103: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1112: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1121: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1130: Instantiating black box module <fadc_mem>.
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -319,15 +346,16 @@ WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/T
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1297: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D5' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 1184: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -649,32 +677,27 @@ WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TO
     Set user-defined property "DRIVE =  12" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 2085: Unconnected output port 'wr_en' of component 'FIFO_SIM'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 2085: Unconnected output port 'data_out' of component 'FIFO_SIM'.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 2085: Unconnected output port 'threshold' of component 'FIFO_SIM'.
-    Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 2101: Unconnected output port 'valid' of component 'ethernet_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf" line 2101: Instantiating black box module <ethernet_FIFO>.
-    Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6291> in unit <TOP_LEVEL>.
-    Set user-defined property "DRIVE =  12" for instance <XLXI_6291> in unit <TOP_LEVEL>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6291> in unit <TOP_LEVEL>.
-    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6291> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
-Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
 Entity <D4_16E_MXILINX_TOP_LEVEL> analyzed. Unit <D4_16E_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <VERSION_BLK> in library <work> (Architecture <behavioral>).
+Analyzing Entity <VERSION_BLK> in library <work> (Architecture <Behavioral>).
 Entity <VERSION_BLK> analyzed. Unit <VERSION_BLK> generated.
 
-Analyzing Entity <MUX64_8> in library <work> (Architecture <behavioral>).
+Analyzing Entity <MUX64_8> in library <work> (Architecture <Behavioral>).
 Entity <MUX64_8> analyzed. Unit <MUX64_8> generated.
 
-Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
 Entity <M2_1_MXILINX_TOP_LEVEL> analyzed. Unit <M2_1_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <FADC_WRITE_CTRL> in library <work> (Architecture <Behavioral>).
+Entity <FADC_WRITE_CTRL> analyzed. Unit <FADC_WRITE_CTRL> generated.
+
+Analyzing Entity <FADC_READ_CTRL> in library <work> (Architecture <Behavioral>).
+Entity <FADC_READ_CTRL> analyzed. Unit <FADC_READ_CTRL> generated.
+
+Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_TOP_LEVEL>.
@@ -693,13 +716,13 @@ Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beh
     Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_TOP_LEVEL>.
 Entity <FD16RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD16RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <buffer_10bit> in library <work> (Architecture <behavioral>).
+Analyzing Entity <buffer_10bit> in library <work> (Architecture <Behavioral>).
 Entity <buffer_10bit> analyzed. Unit <buffer_10bit> generated.
 
-Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <behavioral>).
+Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <Behavioral>).
 Entity <trigger_recv_blk> analyzed. Unit <trigger_recv_blk> generated.
 
-Analyzing Entity <ethernet_interface> in library <work> (Architecture <behavioral>).
+Analyzing Entity <ethernet_interface> in library <work> (Architecture <BEHAVIORAL>).
 WARNING:Xst:753 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/ethernet_interface.vhd" line 145: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
 Entity <ethernet_interface> analyzed. Unit <ethernet_interface> generated.
 
@@ -820,38 +843,8 @@ Entity <burst_traffic_controller> analyzed. Unit <burst_traffic_controller> gene
 Analyzing Entity <reset_mgr> in library <work> (Architecture <Behavioral>).
 Entity <reset_mgr> analyzed. Unit <reset_mgr> generated.
 
-Analyzing Entity <Pulser> in library <work> (Architecture <behavioral>).
+Analyzing Entity <Pulser> in library <work> (Architecture <Behavioral>).
 Entity <Pulser> analyzed. Unit <Pulser> generated.
-
-Analyzing Entity <FIFO_SIM> in library <work> (Architecture <behavioral>).
-INFO:Xst:2679 - Register <FIFO_RESET> in unit <FIFO_SIM> has a constant value of 0 during circuit operation. The register is replaced by logic.
-Entity <FIFO_SIM> analyzed. Unit <FIFO_SIM> generated.
-
-Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
-    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8RE_MXILINX_TOP_LEVEL>.
-Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
-
-Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.vhd" line 68: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <reset>
-Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
-
-Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/data_send.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <rst>, <empty>
-Entity <data_send> analyzed. Unit <data_send> generated.
-
-Analyzing Entity <psudoData> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/psudoData.vhd" line 47: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <counter>, <counter_f>, <reset>
-Entity <psudoData> analyzed. Unit <psudoData> generated.
 
 
 =========================================================================
@@ -877,6 +870,50 @@ Synthesizing Unit <MUX64_8>.
 Unit <MUX64_8> synthesized.
 
 
+Synthesizing Unit <FADC_WRITE_CTRL>.
+    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FADC_WRITE_CTRL.vhd".
+    Found 1-bit register for signal <we_fall>.
+    Found 1-bit register for signal <actually_ready>.
+    Found 10-bit register for signal <cnt>.
+    Found 10-bit adder for signal <cnt$share0000>.
+    Found 1-bit register for signal <done_sig>.
+    Found 1-bit register for signal <halt>.
+    Found 1-bit register for signal <rdy_for_trig_old>.
+    Found 1-bit register for signal <trigger_old>.
+    Found 10-bit up counter for signal <waddr_fall_sig>.
+    Found 10-bit up counter for signal <waddr_rise_sig>.
+    Found 1-bit register for signal <we_rise_sig>.
+    Found 10-bit comparator equal for signal <we_rise_sig$cmp_eq0000> created at line 129.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <FADC_WRITE_CTRL> synthesized.
+
+
+Synthesizing Unit <FADC_READ_CTRL>.
+    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FADC_READ_CTRL.vhd".
+    Found 64-bit register for signal <burst_data>.
+    Found 1-bit register for signal <burst_we>.
+    Found 1-bit register for signal <burst_end_packet>.
+    Found 10-bit comparator equal for signal <burst_data$cmp_eq0009> created at line 93.
+    Found 4-bit register for signal <cnt>.
+    Found 4-bit adder for signal <cnt$addsub0000> created at line 81.
+    Found 1-bit register for signal <delay_state>.
+    Found 1-bit register for signal <done_old>.
+    Found 10-bit register for signal <raddr_sig>.
+    Found 10-bit subtractor for signal <raddr_sig$addsub0000> created at line 88.
+    Found 1-bit register for signal <rdy_for_trig_sig>.
+    Found 1-bit register for signal <reading>.
+    Found 10-bit comparator not equal for signal <reading$cmp_ne0000> created at line 93.
+    Summary:
+	inferred  84 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <FADC_READ_CTRL> synthesized.
+
+
 Synthesizing Unit <buffer_10bit>.
     Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/buffer_10bit.vhd".
 Unit <buffer_10bit> synthesized.
@@ -900,88 +937,6 @@ Synthesizing Unit <Pulser>.
     Summary:
 	inferred   1 Counter(s).
 Unit <Pulser> synthesized.
-
-
-Synthesizing Unit <FIFO_SIM>.
-    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/FIFO_SIM.vhd".
-    Found 1-bit register for signal <wr_en>.
-    Found 32-bit up counter for signal <counter>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <FIFO_SIM> synthesized.
-
-
-Synthesizing Unit <PeakFinder>.
-    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/PeakFinder.vhd".
-WARNING:Xst:647 - Input <data_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 256-bit register for signal <data_out>.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0000> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0001> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0002> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0003> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0004> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0005> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0006> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0007> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0008> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0009> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0010> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0011> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0012> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0013> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0014> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0015> created at line 77.
-    Found 1-bit register for signal <out_en_sig>.
-    Found 16-bit register for signal <samplesSinceTrig>.
-    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 103.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0000> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0001> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0002> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0003> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0004> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0005> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0006> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0007> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0008> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0009> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0010> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0011> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0012> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0013> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0014> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0015> created at line 77.
-    Found 16-bit comparator less for signal <samplesSinceTrig$cmp_lt0000> created at line 96.
-    Summary:
-	inferred 273 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred  33 Comparator(s).
-Unit <PeakFinder> synthesized.
-
-
-Synthesizing Unit <data_send>.
-    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/data_send.vhd".
-WARNING:Xst:647 - Input <b_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <throttle> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <b_data_we>.
-    Found 3-bit up counter for signal <count_delay>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <data_send> synthesized.
-
-
-Synthesizing Unit <psudoData>.
-    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/psudoData.vhd".
-WARNING:Xst:1305 - Output <delay> is never assigned. Tied to value 00000000.
-    Found 8-bit up counter for signal <counter>.
-    Found 8-bit register for signal <counter_f>.
-    Found 8-bit adder for signal <counter_f$add0000> created at line 64.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   8 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <psudoData> synthesized.
 
 
 Synthesizing Unit <burst_traffic_controller>.
@@ -1619,11 +1574,6 @@ Synthesizing Unit <FD16RE_MXILINX_TOP_LEVEL>.
 Unit <FD16RE_MXILINX_TOP_LEVEL> synthesized.
 
 
-Synthesizing Unit <FD8RE_MXILINX_TOP_LEVEL>.
-    Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf".
-Unit <FD8RE_MXILINX_TOP_LEVEL> synthesized.
-
-
 Synthesizing Unit <data_manager>.
     Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/oei/data_manager.vhd".
 WARNING:Xst:1780 - Signal <tx_data_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1718,6 +1668,7 @@ Synthesizing Unit <TOP_LEVEL>.
     Related source file is "D:/cbradford/WorkingExampleCollinDebug/GPS_ADC_/GEL_CAPTAN/TOP_LEVEL.vhf".
 WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:646 - Signal <rx_data<63:25>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rx_data<23:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_addr<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <pulse> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1725,10 +1676,6 @@ WARNING:Xst:653 - Signal <psi_status<55:13>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <psi_status<11:9>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <psi_status<7:5>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <psi_status<3:1>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
-WARNING:Xst:653 - Signal <fadc_wctrl_done> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <fadc_waddr_rise> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
-WARNING:Xst:653 - Signal <fadc_rdy_for_trigger> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <fadc_raddr> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
 WARNING:Xst:653 - Signal <fadc_debug<63:61>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <fadc_debug<59:57>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <fadc_debug<55:53>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
@@ -1736,72 +1683,66 @@ WARNING:Xst:653 - Signal <fadc_debug<51:34>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <fadc_debug<23:22>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:653 - Signal <fadc_debug<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:646 - Signal <fadc_data_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <fadc_ctrl_data<13:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <b_end_packet> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <XLXN_15394> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <XLXN_15389> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <XLXN_15385> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXN_15378> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <XLXN_15364> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXN_15355> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <XLXN_15172> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXI_6245_full_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_6245_clk_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <b_end_packet> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b_enable> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <XLXI_5338_in7_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in6_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in5_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:646 - Signal <GLOBAL_RESET_MAP> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <FADC_DCLK_INV> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <TOP_LEVEL> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-WARNING:Xst:524 - All outputs of the instance <XLXI_6245> of the block <FIFO_SIM> are unconnected in block <TOP_LEVEL>.
-   This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 27
+# Adders/Subtractors                                   : 28
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 3
+ 16-bit adder                                          : 2
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 1
+ 4-bit adder                                           : 1
  64-bit adder                                          : 1
- 8-bit adder                                           : 5
+ 8-bit adder                                           : 4
  8-bit subtractor                                      : 2
 # Counters                                             : 14
+ 10-bit up counter                                     : 2
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
- 3-bit up counter                                      : 2
+ 3-bit up counter                                      : 1
  32-bit up counter                                     : 1
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 691
- 1-bit register                                        : 599
+ 8-bit up counter                                      : 2
+# Registers                                            : 703
+ 1-bit register                                        : 610
+ 10-bit register                                       : 2
  11-bit register                                       : 8
- 16-bit register                                       : 7
+ 16-bit register                                       : 6
  17-bit register                                       : 1
  24-bit register                                       : 1
- 256-bit register                                      : 1
  3-bit register                                        : 1
  32-bit register                                       : 5
- 4-bit register                                        : 1
+ 4-bit register                                        : 2
  40-bit register                                       : 1
  48-bit register                                       : 2
- 64-bit register                                       : 4
- 8-bit register                                        : 60
-# Comparators                                          : 54
+ 64-bit register                                       : 5
+ 8-bit register                                        : 59
+# Comparators                                          : 24
+ 10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 1
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator less                                : 2
+ 16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
@@ -1815,8 +1756,7 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 17
- 8-bit comparator lessequal                            : 16
+ 8-bit comparator greater                              : 1
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 7
  32-bit 4-to-1 multiplexer                             : 4
@@ -2169,14 +2109,18 @@ Optimizing FSM <XLXI_6227/ec_wrapper/ethernet_controller/ArpReplyBlock/Sreg0/FSM
  arpresponse_arp_payload_tip7   | 0100110
  arpresponse_arp_payload_tip8   | 0100010
 --------------------------------------------
-Reading core <ipcore_dir/ADC_FIFO.ngc>.
-Reading core <ipcore_dir/ethernet_FIFO.ngc>.
+Reading core <fadc_mem.ngc>.
 Reading core <DATA_FIFO_0.ngc>.
 Reading core <INFO_FIFO_0.ngc>.
 Reading core <../ipcore_dir/ADDR_FIFO.ngc>.
-Loading core <ADC_FIFO> for timing and area information for instance <ADC_FIFO_F>.
-Loading core <ADC_FIFO> for timing and area information for instance <ADC_FIFO_R>.
-Loading core <ethernet_FIFO> for timing and area information for instance <XLXI_6248>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_FALL_VECTOR_0>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_FALL_VECTOR_1>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_FALL_VECTOR_2>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_FALL_VECTOR_3>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_RISE_VECTOR_0>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_RISE_VECTOR_1>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_RISE_VECTOR_2>.
+Loading core <fadc_mem> for timing and area information for instance <FADC_MEM_RISE_VECTOR_3>.
 Loading core <DATA_FIFO_0> for timing and area information for instance <RX_DATA_FIFO>.
 Loading core <INFO_FIFO_0> for timing and area information for instance <RX_DATA_INFO_FIFO>.
 Loading core <ADDR_FIFO> for timing and area information for instance <RX_SRC_ADDR_FIFO>.
@@ -2222,32 +2166,38 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 8
-# Adders/Subtractors                                   : 27
+# Adders/Subtractors                                   : 28
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
  11-bit adder                                          : 5
  11-bit subtractor                                     : 3
- 16-bit adder                                          : 3
+ 16-bit adder                                          : 2
  16-bit subtractor                                     : 5
  17-bit adder                                          : 2
  3-bit adder                                           : 1
+ 4-bit adder                                           : 1
  64-bit adder                                          : 1
- 8-bit adder                                           : 5
+ 8-bit adder                                           : 4
  8-bit subtractor                                      : 2
 # Counters                                             : 14
+ 10-bit up counter                                     : 2
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
- 3-bit up counter                                      : 2
+ 3-bit up counter                                      : 1
  32-bit up counter                                     : 1
  34-bit up counter                                     : 1
  4-bit up counter                                      : 3
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
- 8-bit up counter                                      : 3
-# Registers                                            : 2184
- Flip-Flops                                            : 2184
-# Comparators                                          : 54
+ 8-bit up counter                                      : 2
+# Registers                                            : 1979
+ Flip-Flops                                            : 1979
+# Comparators                                          : 24
+ 10-bit comparator equal                               : 2
+ 10-bit comparator not equal                           : 1
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator less                                : 2
+ 16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
@@ -2261,8 +2211,7 @@ Macro Statistics
  6-bit comparator less                                 : 1
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 17
- 8-bit comparator lessequal                            : 16
+ 8-bit comparator greater                              : 1
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 7
  32-bit 4-to-1 multiplexer                             : 4
@@ -2279,7 +2228,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1989 - Unit <TOP_LEVEL>: instances <XLXI_6124>, <XLXI_6126> of unit <buffer_10bit> are equivalent, second instance is removed
 WARNING:Xst:1293 - FF/Latch <add_sig_16> has a constant value of 0 in block <ip_checksum_calc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <test_data_1> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_data_2> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
@@ -2314,17 +2262,13 @@ Optimizing unit <user_addrs_mux> ...
 
 Optimizing unit <MUX64_8> ...
 
+Optimizing unit <FADC_WRITE_CTRL> ...
+
+Optimizing unit <FADC_READ_CTRL> ...
+
 Optimizing unit <trigger_recv_blk> ...
 
 Optimizing unit <Pulser> ...
-
-Optimizing unit <FIFO_SIM> ...
-
-Optimizing unit <PeakFinder> ...
-
-Optimizing unit <data_send> ...
-
-Optimizing unit <psudoData> ...
 
 Optimizing unit <burst_traffic_controller> ...
 
@@ -2380,8 +2324,6 @@ Optimizing unit <M2_1_MXILINX_TOP_LEVEL> ...
 
 Optimizing unit <FD16RE_MXILINX_TOP_LEVEL> ...
 
-Optimizing unit <FD8RE_MXILINX_TOP_LEVEL> ...
-
 Optimizing unit <data_manager> ...
 
 Optimizing unit <ethernet_controller> ...
@@ -2390,6 +2332,7 @@ Optimizing unit <ethernet_controller_wrapper> ...
 
 Optimizing unit <ethernet_interface> ...
 WARNING:Xst:1710 - FF/Latch <tx_er> (without init value) has a constant value of 0 in block <crcSplice>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <burst_end_packet> of sequential type is unconnected in block <XLXI_6050>.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6231> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <ram_wdata_48> of sequential type is unconnected in block <RAM_COMM_DEC>.
@@ -2528,15 +2471,7 @@ WARNING:Xst:2677 - Node <udp_data_count_10> of sequential type is unconnected in
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 33.
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <ADC_FIFO_F> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <ADC_FIFO_F> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <ADC_FIFO_R> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <ADC_FIFO_R> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <XLXI_6248> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 30.
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2585,14 +2520,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <ADC_FIFO_F> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <ADC_FIFO_F> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <ADC_FIFO_R> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <ADC_FIFO_R> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <XLXI_6248> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2659,8 +2586,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1812
- Flip-Flops                                            : 1812
+# Registers                                            : 1615
+ Flip-Flops                                            : 1615
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2691,7 +2618,7 @@ Design Statistics
 # IOs                              : 113
 
 Cell Usage :
-# BELS                             : 6333
+# BELS                             : 5659
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2699,54 +2626,54 @@ Cell Usage :
 #      AND5B2                      : 6
 #      AND5B3                      : 4
 #      AND5B4                      : 1
-#      BUF                         : 5
-#      GND                         : 29
-#      INV                         : 185
-#      LUT1                        : 238
-#      LUT2                        : 644
-#      LUT2_D                      : 27
-#      LUT2_L                      : 12
-#      LUT3                        : 1341
-#      LUT3_D                      : 36
-#      LUT3_L                      : 55
-#      LUT4                        : 1969
-#      LUT4_D                      : 64
-#      LUT4_L                      : 195
-#      MUXCY                       : 894
-#      MUXF5                       : 140
+#      BUF                         : 4
+#      GND                         : 34
+#      INV                         : 178
+#      LUT1                        : 212
+#      LUT2                        : 420
+#      LUT2_D                      : 18
+#      LUT2_L                      : 22
+#      LUT3                        : 1130
+#      LUT3_D                      : 14
+#      LUT3_L                      : 38
+#      LUT4                        : 1981
+#      LUT4_D                      : 53
+#      LUT4_L                      : 230
+#      MUXCY                       : 714
+#      MUXF5                       : 133
 #      MUXF6                       : 40
-#      OR2                         : 4
-#      VCC                         : 25
+#      OR2                         : 3
+#      VCC                         : 31
 #      XOR2                        : 2
-#      XORCY                       : 403
-# FlipFlops/Latches                : 2594
-#      FD                          : 388
-#      FDC                         : 148
-#      FDCE                        : 147
-#      FDE                         : 515
-#      FDP                         : 30
-#      FDPE                        : 11
-#      FDR                         : 93
-#      FDR_1                       : 8
-#      FDRE                        : 1045
-#      FDRS                        : 96
-#      FDRSE                       : 1
+#      XORCY                       : 377
+# FlipFlops/Latches                : 2095
+#      FD                          : 56
+#      FDC                         : 48
+#      FDCE                        : 96
+#      FDE                         : 468
+#      FDP                         : 18
+#      FDPE                        : 6
+#      FDR                         : 144
+#      FDR_1                       : 1
+#      FDRE                        : 1059
+#      FDRS                        : 20
+#      FDRSE                       : 2
 #      FDS                         : 16
-#      FDSE                        : 96
-# RAMS                             : 224
+#      FDSE                        : 161
+# RAMS                             : 209
 #      RAM16X1D                    : 192
-#      RAMB16                      : 32
+#      RAMB16                      : 17
 # Shift Registers                  : 24
 #      SRL16E                      : 8
 #      SRLC16E                     : 16
 # Clock Buffers                    : 12
 #      BUFG                        : 12
-# IO Buffers                       : 77
+# IO Buffers                       : 76
 #      IBUF                        : 10
 #      IBUFDS                      : 36
 #      IBUFG                       : 2
 #      IBUFGDS                     : 1
-#      OBUF                        : 28
+#      OBUF                        : 27
 # DCM_ADVs                         : 5
 #      DCM_ADV                     : 5
 # Others                           : 2
@@ -2759,16 +2686,16 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3264  out of  10752    30%  
- Number of Slice Flip Flops:           2594  out of  21504    12%  
- Number of 4 input LUTs:               5174  out of  21504    24%  
-    Number used as logic:              4766
+ Number of Slices:                     2914  out of  10752    27%  
+ Number of Slice Flip Flops:           2095  out of  21504     9%  
+ Number of 4 input LUTs:               4704  out of  21504    21%  
+    Number used as logic:              4296
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                         113
  Number of bonded IOBs:                 113  out of    448    25%  
- Number of FIFO16/RAMB16s:               32  out of     72    44%  
-    Number used as RAMB16s:              32
+ Number of FIFO16/RAMB16s:               17  out of     72    23%  
+    Number used as RAMB16s:              17
  Number of GCLKs:                        12  out of     32    37%  
  Number of DCM_ADVs:                      5  out of      8    62%  
 
@@ -2793,41 +2720,40 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG             | 2824  |
+BUSBHS_02DP_04S                    | XLXI_6199:CLK180       | 4     |
+GEL_RXCLK                          | IBUFG+BUFG             | 2273  |
+BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 41    |
 SECONDARY_CLK                      | IBUFG                  | 18    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                                                                     | Load  |
----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)                                                                             | 44    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)                                                                             | 42    |
-XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
-XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
-XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
-XLXI_6248/N0(XLXI_6248/XST_GND:G)                                                                                                                  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 30    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                    | 30    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)                                                                                         | 27    |
-XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
-XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
-XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
-ADC_FIFO_F/N0(ADC_FIFO_F/XST_GND:G)                                                                                                                | NONE(ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                                                                                                  | 14    |
-ADC_FIFO_R/N0(ADC_FIFO_R/XST_GND:G)                                                                                                                | NONE(ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                                                                                                  | 14    |
-XLXI_6227/reset_mgr/reset(XLXI_6227/reset_mgr/reset:Q)                                                                                             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                                                                                                       | 6     |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                       | 3     |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                                                                                          | 2     |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                       | 2     |
----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                      | Buffer(FF name)                                                                                                                                  | Load  |
+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                      | 40    |
+XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                      | 40    |
+XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)          | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                      | 40    |
+XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                 | 22    |
+XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                 | 22    |
+XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)| NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                 | 22    |
+FADC_MEM_FALL_VECTOR_0/N0(FADC_MEM_FALL_VECTOR_0/XST_GND:G)                                                         | NONE(FADC_MEM_FALL_VECTOR_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_FALL_VECTOR_1/N0(FADC_MEM_FALL_VECTOR_1/XST_GND:G)                                                         | NONE(FADC_MEM_FALL_VECTOR_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_FALL_VECTOR_2/N0(FADC_MEM_FALL_VECTOR_2/XST_GND:G)                                                         | NONE(FADC_MEM_FALL_VECTOR_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_FALL_VECTOR_3/N0(FADC_MEM_FALL_VECTOR_3/XST_GND:G)                                                         | NONE(FADC_MEM_FALL_VECTOR_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_RISE_VECTOR_0/N0(FADC_MEM_RISE_VECTOR_0/XST_GND:G)                                                         | NONE(FADC_MEM_RISE_VECTOR_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_RISE_VECTOR_1/N0(FADC_MEM_RISE_VECTOR_1/XST_GND:G)                                                         | NONE(FADC_MEM_RISE_VECTOR_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_RISE_VECTOR_2/N0(FADC_MEM_RISE_VECTOR_2/XST_GND:G)                                                         | NONE(FADC_MEM_RISE_VECTOR_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+FADC_MEM_RISE_VECTOR_3/N0(FADC_MEM_RISE_VECTOR_3/XST_GND:G)                                                         | NONE(FADC_MEM_RISE_VECTOR_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.241ns (Maximum Frequency: 121.343MHz)
-   Minimum input arrival time before clock: 6.954ns
-   Maximum output required time after clock: 6.295ns
+   Minimum period: 8.843ns (Maximum Frequency: 113.080MHz)
+   Minimum input arrival time before clock: 6.738ns
+   Maximum output required time after clock: 7.550ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2836,10 +2762,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 8.241ns (frequency: 121.343MHz)
-  Total number of paths / destination ports: 2228 / 1916
+  Clock period: 8.843ns (frequency: 113.080MHz)
+  Total number of paths / destination ports: 1869 / 1599
 -------------------------------------------------------------------------
-Offset:              8.241ns (Levels of Logic = 5)
+Offset:              8.843ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2849,18 +2775,84 @@ Offset:              8.241ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            117   0.360   1.260  reset (reset)
+     FDS:C->Q            438   0.360   2.515  reset (reset)
      end scope: 'reset_mgr'
-     BUF:I->O            465   0.358   2.784  reset_mgr_reset_1 (reset_mgr_reset_1)
+     BUF:I->O            471   0.358   2.807  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
-     LUT2:I1->O          211   0.195   1.956  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
+     LUT2:I1->O           38   0.195   1.279  tx_ctrl_fifo_reset_sig1 (tx_ctrl_fifo_reset_sig)
      begin scope: 'TX_CTRL_FIFO'
      begin scope: 'BU2'
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      8.241ns (1.648ns logic, 6.593ns route)
-                                       (20.0% logic, 80.0% route)
+    Total                      8.843ns (1.648ns logic, 7.195ns route)
+                                       (18.6% logic, 81.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
+  Clock period: 4.787ns (frequency: 208.886MHz)
+  Total number of paths / destination ports: 319 / 61
+-------------------------------------------------------------------------
+Offset:              4.787ns (Levels of Logic = 6)
+  Source:            XLXI_6051/I_Q10 (FF)
+  Destination:       XLXI_6047/cnt_0 (FF)
+  Source Clock:      GEL_RXCLK rising
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: XLXI_6051/I_Q10 to XLXI_6047/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.360   0.741  I_Q10 (Q<10>)
+     end scope: 'XLXI_6051'
+     begin scope: 'XLXI_6056'
+     AND2:I0->O            1   0.195   0.741  I_36_9 (M1)
+     OR2:I0->O             3   0.195   0.600  I_36_8 (O)
+     end scope: 'XLXI_6056'
+     begin scope: 'XLXI_6047'
+     LUT3:I1->O            3   0.195   0.538  actually_ready_not000111 (done_sig_and0000)
+     LUT4:I3->O           10   0.195   0.488  cnt_not0001 (cnt_not0001)
+     FDRE:CE                   0.540          cnt_0
+    ----------------------------------------
+    Total                      4.787ns (1.680ns logic, 3.107ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
+  Clock period: 5.790ns (frequency: 172.701MHz)
+  Total number of paths / destination ports: 755 / 168
+-------------------------------------------------------------------------
+Offset:              5.790ns (Levels of Logic = 12)
+  Source:            XLXI_6047/halt (FF)
+  Destination:       XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Source Clock:      BUSBHS_02DP_04S rising
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: XLXI_6047/halt to XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q           10   0.360   0.816  halt (halt)
+     end scope: 'XLXI_6047'
+     begin scope: 'XLXI_6057'
+     AND2B1:I1->O          1   0.195   0.688  I_36_7 (M0)
+     OR2:I1->O             5   0.195   0.383  I_36_8 (O)
+     end scope: 'XLXI_6057'
+     BUF:I->O              1   0.358   0.523  XLXI_6137 (fadc_debug<56>)
+     begin scope: 'XLXI_5338'
+     LUT3:I2->O            1   0.195   0.000  Mmux_muxout_651 (Mmux_muxout_651)
+     MUXF5:I0->O           1   0.382   0.000  Mmux_muxout_4_f5_50 (Mmux_muxout_4_f551)
+     MUXF6:I0->O           1   0.388   0.523  Mmux_muxout_2_f6_50 (muxout<56>)
+     end scope: 'XLXI_5338'
+     begin scope: 'XLXI_6227'
+     LUT2:I1->O            1   0.195   0.360  ots_dout<56>1 (ots_dout<56>)
+     begin scope: 'data_manager_blk'
+     begin scope: 'TX_CTRL_FIFO'
+     begin scope: 'BU2'
+     RAMB16:DIA22              0.230          U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    ----------------------------------------
+    Total                      5.790ns (2.498ns logic, 3.292ns route)
+                                       (43.1% logic, 56.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2886,40 +2878,60 @@ Offset:              2.913ns (Levels of Logic = 2)
                                        (55.5% logic, 44.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 7.596ns (frequency: 131.642MHz)
-  Total number of paths / destination ports: 204160 / 8256
+Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
+  Clock period: 6.096ns (frequency: 164.030MHz)
+  Total number of paths / destination ports: 794 / 230
 -------------------------------------------------------------------------
-Delay:               7.596ns (Levels of Logic = 14)
-  Source:            ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
-  Destination:       XLXI_6249/data_out_29 (FF)
-  Source Clock:      GEL_RXCLK rising
-  Destination Clock: GEL_RXCLK rising
+Delay:               3.048ns (Levels of Logic = 1)
+  Source:            XLXI_6047/we_rise_sig (FF)
+  Destination:       XLXI_6047/we_fall (FF)
+  Source Clock:      BUSBHS_02DP_04S rising
+  Destination Clock: BUSBHS_02DP_04S falling
 
-  Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_29
+  Data Path: XLXI_6047/we_rise_sig to XLXI_6047/we_fall
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16:CLKB->DOB23    2   2.100   0.540  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (dout<48>)
-     end scope: 'ADC_FIFO_R'
-     begin scope: 'XLXI_6249'
-     LUT2:I1->O            1   0.195   0.000  Mcompar_data_out_cmp_le0006_lut<0> (Mcompar_data_out_cmp_le0006_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_data_out_cmp_le0006_cy<0> (Mcompar_data_out_cmp_le0006_cy<0>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<1> (Mcompar_data_out_cmp_le0006_cy<1>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<2> (Mcompar_data_out_cmp_le0006_cy<2>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<3> (Mcompar_data_out_cmp_le0006_cy<3>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<4> (Mcompar_data_out_cmp_le0006_cy<4>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<5> (Mcompar_data_out_cmp_le0006_cy<5>)
-     MUXCY:CI->O           1   0.044   0.000  Mcompar_data_out_cmp_le0006_cy<6> (Mcompar_data_out_cmp_le0006_cy<6>)
-     MUXCY:CI->O           2   0.370   0.758  Mcompar_data_out_cmp_le0006_cy<7> (data_out_cmp_le0006)
-     LUT4:I0->O            1   0.195   0.688  out_en_sig_or000125 (out_en_sig_or000125)
-     LUT4:I1->O           15   0.195   0.754  out_en_sig_or000176 (out_en_sig_or0001)
-     LUT3_D:I2->O         18   0.195   0.756  data_out_and00001 (data_out_and0000)
-     LUT3:I2->O            1   0.195   0.000  data_out_237_rstpot (data_out_237_rstpot)
-     FD:D                      0.022          data_out_237
+     FDR:C->Q             27   0.360   1.071  we_rise_sig (we_rise_sig)
+     LUT2:I1->O            1   0.195   0.360  we_fall_or00001 (we_fall_or0000)
+     FDR_1:R                   1.062          we_fall
     ----------------------------------------
-    Total                      7.596ns (4.100ns logic, 3.497ns route)
-                                       (54.0% logic, 46.0% route)
+    Total                      3.048ns (1.617ns logic, 1.431ns route)
+                                       (53.0% logic, 47.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
+  Clock period: 7.231ns (frequency: 138.284MHz)
+  Total number of paths / destination ports: 91353 / 6737
+-------------------------------------------------------------------------
+Delay:               7.231ns (Levels of Logic = 12)
+  Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
+  Destination:       XLXI_6227/tx_data_dest_port_0 (FF)
+  Source Clock:      GEL_RXCLK rising
+  Destination Clock: GEL_RXCLK rising
+
+  Data Path: XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 to XLXI_6227/tx_data_dest_port_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.360   0.756  ram_addr_sig_53 (ram_addr_sig_53)
+     end scope: 'RAM_COMM_DEC'
+     end scope: 'data_manager_blk'
+     LUT4:I0->O            1   0.195   0.000  ots_user_mask_cmp_eq00001_wg_lut<1> (ots_user_mask_cmp_eq00001_wg_lut<1>)
+     MUXCY:S->O            1   0.366   0.000  ots_user_mask_cmp_eq00001_wg_cy<1> (ots_user_mask_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<2> (ots_user_mask_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<3> (ots_user_mask_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<4> (ots_user_mask_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<5> (ots_user_mask_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.044   0.000  ots_user_mask_cmp_eq00001_wg_cy<6> (ots_user_mask_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O          97   0.370   1.345  ots_user_mask_cmp_eq00001_wg_cy<7> (ots_user_mask_cmp_eq00001_wg_cy<7>)
+     LUT3:I2->O          105   0.195   1.376  tx_data_dest_mac_or00031 (tx_data_dest_mac_or0003)
+     LUT3:I2->O            1   0.195   0.523  tx_data_dest_addr_and00021 (tx_data_dest_addr_and0002)
+     LUT4:I3->O           16   0.195   0.593  tx_data_dest_port_not0001 (tx_data_dest_port_not0001)
+     FDE:CE                    0.540          tx_data_dest_port_0
+    ----------------------------------------
+    Total                      7.231ns (2.638ns logic, 4.593ns route)
+                                       (36.5% logic, 63.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
@@ -2949,37 +2961,35 @@ Delay:               4.543ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 943 / 350
+  Total number of paths / destination ports: 920 / 350
 -------------------------------------------------------------------------
-Offset:              6.954ns (Levels of Logic = 13)
-  Source:            BUSC_17DP_34S (PAD)
-  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6 (FF)
+Offset:              6.738ns (Levels of Logic = 11)
+  Source:            BUSC_19DN_39S (PAD)
+  Destination:       XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_8 (FF)
   Destination Clock: GEL_RXCLK rising
 
-  Data Path: BUSC_17DP_34S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6
+  Data Path: BUSC_19DN_39S to XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/udp_countdown_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   0.965   0.773  XLXI_4220 (GMII_RXD_0_sig<1>)
+     IBUF:I->O             5   0.965   0.711  XLXI_4217 (GMII_RXD_0_sig<4>)
      begin scope: 'XLXI_6227'
      begin scope: 'ec_wrapper'
      begin scope: 'xgmii'
      end scope: 'xgmii'
      begin scope: 'ethernet_controller'
      begin scope: 'DecipherBlock'
-     LUT3:I0->O            1   0.195   0.741  Sreg0_FSM_FFd7-In11_SW0_SW0 (N76)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In11 (N245)
-     LUT3:I2->O            2   0.195   0.758  Sreg0_cmp_eq0001_SW2 (N70)
-     LUT4_D:I0->LO         1   0.195   0.163  Sreg0_cmp_eq0001 (N242)
-     LUT2:I1->O            1   0.195   0.523  Sreg0_FSM_FFd6-In219 (Sreg0_FSM_FFd6-In219)
-     LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd6-In227 (Sreg0_FSM_FFd6-In227)
-     LUT4:I3->O            1   0.195   0.741  Sreg0_FSM_FFd6-In242 (Sreg0_FSM_FFd6-In242)
-     LUT4:I0->O            1   0.195   0.000  Sreg0_FSM_FFd6-In271_F (N218)
-     MUXF5:I0->O           1   0.382   0.000  Sreg0_FSM_FFd6-In271 (Sreg0_FSM_FFd6-In)
-     FDRE:D                    0.022          Sreg0_FSM_FFd6
+     LUT3:I0->O            1   0.195   0.741  is_arp_sig_mux0000112_SW0 (N99)
+     LUT4_D:I0->O          4   0.195   0.599  Sreg0_FSM_FFd6-In215 (N182)
+     LUT4:I2->O           16   0.195   0.818  udp_countdown_0_and00001 (udp_countdown_0_and0000)
+     LUT2:I0->O            1   0.195   0.000  udp_countdown_4_mux000021 (udp_countdown_4_mux00002)
+     MUXF5:I1->O           2   0.374   0.758  udp_countdown_4_mux00002_f5 (N24)
+     LUT4_D:I0->O          7   0.195   0.579  udp_countdown_10_mux0000128 (N62)
+     LUT4:I3->O            1   0.195   0.000  udp_countdown_8_mux000014 (udp_countdown_8_mux0000)
+     FDRE:D                    0.022          udp_countdown_8
     ----------------------------------------
-    Total                      6.954ns (2.929ns logic, 4.025ns route)
-                                       (42.1% logic, 57.9% route)
+    Total                      6.738ns (2.531ns logic, 4.207ns route)
+                                       (37.6% logic, 62.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
@@ -3005,7 +3015,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.295ns (Levels of Logic = 3)
+Offset:              7.550ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3014,14 +3024,14 @@ Offset:              6.295ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            117   0.360   1.260  reset (reset)
+     FDS:C->Q            438   0.360   2.515  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.295ns (4.675ns logic, 1.620ns route)
-                                       (74.3% logic, 25.7% route)
+    Total                      7.550ns (4.675ns logic, 2.875ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3044,14 +3054,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 90.00 secs
-Total CPU time to Xst completion: 89.71 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 62.99 secs
  
 --> 
 
-Total memory usage is 722180 kilobytes
+Total memory usage is 662084 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  310 (   0 filtered)
-Number of infos    :  137 (   0 filtered)
+Number of warnings :  287 (   0 filtered)
+Number of infos    :  120 (   0 filtered)
 
