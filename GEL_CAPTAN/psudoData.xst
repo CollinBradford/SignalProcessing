@@ -1,0 +1,5 @@
+set -tmpdir "D:/cbradford/SignalProcessing/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "D:/cbradford/SignalProcessing/GEL_CAPTAN/xst"
+elaborate
+-ifn psudoData.prj
+-ifmt mixed
