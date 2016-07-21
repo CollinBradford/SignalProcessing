@@ -310,6 +310,9 @@
         <signal name="ethernet_fifo_empty" />
         <signal name="psudo_data_attr_map" />
         <signal name="psudo_delay(7:0)" />
+        <signal name="psudo_data_all_one_val_in(7:0)" />
+        <signal name="psudo_data_ao(31:0)" />
+        <signal name="rx_data(15:8)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -840,6 +843,14 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="psudo_data_allOne">
+            <timestamp>2016-7-21T15:30:29</timestamp>
+            <rect width="320" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="384" y="-44" height="24" />
+            <line x2="448" y1="-32" y2="-32" x1="384" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -2013,7 +2024,7 @@
         </block>
         <block symbolname="ADC_FIFO" name="ADC_FIFO_R">
             <blockpin signalname="clock_5mhz" name="wr_clk" />
-            <blockpin signalname="psudo_rising(31:0)" name="din(31:0)" />
+            <blockpin signalname="psudo_data_ao(31:0)" name="din(31:0)" />
             <blockpin signalname="XLXN_15351" name="wr_en" />
             <blockpin name="full" />
             <blockpin name="overflow" />
@@ -2088,7 +2099,7 @@
         </block>
         <block symbolname="ADC_FIFO" name="ADC_FIFO_F">
             <blockpin signalname="MASTER_CLK" name="wr_clk" />
-            <blockpin signalname="psudo_falling(31:0)" name="din(31:0)" />
+            <blockpin signalname="psudo_data_ao(31:0)" name="din(31:0)" />
             <blockpin signalname="XLXN_15352" name="wr_en" />
             <blockpin name="full" />
             <blockpin name="overflow" />
@@ -2142,6 +2153,17 @@
             <blockpin signalname="rx_data(7:0)" name="D(7:0)" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="psudo_delay(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="psudo_data_allOne" name="XLXI_6294">
+            <blockpin signalname="psudo_data_all_one_val_in(7:0)" name="value_in(7:0)" />
+            <blockpin signalname="psudo_data_ao(31:0)" name="value_out(31:0)" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6295">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="psudo_data_attr_map" name="CE" />
+            <blockpin signalname="rx_data(15:8)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="psudo_data_all_one_val_in(7:0)" name="Q(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2565,7 +2587,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1008" y="688" type="branch" />
             <wire x2="1056" y1="688" y2="688" x1="1008" />
         </branch>
-        <branch name="psudo_rising(31:0)">
+        <branch name="psudo_data_ao(31:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1008" y="720" type="branch" />
             <wire x2="1056" y1="720" y2="720" x1="1008" />
         </branch>
@@ -2580,7 +2602,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="1536" type="branch" />
             <wire x2="2368" y1="1536" y2="1536" x1="2304" />
         </branch>
-        <branch name="psudo_falling(31:0)">
+        <branch name="psudo_data_ao(31:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="1568" type="branch" />
             <wire x2="2368" y1="1568" y2="1568" x1="2304" />
         </branch>
@@ -2775,6 +2797,37 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="1936" type="branch" />
             <wire x2="720" y1="1936" y2="1936" x1="688" />
             <wire x2="736" y1="1936" y2="1936" x1="720" />
+        </branch>
+        <instance x="320" y="2592" name="XLXI_6294" orien="R0">
+        </instance>
+        <instance x="336" y="3072" name="XLXI_6295" orien="R0" />
+        <branch name="psudo_data_all_one_val_in(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="304" y="2560" type="branch" />
+            <wire x2="320" y1="2560" y2="2560" x1="304" />
+        </branch>
+        <branch name="rx_data(15:8)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="320" y="2816" type="branch" />
+            <wire x2="336" y1="2816" y2="2816" x1="320" />
+        </branch>
+        <branch name="psudo_data_attr_map">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="320" y="2880" type="branch" />
+            <wire x2="336" y1="2880" y2="2880" x1="320" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="320" y="2944" type="branch" />
+            <wire x2="336" y1="2944" y2="2944" x1="320" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="320" y="3040" type="branch" />
+            <wire x2="336" y1="3040" y2="3040" x1="320" />
+        </branch>
+        <branch name="psudo_data_all_one_val_in(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="2816" type="branch" />
+            <wire x2="736" y1="2816" y2="2816" x1="720" />
+        </branch>
+        <branch name="psudo_data_ao(31:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="784" y="2560" type="branch" />
+            <wire x2="784" y1="2560" y2="2560" x1="768" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

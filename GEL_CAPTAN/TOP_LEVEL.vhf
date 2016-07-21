@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/21/2016 09:50:20
+-- /___/   /\     Timestamp : 07/21/2016 10:51:01
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -723,6 +723,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal PHY_TXEN_sig              : std_logic;
    signal PHY_TXER_sig              : std_logic;
    signal psi_status                : std_logic_vector (63 downto 0);
+   signal psudo_data_all_one_val_in : std_logic_vector (7 downto 0);
+   signal psudo_data_ao             : std_logic_vector (31 downto 0);
    signal psudo_data_attr_map       : std_logic;
    signal psudo_delay               : std_logic_vector (7 downto 0);
    signal psudo_falling             : std_logic_vector (31 downto 0);
@@ -1156,6 +1158,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
              falling_data : out   std_logic_vector (31 downto 0));
    end component;
    
+   component psudo_data_allOne
+      port ( value_in  : in    std_logic_vector (7 downto 0); 
+             value_out : out   std_logic_vector (31 downto 0));
+   end component;
+   
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
    attribute CLKFX_MULTIPLY of XLXI_3410 : label is "8";
@@ -1226,9 +1233,10 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute HU_SET of XLXI_6247 : label is "XLXI_6247_6";
    attribute HU_SET of XLXI_6251 : label is "XLXI_6251_5";
    attribute HU_SET of XLXI_6293 : label is "XLXI_6293_7";
+   attribute HU_SET of XLXI_6295 : label is "XLXI_6295_8";
 begin
    ADC_FIFO_F : ADC_FIFO
-      port map (din(31 downto 0)=>psudo_falling(31 downto 0),
+      port map (din(31 downto 0)=>psudo_data_ao(31 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
                 wr_clk=>MASTER_CLK,
@@ -1240,7 +1248,7 @@ begin
                 valid=>XLXN_15389);
    
    ADC_FIFO_R : ADC_FIFO
-      port map (din(31 downto 0)=>psudo_rising(31 downto 0),
+      port map (din(31 downto 0)=>psudo_data_ao(31 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
                 wr_clk=>clock_5mhz,
@@ -2174,6 +2182,17 @@ begin
                 D(7 downto 0)=>rx_data(7 downto 0),
                 R=>reset,
                 Q(7 downto 0)=>psudo_delay(7 downto 0));
+   
+   XLXI_6294 : psudo_data_allOne
+      port map (value_in(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0),
+                value_out(31 downto 0)=>psudo_data_ao(31 downto 0));
+   
+   XLXI_6295 : FD8RE_MXILINX_TOP_LEVEL
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_attr_map,
+                D(7 downto 0)=>rx_data(15 downto 8),
+                R=>reset,
+                Q(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0));
    
 end BEHAVIORAL;
 

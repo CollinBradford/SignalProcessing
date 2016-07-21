@@ -57,9 +57,9 @@ Timing constraint: PATH "TS_J4_TO_D2_ila_pro_0_path" TIG;
 Timing constraint: TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 2754 paths analyzed, 451 endpoints analyzed, 0 failing endpoints
+ 2605 paths analyzed, 405 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.743ns.
+ Minimum period is   8.573ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.394ns.
+ Maximum delay is   3.894ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -79,20 +79,20 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   0.959ns.
+ Maximum delay is   0.949ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_J_TO_D_path" TIG;
 
- 189 paths analyzed, 78 endpoints analyzed, 0 failing endpoints
+ 173 paths analyzed, 78 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_D_TO_J_path" TIG;
 
- 438 paths analyzed, 422 endpoints analyzed, 0 failing endpoints
+ 374 paths analyzed, 358 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
@@ -100,9 +100,9 @@ Timing constraint: PATH "TS_D_TO_J_path" TIG;
 Timing constraint: TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" 8 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 207446 paths analyzed, 13462 endpoints analyzed, 0 failing endpoints
+ 207574 paths analyzed, 13386 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.972ns.
+ Minimum period is   7.979ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -110,9 +110,9 @@ Timing constraint: TS_SECONDARY_CLK = PERIOD TIMEGRP "SECONDARY_CLK" 200 ns
 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 1330 paths analyzed, 315 endpoints analyzed, 0 failing endpoints
+ 778 paths analyzed, 193 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.325ns.
+ Minimum period is   4.938ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -172,7 +172,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.972ns|      7.497ns|            0|            0|       207446|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.979ns|      7.497ns|            0|            0|       207574|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -190,7 +190,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.972|         |         |         |
+GEL_RXCLK      |    7.979|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -198,7 +198,7 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    5.325|         |    2.202|         |
+SECONDARY_CLK  |    4.938|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -207,21 +207,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 212190 paths, 0 nets, and 27849 connections
+Constraints cover 211537 paths, 0 nets, and 27316 connections
 
 Design statistics:
-   Minimum period:   7.972ns   (Maximum frequency: 125.439MHz)
-   Maximum path delay from/to any node:   3.394ns
+   Minimum period:   8.573ns   (Maximum frequency: 116.645MHz)
+   Maximum path delay from/to any node:   3.894ns
 
 
-Analysis completed Thu Jul 21 09:57:41 2016 
+Analysis completed Thu Jul 21 10:57:26 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 387 MB
+Peak Memory Usage: 382 MB
 
 
 
