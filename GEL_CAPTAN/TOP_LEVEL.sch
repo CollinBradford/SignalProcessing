@@ -954,7 +954,7 @@
             <blockpin signalname="FADC_DELAY_MAP" name="D3" />
             <blockpin signalname="TRIG_MAP" name="D4" />
             <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="D5" />
-            <blockpin name="D6" />
+            <blockpin signalname="psudo_data_attr_map" name="D6" />
             <blockpin signalname="GLOBAL_RESET_MAP" name="D7" />
             <blockpin name="D8" />
             <blockpin name="D9" />
@@ -2012,7 +2012,7 @@
             <blockpin signalname="XLXN_15150" name="O" />
         </block>
         <block symbolname="ADC_FIFO" name="ADC_FIFO_R">
-            <blockpin signalname="MASTER_CLK" name="wr_clk" />
+            <blockpin signalname="clock_5mhz" name="wr_clk" />
             <blockpin signalname="psudo_rising(31:0)" name="din(31:0)" />
             <blockpin signalname="XLXN_15351" name="wr_en" />
             <blockpin name="full" />
@@ -2130,7 +2130,7 @@
             <blockpin name="O" />
         </block>
         <block symbolname="psudoData" name="XLXI_6292">
-            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="clock_5mhz" name="clk" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_delay(7:0)" name="delay(7:0)" />
             <blockpin signalname="psudo_rising(31:0)" name="rising_data(31:0)" />
@@ -2309,6 +2309,10 @@
         <branch name="TRIG_ATTRIBUTES_MAP">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3104" type="branch" />
             <wire x2="4672" y1="3104" y2="3104" x1="4512" />
+        </branch>
+        <branch name="psudo_data_attr_map">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3168" type="branch" />
+            <wire x2="4672" y1="3168" y2="3168" x1="4512" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
@@ -2557,7 +2561,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4736" y="864" type="branch" />
             <wire x2="4784" y1="864" y2="864" x1="4736" />
         </branch>
-        <branch name="MASTER_CLK">
+        <branch name="clock_5mhz">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1008" y="688" type="branch" />
             <wire x2="1056" y1="688" y2="688" x1="1008" />
         </branch>
@@ -2721,7 +2725,7 @@
         </branch>
         <instance x="256" y="1600" name="XLXI_6292" orien="R0">
         </instance>
-        <branch name="MASTER_CLK">
+        <branch name="clock_5mhz">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="240" y="1440" type="branch" />
             <wire x2="256" y1="1440" y2="1440" x1="240" />
         </branch>

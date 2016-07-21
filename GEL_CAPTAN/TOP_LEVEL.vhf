@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/20/2016 16:48:12
+-- /___/   /\     Timestamp : 07/21/2016 09:16:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1243,7 +1243,7 @@ begin
       port map (din(31 downto 0)=>psudo_rising(31 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
-                wr_clk=>MASTER_CLK,
+                wr_clk=>clock_5mhz,
                 wr_en=>XLXN_15351,
                 dout(127 downto 0)=>peak_finder_din(127 downto 0),
                 empty=>adc_fifo_r_empty,
@@ -1308,7 +1308,7 @@ begin
                 D3=>FADC_DELAY_MAP,
                 D4=>TRIG_MAP,
                 D5=>TRIG_ATTRIBUTES_MAP,
-                D6=>open,
+                D6=>psudo_data_attr_map,
                 D7=>GLOBAL_RESET_MAP,
                 D8=>open,
                 D9=>open,
@@ -2162,7 +2162,7 @@ begin
                 O=>open);
    
    XLXI_6292 : psudoData
-      port map (clk=>MASTER_CLK,
+      port map (clk=>clock_5mhz,
                 delay(7 downto 0)=>psudo_delay(7 downto 0),
                 reset=>reset,
                 falling_data(31 downto 0)=>psudo_falling(31 downto 0),

@@ -1,8 +1,0 @@
-[Inputs]
-clk
-reset
-=delay[7:0]=
-[Outputs]
-=rising_data[31:0]=
-=falling_data[31:0]=
-[BiDir]
