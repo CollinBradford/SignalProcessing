@@ -2165,6 +2165,34 @@
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="psudo_data_all_one_val_in(7:0)" name="Q(7:0)" />
         </block>
+        <block symbolname="fd16re" name="XLXI_6296">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="D(15:0)" />
+            <blockpin name="R" />
+            <blockpin name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16re" name="XLXI_6297">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="D(15:0)" />
+            <blockpin name="R" />
+            <blockpin name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16re" name="XLXI_6298">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="D(15:0)" />
+            <blockpin name="R" />
+            <blockpin name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16re" name="XLXI_6299">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="D(15:0)" />
+            <blockpin name="R" />
+            <blockpin name="Q(15:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <rect width="2260" x="424" y="276" height="1256" />
@@ -2829,6 +2857,10 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="784" y="2560" type="branch" />
             <wire x2="784" y1="2560" y2="2560" x1="768" />
         </branch>
+        <instance x="288" y="3616" name="XLXI_6296" orien="R0" />
+        <instance x="288" y="3968" name="XLXI_6297" orien="R0" />
+        <instance x="288" y="4288" name="XLXI_6298" orien="R0" />
+        <instance x="288" y="4624" name="XLXI_6299" orien="R0" />
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />
