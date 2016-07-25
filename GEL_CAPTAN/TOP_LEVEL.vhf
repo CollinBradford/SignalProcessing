@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/21/2016 10:51:01
+-- /___/   /\     Timestamp : 07/25/2016 15:29:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,93 +18,6 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FD8RE_MXILINX_TOP_LEVEL is
-   port ( C  : in    std_logic; 
-          CE : in    std_logic; 
-          D  : in    std_logic_vector (7 downto 0); 
-          R  : in    std_logic; 
-          Q  : out   std_logic_vector (7 downto 0));
-end FD8RE_MXILINX_TOP_LEVEL;
-
-architecture BEHAVIORAL of FD8RE_MXILINX_TOP_LEVEL is
-   attribute BOX_TYPE   : string ;
-   component FDRE
-      generic( INIT : bit :=  '0');
-      port ( C  : in    std_logic; 
-             CE : in    std_logic; 
-             D  : in    std_logic; 
-             R  : in    std_logic; 
-             Q  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
-   
-begin
-   I_Q0 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(0),
-                R=>R,
-                Q=>Q(0));
-   
-   I_Q1 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(1),
-                R=>R,
-                Q=>Q(1));
-   
-   I_Q2 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(2),
-                R=>R,
-                Q=>Q(2));
-   
-   I_Q3 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(3),
-                R=>R,
-                Q=>Q(3));
-   
-   I_Q4 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(4),
-                R=>R,
-                Q=>Q(4));
-   
-   I_Q5 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(5),
-                R=>R,
-                Q=>Q(5));
-   
-   I_Q6 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(6),
-                R=>R,
-                Q=>Q(6));
-   
-   I_Q7 : FDRE
-      port map (C=>C,
-                CE=>CE,
-                D=>D(7),
-                R=>R,
-                Q=>Q(7));
-   
-end BEHAVIORAL;
-
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -244,6 +157,93 @@ begin
                 D=>D(15),
                 R=>R,
                 Q=>Q(15));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity FD8RE_MXILINX_TOP_LEVEL is
+   port ( C  : in    std_logic; 
+          CE : in    std_logic; 
+          D  : in    std_logic_vector (7 downto 0); 
+          R  : in    std_logic; 
+          Q  : out   std_logic_vector (7 downto 0));
+end FD8RE_MXILINX_TOP_LEVEL;
+
+architecture BEHAVIORAL of FD8RE_MXILINX_TOP_LEVEL is
+   attribute BOX_TYPE   : string ;
+   component FDRE
+      generic( INIT : bit :=  '0');
+      port ( C  : in    std_logic; 
+             CE : in    std_logic; 
+             D  : in    std_logic; 
+             R  : in    std_logic; 
+             Q  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
+   
+begin
+   I_Q0 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(0),
+                R=>R,
+                Q=>Q(0));
+   
+   I_Q1 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(1),
+                R=>R,
+                Q=>Q(1));
+   
+   I_Q2 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(2),
+                R=>R,
+                Q=>Q(2));
+   
+   I_Q3 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(3),
+                R=>R,
+                Q=>Q(3));
+   
+   I_Q4 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(4),
+                R=>R,
+                Q=>Q(4));
+   
+   I_Q5 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(5),
+                R=>R,
+                Q=>Q(5));
+   
+   I_Q6 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(6),
+                R=>R,
+                Q=>Q(6));
+   
+   I_Q7 : FDRE
+      port map (C=>C,
+                CE=>CE,
+                D=>D(7),
+                R=>R,
+                Q=>Q(7));
    
 end BEHAVIORAL;
 
@@ -670,6 +670,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute SLEW                  : string ;
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
+   signal adc_data_in               : std_logic_vector (63 downto 0);
    signal adc_fifo_f_empty          : std_logic;
    signal adc_fifo_r_empty          : std_logic;
    signal b_data                    : std_logic_vector (63 downto 0);
@@ -723,14 +724,17 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal PHY_TXEN_sig              : std_logic;
    signal PHY_TXER_sig              : std_logic;
    signal psi_status                : std_logic_vector (63 downto 0);
+   signal psudo_data_aio            : std_logic_vector (63 downto 0);
    signal psudo_data_all_one_val_in : std_logic_vector (7 downto 0);
-   signal psudo_data_ao             : std_logic_vector (31 downto 0);
+   signal psudo_data_attr           : std_logic_vector (63 downto 0);
    signal psudo_data_attr_map       : std_logic;
+   signal psudo_data_sawtooth       : std_logic_vector (63 downto 0);
+   signal psudo_data_select_map     : std_logic;
    signal psudo_delay               : std_logic_vector (7 downto 0);
    signal psudo_falling             : std_logic_vector (31 downto 0);
-   signal psudo_rising              : std_logic_vector (31 downto 0);
    signal pulse                     : std_logic;
    signal pulse_finder_in_en        : std_logic;
+   signal pusdo_data_select         : std_logic_vector (2 downto 0);
    signal read_size                 : std_logic_vector (15 downto 0);
    signal reset                     : std_logic;
    signal rx_addr                   : std_logic_vector (31 downto 0);
@@ -772,7 +776,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15130                : std_logic;
    signal XLXN_15140                : std_logic;
    signal XLXN_15150                : std_logic;
-   signal XLXN_15172                : std_logic;
    signal XLXN_15351                : std_logic;
    signal XLXN_15352                : std_logic;
    signal XLXN_15355                : std_logic;
@@ -782,13 +785,16 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15385                : std_logic;
    signal XLXN_15389                : std_logic;
    signal XLXN_15390                : std_logic;
+   signal XLXN_15479                : std_logic_vector (63 downto 0);
+   signal XLXN_15480                : std_logic_vector (63 downto 0);
+   signal XLXN_15481                : std_logic_vector (63 downto 0);
+   signal XLXN_15483                : std_logic_vector (63 downto 0);
+   signal XLXN_15484                : std_logic_vector (63 downto 0);
    signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in6_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in7_openSignal  : std_logic_vector (63 downto 0);
-   signal XLXI_6245_clk_openSignal  : std_logic;
-   signal XLXI_6245_full_openSignal : std_logic;
    component ADC_FIFO
       port ( wr_clk   : in    std_logic; 
              din      : in    std_logic_vector (31 downto 0); 
@@ -1082,16 +1088,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
              pulse : out   std_logic);
    end component;
    
-   component FIFO_SIM
-      port ( rst        : in    std_logic; 
-             clk        : in    std_logic; 
-             full       : in    std_logic; 
-             wr_en      : out   std_logic; 
-             FIFO_RESET : out   std_logic; 
-             data_out   : out   std_logic_vector (31 downto 0); 
-             threshold  : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component FD8RE_MXILINX_TOP_LEVEL
       port ( C  : in    std_logic; 
              CE : in    std_logic; 
@@ -1160,7 +1156,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    
    component psudo_data_allOne
       port ( value_in  : in    std_logic_vector (7 downto 0); 
-             value_out : out   std_logic_vector (31 downto 0));
+             value_out : out   std_logic_vector (63 downto 0));
    end component;
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
@@ -1232,11 +1228,13 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute CLKIN_PERIOD of XLXI_6199 : label is "5.33333333";
    attribute HU_SET of XLXI_6247 : label is "XLXI_6247_6";
    attribute HU_SET of XLXI_6251 : label is "XLXI_6251_5";
-   attribute HU_SET of XLXI_6293 : label is "XLXI_6293_7";
-   attribute HU_SET of XLXI_6295 : label is "XLXI_6295_8";
+   attribute HU_SET of XLXI_6296 : label is "XLXI_6296_7";
+   attribute HU_SET of XLXI_6297 : label is "XLXI_6297_8";
+   attribute HU_SET of XLXI_6298 : label is "XLXI_6298_9";
+   attribute HU_SET of XLXI_6299 : label is "XLXI_6299_10";
 begin
    ADC_FIFO_F : ADC_FIFO
-      port map (din(31 downto 0)=>psudo_data_ao(31 downto 0),
+      port map (din(31 downto 0)=>adc_data_in(63 downto 32),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
                 wr_clk=>MASTER_CLK,
@@ -1248,7 +1246,7 @@ begin
                 valid=>XLXN_15389);
    
    ADC_FIFO_R : ADC_FIFO
-      port map (din(31 downto 0)=>psudo_data_ao(31 downto 0),
+      port map (din(31 downto 0)=>adc_data_in(31 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
                 wr_clk=>clock_5mhz,
@@ -1318,7 +1316,7 @@ begin
                 D5=>TRIG_ATTRIBUTES_MAP,
                 D6=>psudo_data_attr_map,
                 D7=>GLOBAL_RESET_MAP,
-                D8=>open,
+                D8=>psudo_data_select_map,
                 D9=>open,
                 D10=>open,
                 D11=>open,
@@ -2092,15 +2090,6 @@ begin
       port map (I=>FADC_DCLK,
                 O=>U10_3);
    
-   XLXI_6245 : FIFO_SIM
-      port map (clk=>XLXI_6245_clk_openSignal,
-                full=>XLXI_6245_full_openSignal,
-                rst=>reset,
-                data_out=>open,
-                FIFO_RESET=>XLXN_15172,
-                threshold=>open,
-                wr_en=>open);
-   
    XLXI_6247 : FD8RE_MXILINX_TOP_LEVEL
       port map (C=>MASTER_CLK,
                 CE=>TRIG_ATTRIBUTES_MAP,
@@ -2174,25 +2163,72 @@ begin
                 delay(7 downto 0)=>psudo_delay(7 downto 0),
                 reset=>reset,
                 falling_data(31 downto 0)=>psudo_falling(31 downto 0),
-                rising_data(31 downto 0)=>psudo_rising(31 downto 0));
-   
-   XLXI_6293 : FD8RE_MXILINX_TOP_LEVEL
-      port map (C=>MASTER_CLK,
-                CE=>psudo_data_attr_map,
-                D(7 downto 0)=>rx_data(7 downto 0),
-                R=>reset,
-                Q(7 downto 0)=>psudo_delay(7 downto 0));
+                rising_data(31 downto 0)=>psudo_data_sawtooth(31 downto 0));
    
    XLXI_6294 : psudo_data_allOne
       port map (value_in(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0),
-                value_out(31 downto 0)=>psudo_data_ao(31 downto 0));
+                value_out(63 downto 0)=>psudo_data_aio(63 downto 0));
    
-   XLXI_6295 : FD8RE_MXILINX_TOP_LEVEL
+   XLXI_6296 : FD16RE_MXILINX_TOP_LEVEL
       port map (C=>MASTER_CLK,
                 CE=>psudo_data_attr_map,
-                D(7 downto 0)=>rx_data(15 downto 8),
+                D(15 downto 0)=>rx_data(15 downto 0),
                 R=>reset,
-                Q(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0));
+                Q(15 downto 0)=>psudo_data_attr(15 downto 0));
+   
+   XLXI_6297 : FD16RE_MXILINX_TOP_LEVEL
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_attr_map,
+                D(15 downto 0)=>rx_data(31 downto 16),
+                R=>reset,
+                Q(15 downto 0)=>psudo_data_attr(31 downto 16));
+   
+   XLXI_6298 : FD16RE_MXILINX_TOP_LEVEL
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_attr_map,
+                D(15 downto 0)=>rx_data(47 downto 32),
+                R=>reset,
+                Q(15 downto 0)=>psudo_data_attr(47 downto 32));
+   
+   XLXI_6299 : FD16RE_MXILINX_TOP_LEVEL
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_attr_map,
+                D(15 downto 0)=>rx_data(63 downto 48),
+                R=>reset,
+                Q(15 downto 0)=>psudo_data_attr(63 downto 48));
+   
+   XLXI_6321 : MUX64_8
+      port map (in0(63 downto 0)=>psudo_data_attr(63 downto 0),
+                in1(63 downto 0)=>psudo_data_aio(63 downto 0),
+                in2(63 downto 0)=>psudo_data_sawtooth(63 downto 0),
+                in3(63 downto 0)=>XLXN_15479(63 downto 0),
+                in4(63 downto 0)=>XLXN_15480(63 downto 0),
+                in5(63 downto 0)=>XLXN_15481(63 downto 0),
+                in6(63 downto 0)=>XLXN_15483(63 downto 0),
+                in7(63 downto 0)=>XLXN_15484(63 downto 0),
+                sel(2 downto 0)=>pusdo_data_select(2 downto 0),
+                muxout(63 downto 0)=>adc_data_in(63 downto 0));
+   
+   XLXI_6323 : FDRE
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_select_map,
+                D=>rx_data(2),
+                R=>reset,
+                Q=>pusdo_data_select(2));
+   
+   XLXI_6324 : FDRE
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_select_map,
+                D=>rx_data(1),
+                R=>reset,
+                Q=>pusdo_data_select(1));
+   
+   XLXI_6325 : FDRE
+      port map (C=>MASTER_CLK,
+                CE=>psudo_data_select_map,
+                D=>rx_data(0),
+                R=>reset,
+                Q=>pusdo_data_select(0));
    
 end BEHAVIORAL;
 

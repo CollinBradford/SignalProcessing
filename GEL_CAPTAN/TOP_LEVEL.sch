@@ -309,7 +309,7 @@
         <signal name="adc_data_in(63:0)" />
         <signal name="psudo_data_attr(63:0)" />
         <signal name="psudo_data_aio(63:0)" />
-        <signal name="psudo_data_sawtooth(63:32)" />
+        <signal name="psudo_data_sawtooth(63:0)" />
         <signal name="XLXN_15479(63:0)" />
         <signal name="XLXN_15480(63:0)" />
         <signal name="XLXN_15481(63:0)" />
@@ -327,7 +327,6 @@
         <signal name="psudo_data_attr(63:48)" />
         <signal name="psudo_data_select_map" />
         <signal name="psudo_data_all_one_val_in(7:0)" />
-        <signal name="psudo_data_ao(31:0)" />
         <signal name="psudo_delay(7:0)" />
         <signal name="psudo_data_sawtooth(31:0)" />
         <signal name="psudo_falling(31:0)" />
@@ -2173,7 +2172,7 @@
         <block symbolname="MUX64_8" name="XLXI_6321">
             <blockpin signalname="psudo_data_attr(63:0)" name="in0(63:0)" />
             <blockpin signalname="psudo_data_aio(63:0)" name="in1(63:0)" />
-            <blockpin signalname="psudo_data_sawtooth(63:32)" name="in2(63:0)" />
+            <blockpin signalname="psudo_data_sawtooth(63:0)" name="in2(63:0)" />
             <blockpin signalname="XLXN_15479(63:0)" name="in3(63:0)" />
             <blockpin signalname="XLXN_15480(63:0)" name="in4(63:0)" />
             <blockpin signalname="XLXN_15481(63:0)" name="in5(63:0)" />
@@ -2191,7 +2190,7 @@
         </block>
         <block symbolname="psudo_data_allOne" name="XLXI_6294">
             <blockpin signalname="psudo_data_all_one_val_in(7:0)" name="value_in(7:0)" />
-            <blockpin signalname="psudo_data_ao(31:0)" name="value_out(63:0)" />
+            <blockpin signalname="psudo_data_aio(63:0)" name="value_out(63:0)" />
         </block>
         <block symbolname="psudoData" name="XLXI_6292">
             <blockpin signalname="clock_5mhz" name="clk" />
@@ -2824,7 +2823,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="704" type="branch" />
             <wire x2="768" y1="704" y2="704" x1="736" />
         </branch>
-        <branch name="psudo_data_sawtooth(63:32)">
+        <branch name="psudo_data_sawtooth(63:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="768" type="branch" />
             <wire x2="768" y1="768" y2="768" x1="736" />
         </branch>
@@ -2934,7 +2933,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="2672" type="branch" />
             <wire x2="688" y1="2672" y2="2672" x1="672" />
         </branch>
-        <branch name="psudo_data_ao(31:0)">
+        <branch name="psudo_data_aio(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1152" y="2672" type="branch" />
             <wire x2="1152" y1="2672" y2="2672" x1="1136" />
         </branch>

@@ -1,5 +1,0 @@
-[Inputs]
-=value_in[7:0]=
-[Outputs]
-=value_out[63:0]=
-[BiDir]
