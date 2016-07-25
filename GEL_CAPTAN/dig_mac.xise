@@ -221,6 +221,7 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="307"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="34"/>
     </file>
+    <file xil_pn:name="ProjectNotes" xil_pn:type="FILE_USERDOC"/>
     <file xil_pn:name="../ipcore_dir/ADDR_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
