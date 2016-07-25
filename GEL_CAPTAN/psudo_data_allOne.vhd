@@ -23,7 +23,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity psudo_data_allOne is
     Port ( value_in : in  STD_LOGIC_VECTOR (7 downto 0);
-           value_out : out  STD_LOGIC_VECTOR (31 downto 0));
+           value_out : out  STD_LOGIC_VECTOR (63 downto 0));
 end psudo_data_allOne;
 
 architecture Behavioral of psudo_data_allOne is
@@ -34,6 +34,10 @@ begin
 	value_out(15 downto 8) <= value_in;
 	value_out(23 downto 16) <= value_in;
 	value_out(31 downto 24) <= value_in;
+	value_out(39 downto 32) <= value_in;
+	value_out(47 downto 40) <= value_in;
+	value_out(55 downto 48) <= value_in;
+	value_out(63 downto 56) <= value_in;
 	
 end Behavioral;
 

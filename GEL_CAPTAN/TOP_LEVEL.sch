@@ -308,8 +308,8 @@
         <signal name="U10_3" />
         <signal name="adc_data_in(63:0)" />
         <signal name="psudo_data_attr(63:0)" />
-        <signal name="XLXN_15476(63:0)" />
-        <signal name="XLXN_15478(63:0)" />
+        <signal name="psudo_data_aio(63:0)" />
+        <signal name="psudo_data_sawtooth(63:32)" />
         <signal name="XLXN_15479(63:0)" />
         <signal name="XLXN_15480(63:0)" />
         <signal name="XLXN_15481(63:0)" />
@@ -329,7 +329,7 @@
         <signal name="psudo_data_all_one_val_in(7:0)" />
         <signal name="psudo_data_ao(31:0)" />
         <signal name="psudo_delay(7:0)" />
-        <signal name="psudo_rising(31:0)" />
+        <signal name="psudo_data_sawtooth(31:0)" />
         <signal name="psudo_falling(31:0)" />
         <signal name="rx_data(2)" />
         <signal name="pusdo_data_select(2)" />
@@ -856,7 +856,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="psudo_data_allOne">
-            <timestamp>2016-7-21T15:30:29</timestamp>
+            <timestamp>2016-7-25T20:3:3</timestamp>
             <rect width="320" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -2172,8 +2172,8 @@
         </block>
         <block symbolname="MUX64_8" name="XLXI_6321">
             <blockpin signalname="psudo_data_attr(63:0)" name="in0(63:0)" />
-            <blockpin signalname="XLXN_15476(63:0)" name="in1(63:0)" />
-            <blockpin signalname="XLXN_15478(63:0)" name="in2(63:0)" />
+            <blockpin signalname="psudo_data_aio(63:0)" name="in1(63:0)" />
+            <blockpin signalname="psudo_data_sawtooth(63:32)" name="in2(63:0)" />
             <blockpin signalname="XLXN_15479(63:0)" name="in3(63:0)" />
             <blockpin signalname="XLXN_15480(63:0)" name="in4(63:0)" />
             <blockpin signalname="XLXN_15481(63:0)" name="in5(63:0)" />
@@ -2191,13 +2191,13 @@
         </block>
         <block symbolname="psudo_data_allOne" name="XLXI_6294">
             <blockpin signalname="psudo_data_all_one_val_in(7:0)" name="value_in(7:0)" />
-            <blockpin signalname="psudo_data_ao(31:0)" name="value_out(31:0)" />
+            <blockpin signalname="psudo_data_ao(31:0)" name="value_out(63:0)" />
         </block>
         <block symbolname="psudoData" name="XLXI_6292">
             <blockpin signalname="clock_5mhz" name="clk" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_delay(7:0)" name="delay(7:0)" />
-            <blockpin signalname="psudo_rising(31:0)" name="rising_data(31:0)" />
+            <blockpin signalname="psudo_data_sawtooth(31:0)" name="rising_data(31:0)" />
             <blockpin signalname="psudo_falling(31:0)" name="falling_data(31:0)" />
         </block>
         <block symbolname="fdre" name="XLXI_6324">
@@ -2820,10 +2820,12 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="640" type="branch" />
             <wire x2="768" y1="640" y2="640" x1="736" />
         </branch>
-        <branch name="XLXN_15476(63:0)">
+        <branch name="psudo_data_aio(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="704" type="branch" />
             <wire x2="768" y1="704" y2="704" x1="736" />
         </branch>
-        <branch name="XLXN_15478(63:0)">
+        <branch name="psudo_data_sawtooth(63:32)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="768" type="branch" />
             <wire x2="768" y1="768" y2="768" x1="736" />
         </branch>
         <branch name="XLXN_15479(63:0)">
@@ -2951,7 +2953,7 @@
             <wire x2="1088" y1="2336" y2="2336" x1="1072" />
             <wire x2="1104" y1="2336" y2="2336" x1="1088" />
         </branch>
-        <branch name="psudo_rising(31:0)">
+        <branch name="psudo_data_sawtooth(31:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2400" type="branch" />
             <wire x2="1088" y1="2400" y2="2400" x1="1072" />
         </branch>
