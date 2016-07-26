@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/26/2016 11:49:25
+-- /___/   /\     Timestamp : 07/26/2016 16:40:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1237,7 +1237,7 @@ begin
       port map (din(31 downto 0)=>adc_data_in(63 downto 32),
                 rd_clk=>MASTER_CLK,
                 rd_en=>pulse_finder_in_en,
-                wr_clk=>MASTER_CLK,
+                wr_clk=>clock_5mhz,
                 wr_en=>XLXN_15352,
                 dout(127 downto 0)=>peak_finder_din(255 downto 128),
                 empty=>adc_fifo_f_empty,
