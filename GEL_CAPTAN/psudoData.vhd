@@ -51,11 +51,15 @@ begin
 		
 		if(reset = '0') then
 			if(rising_edge(clk)) then
-				counter <= counter + 1;
+				if(delayCounter = unsDelay) then
+					counter <= counter + 1;
+					delayCounter <= (others => '0');
+				else
+					delayCounter <= delayCounter + 1;
+				end if;
 			end if;
-			
 			if(falling_edge(clk)) then
-				counter_f <= counter_f + 1;
+				counter_f <= counter;
 			end if;
 		else
 			counter <= (others => '0');
