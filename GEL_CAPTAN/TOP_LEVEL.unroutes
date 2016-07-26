@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Jul 25 15:36:04 2016
+Tue Jul 26 11:33:49 2016
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 62 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 61 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>
@@ -54,7 +54,6 @@ WARNING:ParHelpers:361 - There are 62 loadless signals in this design. This desi
    icon_control0<16>
    icon_control0<17>
    icon_control0<18>
-   icon_control0<21>
    icon_control0<22>
    icon_control0<23>
    icon_control0<24>
