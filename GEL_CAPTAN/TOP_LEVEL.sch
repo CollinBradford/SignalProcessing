@@ -334,7 +334,6 @@
         <signal name="pusdo_data_select(2)" />
         <signal name="rx_data(1)" />
         <signal name="pusdo_data_select(1)" />
-        <signal name="XLXN_15522" />
         <signal name="pusdo_data_select(0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
@@ -794,11 +793,11 @@
             <line x2="800" y1="592" y2="592" x1="832" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2016-7-14T20:41:13</timestamp>
+            <timestamp>2016-7-29T19:34:3</timestamp>
+            <line x2="528" y1="160" y2="160" x1="464" />
             <rect width="64" x="0" y="84" height="24" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
-            <line x2="528" y1="32" y2="32" x1="464" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -809,7 +808,7 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="448" />
+            <rect width="400" x="64" y="-320" height="512" />
         </blockdef>
         <blockdef name="data_send">
             <timestamp>2016-7-12T15:57:57</timestamp>
@@ -2115,8 +2114,8 @@
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
-            <blockpin signalname="pulse_finder_in_en" name="in_enable" />
             <blockpin signalname="ethernet_fifo_din(255:0)" name="data_out(255:0)" />
+            <blockpin name="in_enable" />
         </block>
         <block symbolname="inv" name="XLXI_6290">
             <blockpin signalname="XLXN_15390" name="I" />

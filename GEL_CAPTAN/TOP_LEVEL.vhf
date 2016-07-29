@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/29/2016 11:28:05
+-- /___/   /\     Timestamp : 07/29/2016 14:40:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1118,8 +1118,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
              signal_threshold        : in    std_logic_vector (7 downto 0); 
              user_samples_after_trig : in    std_logic_vector (15 downto 0); 
              out_enable              : out   std_logic; 
-             in_enable               : out   std_logic; 
-             data_out                : out   std_logic_vector (255 downto 0));
+             data_out                : out   std_logic_vector (255 downto 0); 
+             in_enable               : out   std_logic);
    end component;
    
    component data_send
@@ -2118,7 +2118,7 @@ begin
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),
                 data_out(255 downto 0)=>ethernet_fifo_din(255 downto 0),
-                in_enable=>pulse_finder_in_en,
+                in_enable=>open,
                 out_enable=>ethernet_fifo_in_en);
    
    XLXI_6251 : FD16RE_MXILINX_TOP_LEVEL
