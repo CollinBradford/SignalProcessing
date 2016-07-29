@@ -329,7 +329,7 @@
         <signal name="psudo_data_all_one_val_in(7:0)" />
         <signal name="psudo_delay(7:0)" />
         <signal name="psudo_data_sawtooth(31:0)" />
-        <signal name="psudo_falling(31:0)" />
+        <signal name="psudo_data_sawtooth(63:32)" />
         <signal name="rx_data(2)" />
         <signal name="pusdo_data_select(2)" />
         <signal name="rx_data(1)" />
@@ -2197,7 +2197,7 @@
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_delay(7:0)" name="delay(7:0)" />
             <blockpin signalname="psudo_data_sawtooth(31:0)" name="rising_data(31:0)" />
-            <blockpin signalname="psudo_falling(31:0)" name="falling_data(31:0)" />
+            <blockpin signalname="psudo_data_sawtooth(63:32)" name="falling_data(31:0)" />
         </block>
         <block symbolname="fdre" name="XLXI_6324">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2936,7 +2936,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2400" type="branch" />
             <wire x2="1088" y1="2400" y2="2400" x1="1072" />
         </branch>
-        <branch name="psudo_falling(31:0)">
+        <branch name="psudo_data_sawtooth(63:32)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2464" type="branch" />
             <wire x2="1088" y1="2464" y2="2464" x1="1072" />
         </branch>

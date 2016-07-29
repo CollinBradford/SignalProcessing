@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/26/2016 16:40:52
+-- /___/   /\     Timestamp : 07/29/2016 09:27:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -731,7 +731,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal psudo_data_sawtooth       : std_logic_vector (63 downto 0);
    signal psudo_data_select_map     : std_logic;
    signal psudo_delay               : std_logic_vector (7 downto 0);
-   signal psudo_falling             : std_logic_vector (31 downto 0);
    signal pulse                     : std_logic;
    signal pulse_finder_in_en        : std_logic;
    signal pusdo_data_select         : std_logic_vector (2 downto 0);
@@ -2162,7 +2161,7 @@ begin
       port map (clk=>clock_5mhz,
                 delay(7 downto 0)=>psudo_delay(7 downto 0),
                 reset=>reset,
-                falling_data(31 downto 0)=>psudo_falling(31 downto 0),
+                falling_data(31 downto 0)=>psudo_data_sawtooth(63 downto 32),
                 rising_data(31 downto 0)=>psudo_data_sawtooth(31 downto 0));
    
    XLXI_6294 : psudo_data_allOne
