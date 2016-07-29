@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jul 29 09:35:20 2016
+// Written by: Map P.20131013 on Fri Jul 29 11:35:41 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -561,144 +561,144 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/out_en_sig" BEL
-        "XLXI_6249/samplesSinceTrig_0" BEL "XLXI_6249/samplesSinceTrig_1" BEL
-        "XLXI_6249/samplesSinceTrig_2" BEL "XLXI_6249/samplesSinceTrig_3" BEL
-        "XLXI_6249/samplesSinceTrig_4" BEL "XLXI_6249/samplesSinceTrig_5" BEL
-        "XLXI_6249/samplesSinceTrig_6" BEL "XLXI_6249/samplesSinceTrig_7" BEL
-        "XLXI_6249/samplesSinceTrig_8" BEL "XLXI_6249/samplesSinceTrig_9" BEL
-        "XLXI_6249/samplesSinceTrig_10" BEL "XLXI_6249/samplesSinceTrig_11"
-        BEL "XLXI_6249/samplesSinceTrig_12" BEL
-        "XLXI_6249/samplesSinceTrig_13" BEL "XLXI_6249/samplesSinceTrig_14"
-        BEL "XLXI_6249/samplesSinceTrig_15" BEL "XLXI_6249/data_out_0" BEL
-        "XLXI_6249/data_out_1" BEL "XLXI_6249/data_out_2" BEL
-        "XLXI_6249/data_out_3" BEL "XLXI_6249/data_out_4" BEL
-        "XLXI_6249/data_out_5" BEL "XLXI_6249/data_out_6" BEL
-        "XLXI_6249/data_out_7" BEL "XLXI_6249/data_out_8" BEL
-        "XLXI_6249/data_out_9" BEL "XLXI_6249/data_out_10" BEL
-        "XLXI_6249/data_out_11" BEL "XLXI_6249/data_out_12" BEL
-        "XLXI_6249/data_out_13" BEL "XLXI_6249/data_out_14" BEL
-        "XLXI_6249/data_out_15" BEL "XLXI_6249/data_out_16" BEL
-        "XLXI_6249/data_out_17" BEL "XLXI_6249/data_out_18" BEL
-        "XLXI_6249/data_out_19" BEL "XLXI_6249/data_out_20" BEL
-        "XLXI_6249/data_out_21" BEL "XLXI_6249/data_out_22" BEL
-        "XLXI_6249/data_out_23" BEL "XLXI_6249/data_out_24" BEL
-        "XLXI_6249/data_out_25" BEL "XLXI_6249/data_out_26" BEL
-        "XLXI_6249/data_out_27" BEL "XLXI_6249/data_out_28" BEL
-        "XLXI_6249/data_out_29" BEL "XLXI_6249/data_out_30" BEL
-        "XLXI_6249/data_out_31" BEL "XLXI_6249/data_out_32" BEL
-        "XLXI_6249/data_out_33" BEL "XLXI_6249/data_out_34" BEL
-        "XLXI_6249/data_out_35" BEL "XLXI_6249/data_out_36" BEL
-        "XLXI_6249/data_out_37" BEL "XLXI_6249/data_out_38" BEL
-        "XLXI_6249/data_out_39" BEL "XLXI_6249/data_out_40" BEL
-        "XLXI_6249/data_out_41" BEL "XLXI_6249/data_out_42" BEL
-        "XLXI_6249/data_out_43" BEL "XLXI_6249/data_out_44" BEL
-        "XLXI_6249/data_out_45" BEL "XLXI_6249/data_out_46" BEL
-        "XLXI_6249/data_out_47" BEL "XLXI_6249/data_out_48" BEL
-        "XLXI_6249/data_out_49" BEL "XLXI_6249/data_out_50" BEL
-        "XLXI_6249/data_out_51" BEL "XLXI_6249/data_out_52" BEL
-        "XLXI_6249/data_out_53" BEL "XLXI_6249/data_out_54" BEL
-        "XLXI_6249/data_out_55" BEL "XLXI_6249/data_out_56" BEL
-        "XLXI_6249/data_out_57" BEL "XLXI_6249/data_out_58" BEL
-        "XLXI_6249/data_out_59" BEL "XLXI_6249/data_out_60" BEL
-        "XLXI_6249/data_out_61" BEL "XLXI_6249/data_out_62" BEL
-        "XLXI_6249/data_out_63" BEL "XLXI_6249/data_out_64" BEL
-        "XLXI_6249/data_out_65" BEL "XLXI_6249/data_out_66" BEL
-        "XLXI_6249/data_out_67" BEL "XLXI_6249/data_out_68" BEL
-        "XLXI_6249/data_out_69" BEL "XLXI_6249/data_out_70" BEL
-        "XLXI_6249/data_out_71" BEL "XLXI_6249/data_out_72" BEL
-        "XLXI_6249/data_out_73" BEL "XLXI_6249/data_out_74" BEL
-        "XLXI_6249/data_out_75" BEL "XLXI_6249/data_out_76" BEL
-        "XLXI_6249/data_out_77" BEL "XLXI_6249/data_out_78" BEL
-        "XLXI_6249/data_out_79" BEL "XLXI_6249/data_out_80" BEL
-        "XLXI_6249/data_out_81" BEL "XLXI_6249/data_out_82" BEL
-        "XLXI_6249/data_out_83" BEL "XLXI_6249/data_out_84" BEL
-        "XLXI_6249/data_out_85" BEL "XLXI_6249/data_out_86" BEL
-        "XLXI_6249/data_out_87" BEL "XLXI_6249/data_out_88" BEL
-        "XLXI_6249/data_out_89" BEL "XLXI_6249/data_out_90" BEL
-        "XLXI_6249/data_out_91" BEL "XLXI_6249/data_out_92" BEL
-        "XLXI_6249/data_out_93" BEL "XLXI_6249/data_out_94" BEL
-        "XLXI_6249/data_out_95" BEL "XLXI_6249/data_out_96" BEL
-        "XLXI_6249/data_out_97" BEL "XLXI_6249/data_out_98" BEL
-        "XLXI_6249/data_out_99" BEL "XLXI_6249/data_out_100" BEL
-        "XLXI_6249/data_out_101" BEL "XLXI_6249/data_out_102" BEL
-        "XLXI_6249/data_out_103" BEL "XLXI_6249/data_out_104" BEL
-        "XLXI_6249/data_out_105" BEL "XLXI_6249/data_out_106" BEL
-        "XLXI_6249/data_out_107" BEL "XLXI_6249/data_out_108" BEL
-        "XLXI_6249/data_out_109" BEL "XLXI_6249/data_out_110" BEL
-        "XLXI_6249/data_out_111" BEL "XLXI_6249/data_out_112" BEL
-        "XLXI_6249/data_out_113" BEL "XLXI_6249/data_out_114" BEL
-        "XLXI_6249/data_out_115" BEL "XLXI_6249/data_out_116" BEL
-        "XLXI_6249/data_out_117" BEL "XLXI_6249/data_out_118" BEL
-        "XLXI_6249/data_out_119" BEL "XLXI_6249/data_out_120" BEL
-        "XLXI_6249/data_out_121" BEL "XLXI_6249/data_out_122" BEL
-        "XLXI_6249/data_out_123" BEL "XLXI_6249/data_out_124" BEL
-        "XLXI_6249/data_out_125" BEL "XLXI_6249/data_out_126" BEL
-        "XLXI_6249/data_out_127" BEL "XLXI_6249/data_out_128" BEL
-        "XLXI_6249/data_out_129" BEL "XLXI_6249/data_out_130" BEL
-        "XLXI_6249/data_out_131" BEL "XLXI_6249/data_out_132" BEL
-        "XLXI_6249/data_out_133" BEL "XLXI_6249/data_out_134" BEL
-        "XLXI_6249/data_out_135" BEL "XLXI_6249/data_out_136" BEL
-        "XLXI_6249/data_out_137" BEL "XLXI_6249/data_out_138" BEL
-        "XLXI_6249/data_out_139" BEL "XLXI_6249/data_out_140" BEL
-        "XLXI_6249/data_out_141" BEL "XLXI_6249/data_out_142" BEL
-        "XLXI_6249/data_out_143" BEL "XLXI_6249/data_out_144" BEL
-        "XLXI_6249/data_out_145" BEL "XLXI_6249/data_out_146" BEL
-        "XLXI_6249/data_out_147" BEL "XLXI_6249/data_out_148" BEL
-        "XLXI_6249/data_out_149" BEL "XLXI_6249/data_out_150" BEL
-        "XLXI_6249/data_out_151" BEL "XLXI_6249/data_out_152" BEL
-        "XLXI_6249/data_out_153" BEL "XLXI_6249/data_out_154" BEL
-        "XLXI_6249/data_out_155" BEL "XLXI_6249/data_out_156" BEL
-        "XLXI_6249/data_out_157" BEL "XLXI_6249/data_out_158" BEL
-        "XLXI_6249/data_out_159" BEL "XLXI_6249/data_out_160" BEL
-        "XLXI_6249/data_out_161" BEL "XLXI_6249/data_out_162" BEL
-        "XLXI_6249/data_out_163" BEL "XLXI_6249/data_out_164" BEL
-        "XLXI_6249/data_out_165" BEL "XLXI_6249/data_out_166" BEL
-        "XLXI_6249/data_out_167" BEL "XLXI_6249/data_out_168" BEL
-        "XLXI_6249/data_out_169" BEL "XLXI_6249/data_out_170" BEL
-        "XLXI_6249/data_out_171" BEL "XLXI_6249/data_out_172" BEL
-        "XLXI_6249/data_out_173" BEL "XLXI_6249/data_out_174" BEL
-        "XLXI_6249/data_out_175" BEL "XLXI_6249/data_out_176" BEL
-        "XLXI_6249/data_out_177" BEL "XLXI_6249/data_out_178" BEL
-        "XLXI_6249/data_out_179" BEL "XLXI_6249/data_out_180" BEL
-        "XLXI_6249/data_out_181" BEL "XLXI_6249/data_out_182" BEL
-        "XLXI_6249/data_out_183" BEL "XLXI_6249/data_out_184" BEL
-        "XLXI_6249/data_out_185" BEL "XLXI_6249/data_out_186" BEL
-        "XLXI_6249/data_out_187" BEL "XLXI_6249/data_out_188" BEL
-        "XLXI_6249/data_out_189" BEL "XLXI_6249/data_out_190" BEL
-        "XLXI_6249/data_out_191" BEL "XLXI_6249/data_out_192" BEL
-        "XLXI_6249/data_out_193" BEL "XLXI_6249/data_out_194" BEL
-        "XLXI_6249/data_out_195" BEL "XLXI_6249/data_out_196" BEL
-        "XLXI_6249/data_out_197" BEL "XLXI_6249/data_out_198" BEL
-        "XLXI_6249/data_out_199" BEL "XLXI_6249/data_out_200" BEL
-        "XLXI_6249/data_out_201" BEL "XLXI_6249/data_out_202" BEL
-        "XLXI_6249/data_out_203" BEL "XLXI_6249/data_out_204" BEL
-        "XLXI_6249/data_out_205" BEL "XLXI_6249/data_out_206" BEL
-        "XLXI_6249/data_out_207" BEL "XLXI_6249/data_out_208" BEL
-        "XLXI_6249/data_out_209" BEL "XLXI_6249/data_out_210" BEL
-        "XLXI_6249/data_out_211" BEL "XLXI_6249/data_out_212" BEL
-        "XLXI_6249/data_out_213" BEL "XLXI_6249/data_out_214" BEL
-        "XLXI_6249/data_out_215" BEL "XLXI_6249/data_out_216" BEL
-        "XLXI_6249/data_out_217" BEL "XLXI_6249/data_out_218" BEL
-        "XLXI_6249/data_out_219" BEL "XLXI_6249/data_out_220" BEL
-        "XLXI_6249/data_out_221" BEL "XLXI_6249/data_out_222" BEL
-        "XLXI_6249/data_out_223" BEL "XLXI_6249/data_out_224" BEL
-        "XLXI_6249/data_out_225" BEL "XLXI_6249/data_out_226" BEL
-        "XLXI_6249/data_out_227" BEL "XLXI_6249/data_out_228" BEL
-        "XLXI_6249/data_out_229" BEL "XLXI_6249/data_out_230" BEL
-        "XLXI_6249/data_out_231" BEL "XLXI_6249/data_out_232" BEL
-        "XLXI_6249/data_out_233" BEL "XLXI_6249/data_out_234" BEL
-        "XLXI_6249/data_out_235" BEL "XLXI_6249/data_out_236" BEL
-        "XLXI_6249/data_out_237" BEL "XLXI_6249/data_out_238" BEL
-        "XLXI_6249/data_out_239" BEL "XLXI_6249/data_out_240" BEL
-        "XLXI_6249/data_out_241" BEL "XLXI_6249/data_out_242" BEL
-        "XLXI_6249/data_out_243" BEL "XLXI_6249/data_out_244" BEL
-        "XLXI_6249/data_out_245" BEL "XLXI_6249/data_out_246" BEL
-        "XLXI_6249/data_out_247" BEL "XLXI_6249/data_out_248" BEL
-        "XLXI_6249/data_out_249" BEL "XLXI_6249/data_out_250" BEL
-        "XLXI_6249/data_out_251" BEL "XLXI_6249/data_out_252" BEL
-        "XLXI_6249/data_out_253" BEL "XLXI_6249/data_out_254" BEL
-        "XLXI_6249/data_out_255" BEL "XLXI_6253/b_data_we" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/samplesSinceTrig_0" BEL
+        "XLXI_6249/samplesSinceTrig_1" BEL "XLXI_6249/samplesSinceTrig_2" BEL
+        "XLXI_6249/samplesSinceTrig_3" BEL "XLXI_6249/samplesSinceTrig_4" BEL
+        "XLXI_6249/samplesSinceTrig_5" BEL "XLXI_6249/samplesSinceTrig_6" BEL
+        "XLXI_6249/samplesSinceTrig_7" BEL "XLXI_6249/samplesSinceTrig_8" BEL
+        "XLXI_6249/samplesSinceTrig_9" BEL "XLXI_6249/samplesSinceTrig_10" BEL
+        "XLXI_6249/samplesSinceTrig_11" BEL "XLXI_6249/samplesSinceTrig_12"
+        BEL "XLXI_6249/samplesSinceTrig_13" BEL
+        "XLXI_6249/samplesSinceTrig_14" BEL "XLXI_6249/samplesSinceTrig_15"
+        BEL "XLXI_6249/data_out_0" BEL "XLXI_6249/data_out_1" BEL
+        "XLXI_6249/data_out_2" BEL "XLXI_6249/data_out_3" BEL
+        "XLXI_6249/data_out_4" BEL "XLXI_6249/data_out_5" BEL
+        "XLXI_6249/data_out_6" BEL "XLXI_6249/data_out_7" BEL
+        "XLXI_6249/data_out_8" BEL "XLXI_6249/data_out_9" BEL
+        "XLXI_6249/data_out_10" BEL "XLXI_6249/data_out_11" BEL
+        "XLXI_6249/data_out_12" BEL "XLXI_6249/data_out_13" BEL
+        "XLXI_6249/data_out_14" BEL "XLXI_6249/data_out_15" BEL
+        "XLXI_6249/data_out_16" BEL "XLXI_6249/data_out_17" BEL
+        "XLXI_6249/data_out_18" BEL "XLXI_6249/data_out_19" BEL
+        "XLXI_6249/data_out_20" BEL "XLXI_6249/data_out_21" BEL
+        "XLXI_6249/data_out_22" BEL "XLXI_6249/data_out_23" BEL
+        "XLXI_6249/data_out_24" BEL "XLXI_6249/data_out_25" BEL
+        "XLXI_6249/data_out_26" BEL "XLXI_6249/data_out_27" BEL
+        "XLXI_6249/data_out_28" BEL "XLXI_6249/data_out_29" BEL
+        "XLXI_6249/data_out_30" BEL "XLXI_6249/data_out_31" BEL
+        "XLXI_6249/data_out_32" BEL "XLXI_6249/data_out_33" BEL
+        "XLXI_6249/data_out_34" BEL "XLXI_6249/data_out_35" BEL
+        "XLXI_6249/data_out_36" BEL "XLXI_6249/data_out_37" BEL
+        "XLXI_6249/data_out_38" BEL "XLXI_6249/data_out_39" BEL
+        "XLXI_6249/data_out_40" BEL "XLXI_6249/data_out_41" BEL
+        "XLXI_6249/data_out_42" BEL "XLXI_6249/data_out_43" BEL
+        "XLXI_6249/data_out_44" BEL "XLXI_6249/data_out_45" BEL
+        "XLXI_6249/data_out_46" BEL "XLXI_6249/data_out_47" BEL
+        "XLXI_6249/data_out_48" BEL "XLXI_6249/data_out_49" BEL
+        "XLXI_6249/data_out_50" BEL "XLXI_6249/data_out_51" BEL
+        "XLXI_6249/data_out_52" BEL "XLXI_6249/data_out_53" BEL
+        "XLXI_6249/data_out_54" BEL "XLXI_6249/data_out_55" BEL
+        "XLXI_6249/data_out_56" BEL "XLXI_6249/data_out_57" BEL
+        "XLXI_6249/data_out_58" BEL "XLXI_6249/data_out_59" BEL
+        "XLXI_6249/data_out_60" BEL "XLXI_6249/data_out_61" BEL
+        "XLXI_6249/data_out_62" BEL "XLXI_6249/data_out_63" BEL
+        "XLXI_6249/data_out_64" BEL "XLXI_6249/data_out_65" BEL
+        "XLXI_6249/data_out_66" BEL "XLXI_6249/data_out_67" BEL
+        "XLXI_6249/data_out_68" BEL "XLXI_6249/data_out_69" BEL
+        "XLXI_6249/data_out_70" BEL "XLXI_6249/data_out_71" BEL
+        "XLXI_6249/data_out_72" BEL "XLXI_6249/data_out_73" BEL
+        "XLXI_6249/data_out_74" BEL "XLXI_6249/data_out_75" BEL
+        "XLXI_6249/data_out_76" BEL "XLXI_6249/data_out_77" BEL
+        "XLXI_6249/data_out_78" BEL "XLXI_6249/data_out_79" BEL
+        "XLXI_6249/data_out_80" BEL "XLXI_6249/data_out_81" BEL
+        "XLXI_6249/data_out_82" BEL "XLXI_6249/data_out_83" BEL
+        "XLXI_6249/data_out_84" BEL "XLXI_6249/data_out_85" BEL
+        "XLXI_6249/data_out_86" BEL "XLXI_6249/data_out_87" BEL
+        "XLXI_6249/data_out_88" BEL "XLXI_6249/data_out_89" BEL
+        "XLXI_6249/data_out_90" BEL "XLXI_6249/data_out_91" BEL
+        "XLXI_6249/data_out_92" BEL "XLXI_6249/data_out_93" BEL
+        "XLXI_6249/data_out_94" BEL "XLXI_6249/data_out_95" BEL
+        "XLXI_6249/data_out_96" BEL "XLXI_6249/data_out_97" BEL
+        "XLXI_6249/data_out_98" BEL "XLXI_6249/data_out_99" BEL
+        "XLXI_6249/data_out_100" BEL "XLXI_6249/data_out_101" BEL
+        "XLXI_6249/data_out_102" BEL "XLXI_6249/data_out_103" BEL
+        "XLXI_6249/data_out_104" BEL "XLXI_6249/data_out_105" BEL
+        "XLXI_6249/data_out_106" BEL "XLXI_6249/data_out_107" BEL
+        "XLXI_6249/data_out_108" BEL "XLXI_6249/data_out_109" BEL
+        "XLXI_6249/data_out_110" BEL "XLXI_6249/data_out_111" BEL
+        "XLXI_6249/data_out_112" BEL "XLXI_6249/data_out_113" BEL
+        "XLXI_6249/data_out_114" BEL "XLXI_6249/data_out_115" BEL
+        "XLXI_6249/data_out_116" BEL "XLXI_6249/data_out_117" BEL
+        "XLXI_6249/data_out_118" BEL "XLXI_6249/data_out_119" BEL
+        "XLXI_6249/data_out_120" BEL "XLXI_6249/data_out_121" BEL
+        "XLXI_6249/data_out_122" BEL "XLXI_6249/data_out_123" BEL
+        "XLXI_6249/data_out_124" BEL "XLXI_6249/data_out_125" BEL
+        "XLXI_6249/data_out_126" BEL "XLXI_6249/data_out_127" BEL
+        "XLXI_6249/data_out_128" BEL "XLXI_6249/data_out_129" BEL
+        "XLXI_6249/data_out_130" BEL "XLXI_6249/data_out_131" BEL
+        "XLXI_6249/data_out_132" BEL "XLXI_6249/data_out_133" BEL
+        "XLXI_6249/data_out_134" BEL "XLXI_6249/data_out_135" BEL
+        "XLXI_6249/data_out_136" BEL "XLXI_6249/data_out_137" BEL
+        "XLXI_6249/data_out_138" BEL "XLXI_6249/data_out_139" BEL
+        "XLXI_6249/data_out_140" BEL "XLXI_6249/data_out_141" BEL
+        "XLXI_6249/data_out_142" BEL "XLXI_6249/data_out_143" BEL
+        "XLXI_6249/data_out_144" BEL "XLXI_6249/data_out_145" BEL
+        "XLXI_6249/data_out_146" BEL "XLXI_6249/data_out_147" BEL
+        "XLXI_6249/data_out_148" BEL "XLXI_6249/data_out_149" BEL
+        "XLXI_6249/data_out_150" BEL "XLXI_6249/data_out_151" BEL
+        "XLXI_6249/data_out_152" BEL "XLXI_6249/data_out_153" BEL
+        "XLXI_6249/data_out_154" BEL "XLXI_6249/data_out_155" BEL
+        "XLXI_6249/data_out_156" BEL "XLXI_6249/data_out_157" BEL
+        "XLXI_6249/data_out_158" BEL "XLXI_6249/data_out_159" BEL
+        "XLXI_6249/data_out_160" BEL "XLXI_6249/data_out_161" BEL
+        "XLXI_6249/data_out_162" BEL "XLXI_6249/data_out_163" BEL
+        "XLXI_6249/data_out_164" BEL "XLXI_6249/data_out_165" BEL
+        "XLXI_6249/data_out_166" BEL "XLXI_6249/data_out_167" BEL
+        "XLXI_6249/data_out_168" BEL "XLXI_6249/data_out_169" BEL
+        "XLXI_6249/data_out_170" BEL "XLXI_6249/data_out_171" BEL
+        "XLXI_6249/data_out_172" BEL "XLXI_6249/data_out_173" BEL
+        "XLXI_6249/data_out_174" BEL "XLXI_6249/data_out_175" BEL
+        "XLXI_6249/data_out_176" BEL "XLXI_6249/data_out_177" BEL
+        "XLXI_6249/data_out_178" BEL "XLXI_6249/data_out_179" BEL
+        "XLXI_6249/data_out_180" BEL "XLXI_6249/data_out_181" BEL
+        "XLXI_6249/data_out_182" BEL "XLXI_6249/data_out_183" BEL
+        "XLXI_6249/data_out_184" BEL "XLXI_6249/data_out_185" BEL
+        "XLXI_6249/data_out_186" BEL "XLXI_6249/data_out_187" BEL
+        "XLXI_6249/data_out_188" BEL "XLXI_6249/data_out_189" BEL
+        "XLXI_6249/data_out_190" BEL "XLXI_6249/data_out_191" BEL
+        "XLXI_6249/data_out_192" BEL "XLXI_6249/data_out_193" BEL
+        "XLXI_6249/data_out_194" BEL "XLXI_6249/data_out_195" BEL
+        "XLXI_6249/data_out_196" BEL "XLXI_6249/data_out_197" BEL
+        "XLXI_6249/data_out_198" BEL "XLXI_6249/data_out_199" BEL
+        "XLXI_6249/data_out_200" BEL "XLXI_6249/data_out_201" BEL
+        "XLXI_6249/data_out_202" BEL "XLXI_6249/data_out_203" BEL
+        "XLXI_6249/data_out_204" BEL "XLXI_6249/data_out_205" BEL
+        "XLXI_6249/data_out_206" BEL "XLXI_6249/data_out_207" BEL
+        "XLXI_6249/data_out_208" BEL "XLXI_6249/data_out_209" BEL
+        "XLXI_6249/data_out_210" BEL "XLXI_6249/data_out_211" BEL
+        "XLXI_6249/data_out_212" BEL "XLXI_6249/data_out_213" BEL
+        "XLXI_6249/data_out_214" BEL "XLXI_6249/data_out_215" BEL
+        "XLXI_6249/data_out_216" BEL "XLXI_6249/data_out_217" BEL
+        "XLXI_6249/data_out_218" BEL "XLXI_6249/data_out_219" BEL
+        "XLXI_6249/data_out_220" BEL "XLXI_6249/data_out_221" BEL
+        "XLXI_6249/data_out_222" BEL "XLXI_6249/data_out_223" BEL
+        "XLXI_6249/data_out_224" BEL "XLXI_6249/data_out_225" BEL
+        "XLXI_6249/data_out_226" BEL "XLXI_6249/data_out_227" BEL
+        "XLXI_6249/data_out_228" BEL "XLXI_6249/data_out_229" BEL
+        "XLXI_6249/data_out_230" BEL "XLXI_6249/data_out_231" BEL
+        "XLXI_6249/data_out_232" BEL "XLXI_6249/data_out_233" BEL
+        "XLXI_6249/data_out_234" BEL "XLXI_6249/data_out_235" BEL
+        "XLXI_6249/data_out_236" BEL "XLXI_6249/data_out_237" BEL
+        "XLXI_6249/data_out_238" BEL "XLXI_6249/data_out_239" BEL
+        "XLXI_6249/data_out_240" BEL "XLXI_6249/data_out_241" BEL
+        "XLXI_6249/data_out_242" BEL "XLXI_6249/data_out_243" BEL
+        "XLXI_6249/data_out_244" BEL "XLXI_6249/data_out_245" BEL
+        "XLXI_6249/data_out_246" BEL "XLXI_6249/data_out_247" BEL
+        "XLXI_6249/data_out_248" BEL "XLXI_6249/data_out_249" BEL
+        "XLXI_6249/data_out_250" BEL "XLXI_6249/data_out_251" BEL
+        "XLXI_6249/data_out_252" BEL "XLXI_6249/data_out_253" BEL
+        "XLXI_6249/data_out_254" BEL "XLXI_6249/data_out_255" BEL
+        "XLXI_6249/out_en_sig" BEL "XLXI_6253/b_data_we" BEL
         "XLXI_6253/count_delay_0" BEL "XLXI_6253/count_delay_1" BEL
         "XLXI_6253/count_delay_2" BEL "XLXI_6299/I_Q0" BEL "XLXI_6299/I_Q1"
         BEL "XLXI_6299/I_Q2" BEL "XLXI_6299/I_Q3" BEL "XLXI_6299/I_Q4" BEL
@@ -1264,6 +1264,10 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
@@ -1279,10 +1283,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -3371,16 +3371,6 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/state_3"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
-        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_0"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_1"
@@ -3402,6 +3392,16 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_9"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_10"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
         BEL "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/busy"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/delay_count_0"
@@ -4200,6 +4200,16 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -4344,24 +4354,20 @@ TIMEGRP D_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_3"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_GMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_FMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_4"
@@ -9180,144 +9186,144 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/out_en_sig" BEL
-        "XLXI_6249/samplesSinceTrig_0" BEL "XLXI_6249/samplesSinceTrig_1" BEL
-        "XLXI_6249/samplesSinceTrig_2" BEL "XLXI_6249/samplesSinceTrig_3" BEL
-        "XLXI_6249/samplesSinceTrig_4" BEL "XLXI_6249/samplesSinceTrig_5" BEL
-        "XLXI_6249/samplesSinceTrig_6" BEL "XLXI_6249/samplesSinceTrig_7" BEL
-        "XLXI_6249/samplesSinceTrig_8" BEL "XLXI_6249/samplesSinceTrig_9" BEL
-        "XLXI_6249/samplesSinceTrig_10" BEL "XLXI_6249/samplesSinceTrig_11"
-        BEL "XLXI_6249/samplesSinceTrig_12" BEL
-        "XLXI_6249/samplesSinceTrig_13" BEL "XLXI_6249/samplesSinceTrig_14"
-        BEL "XLXI_6249/samplesSinceTrig_15" BEL "XLXI_6249/data_out_0" BEL
-        "XLXI_6249/data_out_1" BEL "XLXI_6249/data_out_2" BEL
-        "XLXI_6249/data_out_3" BEL "XLXI_6249/data_out_4" BEL
-        "XLXI_6249/data_out_5" BEL "XLXI_6249/data_out_6" BEL
-        "XLXI_6249/data_out_7" BEL "XLXI_6249/data_out_8" BEL
-        "XLXI_6249/data_out_9" BEL "XLXI_6249/data_out_10" BEL
-        "XLXI_6249/data_out_11" BEL "XLXI_6249/data_out_12" BEL
-        "XLXI_6249/data_out_13" BEL "XLXI_6249/data_out_14" BEL
-        "XLXI_6249/data_out_15" BEL "XLXI_6249/data_out_16" BEL
-        "XLXI_6249/data_out_17" BEL "XLXI_6249/data_out_18" BEL
-        "XLXI_6249/data_out_19" BEL "XLXI_6249/data_out_20" BEL
-        "XLXI_6249/data_out_21" BEL "XLXI_6249/data_out_22" BEL
-        "XLXI_6249/data_out_23" BEL "XLXI_6249/data_out_24" BEL
-        "XLXI_6249/data_out_25" BEL "XLXI_6249/data_out_26" BEL
-        "XLXI_6249/data_out_27" BEL "XLXI_6249/data_out_28" BEL
-        "XLXI_6249/data_out_29" BEL "XLXI_6249/data_out_30" BEL
-        "XLXI_6249/data_out_31" BEL "XLXI_6249/data_out_32" BEL
-        "XLXI_6249/data_out_33" BEL "XLXI_6249/data_out_34" BEL
-        "XLXI_6249/data_out_35" BEL "XLXI_6249/data_out_36" BEL
-        "XLXI_6249/data_out_37" BEL "XLXI_6249/data_out_38" BEL
-        "XLXI_6249/data_out_39" BEL "XLXI_6249/data_out_40" BEL
-        "XLXI_6249/data_out_41" BEL "XLXI_6249/data_out_42" BEL
-        "XLXI_6249/data_out_43" BEL "XLXI_6249/data_out_44" BEL
-        "XLXI_6249/data_out_45" BEL "XLXI_6249/data_out_46" BEL
-        "XLXI_6249/data_out_47" BEL "XLXI_6249/data_out_48" BEL
-        "XLXI_6249/data_out_49" BEL "XLXI_6249/data_out_50" BEL
-        "XLXI_6249/data_out_51" BEL "XLXI_6249/data_out_52" BEL
-        "XLXI_6249/data_out_53" BEL "XLXI_6249/data_out_54" BEL
-        "XLXI_6249/data_out_55" BEL "XLXI_6249/data_out_56" BEL
-        "XLXI_6249/data_out_57" BEL "XLXI_6249/data_out_58" BEL
-        "XLXI_6249/data_out_59" BEL "XLXI_6249/data_out_60" BEL
-        "XLXI_6249/data_out_61" BEL "XLXI_6249/data_out_62" BEL
-        "XLXI_6249/data_out_63" BEL "XLXI_6249/data_out_64" BEL
-        "XLXI_6249/data_out_65" BEL "XLXI_6249/data_out_66" BEL
-        "XLXI_6249/data_out_67" BEL "XLXI_6249/data_out_68" BEL
-        "XLXI_6249/data_out_69" BEL "XLXI_6249/data_out_70" BEL
-        "XLXI_6249/data_out_71" BEL "XLXI_6249/data_out_72" BEL
-        "XLXI_6249/data_out_73" BEL "XLXI_6249/data_out_74" BEL
-        "XLXI_6249/data_out_75" BEL "XLXI_6249/data_out_76" BEL
-        "XLXI_6249/data_out_77" BEL "XLXI_6249/data_out_78" BEL
-        "XLXI_6249/data_out_79" BEL "XLXI_6249/data_out_80" BEL
-        "XLXI_6249/data_out_81" BEL "XLXI_6249/data_out_82" BEL
-        "XLXI_6249/data_out_83" BEL "XLXI_6249/data_out_84" BEL
-        "XLXI_6249/data_out_85" BEL "XLXI_6249/data_out_86" BEL
-        "XLXI_6249/data_out_87" BEL "XLXI_6249/data_out_88" BEL
-        "XLXI_6249/data_out_89" BEL "XLXI_6249/data_out_90" BEL
-        "XLXI_6249/data_out_91" BEL "XLXI_6249/data_out_92" BEL
-        "XLXI_6249/data_out_93" BEL "XLXI_6249/data_out_94" BEL
-        "XLXI_6249/data_out_95" BEL "XLXI_6249/data_out_96" BEL
-        "XLXI_6249/data_out_97" BEL "XLXI_6249/data_out_98" BEL
-        "XLXI_6249/data_out_99" BEL "XLXI_6249/data_out_100" BEL
-        "XLXI_6249/data_out_101" BEL "XLXI_6249/data_out_102" BEL
-        "XLXI_6249/data_out_103" BEL "XLXI_6249/data_out_104" BEL
-        "XLXI_6249/data_out_105" BEL "XLXI_6249/data_out_106" BEL
-        "XLXI_6249/data_out_107" BEL "XLXI_6249/data_out_108" BEL
-        "XLXI_6249/data_out_109" BEL "XLXI_6249/data_out_110" BEL
-        "XLXI_6249/data_out_111" BEL "XLXI_6249/data_out_112" BEL
-        "XLXI_6249/data_out_113" BEL "XLXI_6249/data_out_114" BEL
-        "XLXI_6249/data_out_115" BEL "XLXI_6249/data_out_116" BEL
-        "XLXI_6249/data_out_117" BEL "XLXI_6249/data_out_118" BEL
-        "XLXI_6249/data_out_119" BEL "XLXI_6249/data_out_120" BEL
-        "XLXI_6249/data_out_121" BEL "XLXI_6249/data_out_122" BEL
-        "XLXI_6249/data_out_123" BEL "XLXI_6249/data_out_124" BEL
-        "XLXI_6249/data_out_125" BEL "XLXI_6249/data_out_126" BEL
-        "XLXI_6249/data_out_127" BEL "XLXI_6249/data_out_128" BEL
-        "XLXI_6249/data_out_129" BEL "XLXI_6249/data_out_130" BEL
-        "XLXI_6249/data_out_131" BEL "XLXI_6249/data_out_132" BEL
-        "XLXI_6249/data_out_133" BEL "XLXI_6249/data_out_134" BEL
-        "XLXI_6249/data_out_135" BEL "XLXI_6249/data_out_136" BEL
-        "XLXI_6249/data_out_137" BEL "XLXI_6249/data_out_138" BEL
-        "XLXI_6249/data_out_139" BEL "XLXI_6249/data_out_140" BEL
-        "XLXI_6249/data_out_141" BEL "XLXI_6249/data_out_142" BEL
-        "XLXI_6249/data_out_143" BEL "XLXI_6249/data_out_144" BEL
-        "XLXI_6249/data_out_145" BEL "XLXI_6249/data_out_146" BEL
-        "XLXI_6249/data_out_147" BEL "XLXI_6249/data_out_148" BEL
-        "XLXI_6249/data_out_149" BEL "XLXI_6249/data_out_150" BEL
-        "XLXI_6249/data_out_151" BEL "XLXI_6249/data_out_152" BEL
-        "XLXI_6249/data_out_153" BEL "XLXI_6249/data_out_154" BEL
-        "XLXI_6249/data_out_155" BEL "XLXI_6249/data_out_156" BEL
-        "XLXI_6249/data_out_157" BEL "XLXI_6249/data_out_158" BEL
-        "XLXI_6249/data_out_159" BEL "XLXI_6249/data_out_160" BEL
-        "XLXI_6249/data_out_161" BEL "XLXI_6249/data_out_162" BEL
-        "XLXI_6249/data_out_163" BEL "XLXI_6249/data_out_164" BEL
-        "XLXI_6249/data_out_165" BEL "XLXI_6249/data_out_166" BEL
-        "XLXI_6249/data_out_167" BEL "XLXI_6249/data_out_168" BEL
-        "XLXI_6249/data_out_169" BEL "XLXI_6249/data_out_170" BEL
-        "XLXI_6249/data_out_171" BEL "XLXI_6249/data_out_172" BEL
-        "XLXI_6249/data_out_173" BEL "XLXI_6249/data_out_174" BEL
-        "XLXI_6249/data_out_175" BEL "XLXI_6249/data_out_176" BEL
-        "XLXI_6249/data_out_177" BEL "XLXI_6249/data_out_178" BEL
-        "XLXI_6249/data_out_179" BEL "XLXI_6249/data_out_180" BEL
-        "XLXI_6249/data_out_181" BEL "XLXI_6249/data_out_182" BEL
-        "XLXI_6249/data_out_183" BEL "XLXI_6249/data_out_184" BEL
-        "XLXI_6249/data_out_185" BEL "XLXI_6249/data_out_186" BEL
-        "XLXI_6249/data_out_187" BEL "XLXI_6249/data_out_188" BEL
-        "XLXI_6249/data_out_189" BEL "XLXI_6249/data_out_190" BEL
-        "XLXI_6249/data_out_191" BEL "XLXI_6249/data_out_192" BEL
-        "XLXI_6249/data_out_193" BEL "XLXI_6249/data_out_194" BEL
-        "XLXI_6249/data_out_195" BEL "XLXI_6249/data_out_196" BEL
-        "XLXI_6249/data_out_197" BEL "XLXI_6249/data_out_198" BEL
-        "XLXI_6249/data_out_199" BEL "XLXI_6249/data_out_200" BEL
-        "XLXI_6249/data_out_201" BEL "XLXI_6249/data_out_202" BEL
-        "XLXI_6249/data_out_203" BEL "XLXI_6249/data_out_204" BEL
-        "XLXI_6249/data_out_205" BEL "XLXI_6249/data_out_206" BEL
-        "XLXI_6249/data_out_207" BEL "XLXI_6249/data_out_208" BEL
-        "XLXI_6249/data_out_209" BEL "XLXI_6249/data_out_210" BEL
-        "XLXI_6249/data_out_211" BEL "XLXI_6249/data_out_212" BEL
-        "XLXI_6249/data_out_213" BEL "XLXI_6249/data_out_214" BEL
-        "XLXI_6249/data_out_215" BEL "XLXI_6249/data_out_216" BEL
-        "XLXI_6249/data_out_217" BEL "XLXI_6249/data_out_218" BEL
-        "XLXI_6249/data_out_219" BEL "XLXI_6249/data_out_220" BEL
-        "XLXI_6249/data_out_221" BEL "XLXI_6249/data_out_222" BEL
-        "XLXI_6249/data_out_223" BEL "XLXI_6249/data_out_224" BEL
-        "XLXI_6249/data_out_225" BEL "XLXI_6249/data_out_226" BEL
-        "XLXI_6249/data_out_227" BEL "XLXI_6249/data_out_228" BEL
-        "XLXI_6249/data_out_229" BEL "XLXI_6249/data_out_230" BEL
-        "XLXI_6249/data_out_231" BEL "XLXI_6249/data_out_232" BEL
-        "XLXI_6249/data_out_233" BEL "XLXI_6249/data_out_234" BEL
-        "XLXI_6249/data_out_235" BEL "XLXI_6249/data_out_236" BEL
-        "XLXI_6249/data_out_237" BEL "XLXI_6249/data_out_238" BEL
-        "XLXI_6249/data_out_239" BEL "XLXI_6249/data_out_240" BEL
-        "XLXI_6249/data_out_241" BEL "XLXI_6249/data_out_242" BEL
-        "XLXI_6249/data_out_243" BEL "XLXI_6249/data_out_244" BEL
-        "XLXI_6249/data_out_245" BEL "XLXI_6249/data_out_246" BEL
-        "XLXI_6249/data_out_247" BEL "XLXI_6249/data_out_248" BEL
-        "XLXI_6249/data_out_249" BEL "XLXI_6249/data_out_250" BEL
-        "XLXI_6249/data_out_251" BEL "XLXI_6249/data_out_252" BEL
-        "XLXI_6249/data_out_253" BEL "XLXI_6249/data_out_254" BEL
-        "XLXI_6249/data_out_255" BEL "XLXI_6253/b_data_we" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/samplesSinceTrig_0" BEL
+        "XLXI_6249/samplesSinceTrig_1" BEL "XLXI_6249/samplesSinceTrig_2" BEL
+        "XLXI_6249/samplesSinceTrig_3" BEL "XLXI_6249/samplesSinceTrig_4" BEL
+        "XLXI_6249/samplesSinceTrig_5" BEL "XLXI_6249/samplesSinceTrig_6" BEL
+        "XLXI_6249/samplesSinceTrig_7" BEL "XLXI_6249/samplesSinceTrig_8" BEL
+        "XLXI_6249/samplesSinceTrig_9" BEL "XLXI_6249/samplesSinceTrig_10" BEL
+        "XLXI_6249/samplesSinceTrig_11" BEL "XLXI_6249/samplesSinceTrig_12"
+        BEL "XLXI_6249/samplesSinceTrig_13" BEL
+        "XLXI_6249/samplesSinceTrig_14" BEL "XLXI_6249/samplesSinceTrig_15"
+        BEL "XLXI_6249/data_out_0" BEL "XLXI_6249/data_out_1" BEL
+        "XLXI_6249/data_out_2" BEL "XLXI_6249/data_out_3" BEL
+        "XLXI_6249/data_out_4" BEL "XLXI_6249/data_out_5" BEL
+        "XLXI_6249/data_out_6" BEL "XLXI_6249/data_out_7" BEL
+        "XLXI_6249/data_out_8" BEL "XLXI_6249/data_out_9" BEL
+        "XLXI_6249/data_out_10" BEL "XLXI_6249/data_out_11" BEL
+        "XLXI_6249/data_out_12" BEL "XLXI_6249/data_out_13" BEL
+        "XLXI_6249/data_out_14" BEL "XLXI_6249/data_out_15" BEL
+        "XLXI_6249/data_out_16" BEL "XLXI_6249/data_out_17" BEL
+        "XLXI_6249/data_out_18" BEL "XLXI_6249/data_out_19" BEL
+        "XLXI_6249/data_out_20" BEL "XLXI_6249/data_out_21" BEL
+        "XLXI_6249/data_out_22" BEL "XLXI_6249/data_out_23" BEL
+        "XLXI_6249/data_out_24" BEL "XLXI_6249/data_out_25" BEL
+        "XLXI_6249/data_out_26" BEL "XLXI_6249/data_out_27" BEL
+        "XLXI_6249/data_out_28" BEL "XLXI_6249/data_out_29" BEL
+        "XLXI_6249/data_out_30" BEL "XLXI_6249/data_out_31" BEL
+        "XLXI_6249/data_out_32" BEL "XLXI_6249/data_out_33" BEL
+        "XLXI_6249/data_out_34" BEL "XLXI_6249/data_out_35" BEL
+        "XLXI_6249/data_out_36" BEL "XLXI_6249/data_out_37" BEL
+        "XLXI_6249/data_out_38" BEL "XLXI_6249/data_out_39" BEL
+        "XLXI_6249/data_out_40" BEL "XLXI_6249/data_out_41" BEL
+        "XLXI_6249/data_out_42" BEL "XLXI_6249/data_out_43" BEL
+        "XLXI_6249/data_out_44" BEL "XLXI_6249/data_out_45" BEL
+        "XLXI_6249/data_out_46" BEL "XLXI_6249/data_out_47" BEL
+        "XLXI_6249/data_out_48" BEL "XLXI_6249/data_out_49" BEL
+        "XLXI_6249/data_out_50" BEL "XLXI_6249/data_out_51" BEL
+        "XLXI_6249/data_out_52" BEL "XLXI_6249/data_out_53" BEL
+        "XLXI_6249/data_out_54" BEL "XLXI_6249/data_out_55" BEL
+        "XLXI_6249/data_out_56" BEL "XLXI_6249/data_out_57" BEL
+        "XLXI_6249/data_out_58" BEL "XLXI_6249/data_out_59" BEL
+        "XLXI_6249/data_out_60" BEL "XLXI_6249/data_out_61" BEL
+        "XLXI_6249/data_out_62" BEL "XLXI_6249/data_out_63" BEL
+        "XLXI_6249/data_out_64" BEL "XLXI_6249/data_out_65" BEL
+        "XLXI_6249/data_out_66" BEL "XLXI_6249/data_out_67" BEL
+        "XLXI_6249/data_out_68" BEL "XLXI_6249/data_out_69" BEL
+        "XLXI_6249/data_out_70" BEL "XLXI_6249/data_out_71" BEL
+        "XLXI_6249/data_out_72" BEL "XLXI_6249/data_out_73" BEL
+        "XLXI_6249/data_out_74" BEL "XLXI_6249/data_out_75" BEL
+        "XLXI_6249/data_out_76" BEL "XLXI_6249/data_out_77" BEL
+        "XLXI_6249/data_out_78" BEL "XLXI_6249/data_out_79" BEL
+        "XLXI_6249/data_out_80" BEL "XLXI_6249/data_out_81" BEL
+        "XLXI_6249/data_out_82" BEL "XLXI_6249/data_out_83" BEL
+        "XLXI_6249/data_out_84" BEL "XLXI_6249/data_out_85" BEL
+        "XLXI_6249/data_out_86" BEL "XLXI_6249/data_out_87" BEL
+        "XLXI_6249/data_out_88" BEL "XLXI_6249/data_out_89" BEL
+        "XLXI_6249/data_out_90" BEL "XLXI_6249/data_out_91" BEL
+        "XLXI_6249/data_out_92" BEL "XLXI_6249/data_out_93" BEL
+        "XLXI_6249/data_out_94" BEL "XLXI_6249/data_out_95" BEL
+        "XLXI_6249/data_out_96" BEL "XLXI_6249/data_out_97" BEL
+        "XLXI_6249/data_out_98" BEL "XLXI_6249/data_out_99" BEL
+        "XLXI_6249/data_out_100" BEL "XLXI_6249/data_out_101" BEL
+        "XLXI_6249/data_out_102" BEL "XLXI_6249/data_out_103" BEL
+        "XLXI_6249/data_out_104" BEL "XLXI_6249/data_out_105" BEL
+        "XLXI_6249/data_out_106" BEL "XLXI_6249/data_out_107" BEL
+        "XLXI_6249/data_out_108" BEL "XLXI_6249/data_out_109" BEL
+        "XLXI_6249/data_out_110" BEL "XLXI_6249/data_out_111" BEL
+        "XLXI_6249/data_out_112" BEL "XLXI_6249/data_out_113" BEL
+        "XLXI_6249/data_out_114" BEL "XLXI_6249/data_out_115" BEL
+        "XLXI_6249/data_out_116" BEL "XLXI_6249/data_out_117" BEL
+        "XLXI_6249/data_out_118" BEL "XLXI_6249/data_out_119" BEL
+        "XLXI_6249/data_out_120" BEL "XLXI_6249/data_out_121" BEL
+        "XLXI_6249/data_out_122" BEL "XLXI_6249/data_out_123" BEL
+        "XLXI_6249/data_out_124" BEL "XLXI_6249/data_out_125" BEL
+        "XLXI_6249/data_out_126" BEL "XLXI_6249/data_out_127" BEL
+        "XLXI_6249/data_out_128" BEL "XLXI_6249/data_out_129" BEL
+        "XLXI_6249/data_out_130" BEL "XLXI_6249/data_out_131" BEL
+        "XLXI_6249/data_out_132" BEL "XLXI_6249/data_out_133" BEL
+        "XLXI_6249/data_out_134" BEL "XLXI_6249/data_out_135" BEL
+        "XLXI_6249/data_out_136" BEL "XLXI_6249/data_out_137" BEL
+        "XLXI_6249/data_out_138" BEL "XLXI_6249/data_out_139" BEL
+        "XLXI_6249/data_out_140" BEL "XLXI_6249/data_out_141" BEL
+        "XLXI_6249/data_out_142" BEL "XLXI_6249/data_out_143" BEL
+        "XLXI_6249/data_out_144" BEL "XLXI_6249/data_out_145" BEL
+        "XLXI_6249/data_out_146" BEL "XLXI_6249/data_out_147" BEL
+        "XLXI_6249/data_out_148" BEL "XLXI_6249/data_out_149" BEL
+        "XLXI_6249/data_out_150" BEL "XLXI_6249/data_out_151" BEL
+        "XLXI_6249/data_out_152" BEL "XLXI_6249/data_out_153" BEL
+        "XLXI_6249/data_out_154" BEL "XLXI_6249/data_out_155" BEL
+        "XLXI_6249/data_out_156" BEL "XLXI_6249/data_out_157" BEL
+        "XLXI_6249/data_out_158" BEL "XLXI_6249/data_out_159" BEL
+        "XLXI_6249/data_out_160" BEL "XLXI_6249/data_out_161" BEL
+        "XLXI_6249/data_out_162" BEL "XLXI_6249/data_out_163" BEL
+        "XLXI_6249/data_out_164" BEL "XLXI_6249/data_out_165" BEL
+        "XLXI_6249/data_out_166" BEL "XLXI_6249/data_out_167" BEL
+        "XLXI_6249/data_out_168" BEL "XLXI_6249/data_out_169" BEL
+        "XLXI_6249/data_out_170" BEL "XLXI_6249/data_out_171" BEL
+        "XLXI_6249/data_out_172" BEL "XLXI_6249/data_out_173" BEL
+        "XLXI_6249/data_out_174" BEL "XLXI_6249/data_out_175" BEL
+        "XLXI_6249/data_out_176" BEL "XLXI_6249/data_out_177" BEL
+        "XLXI_6249/data_out_178" BEL "XLXI_6249/data_out_179" BEL
+        "XLXI_6249/data_out_180" BEL "XLXI_6249/data_out_181" BEL
+        "XLXI_6249/data_out_182" BEL "XLXI_6249/data_out_183" BEL
+        "XLXI_6249/data_out_184" BEL "XLXI_6249/data_out_185" BEL
+        "XLXI_6249/data_out_186" BEL "XLXI_6249/data_out_187" BEL
+        "XLXI_6249/data_out_188" BEL "XLXI_6249/data_out_189" BEL
+        "XLXI_6249/data_out_190" BEL "XLXI_6249/data_out_191" BEL
+        "XLXI_6249/data_out_192" BEL "XLXI_6249/data_out_193" BEL
+        "XLXI_6249/data_out_194" BEL "XLXI_6249/data_out_195" BEL
+        "XLXI_6249/data_out_196" BEL "XLXI_6249/data_out_197" BEL
+        "XLXI_6249/data_out_198" BEL "XLXI_6249/data_out_199" BEL
+        "XLXI_6249/data_out_200" BEL "XLXI_6249/data_out_201" BEL
+        "XLXI_6249/data_out_202" BEL "XLXI_6249/data_out_203" BEL
+        "XLXI_6249/data_out_204" BEL "XLXI_6249/data_out_205" BEL
+        "XLXI_6249/data_out_206" BEL "XLXI_6249/data_out_207" BEL
+        "XLXI_6249/data_out_208" BEL "XLXI_6249/data_out_209" BEL
+        "XLXI_6249/data_out_210" BEL "XLXI_6249/data_out_211" BEL
+        "XLXI_6249/data_out_212" BEL "XLXI_6249/data_out_213" BEL
+        "XLXI_6249/data_out_214" BEL "XLXI_6249/data_out_215" BEL
+        "XLXI_6249/data_out_216" BEL "XLXI_6249/data_out_217" BEL
+        "XLXI_6249/data_out_218" BEL "XLXI_6249/data_out_219" BEL
+        "XLXI_6249/data_out_220" BEL "XLXI_6249/data_out_221" BEL
+        "XLXI_6249/data_out_222" BEL "XLXI_6249/data_out_223" BEL
+        "XLXI_6249/data_out_224" BEL "XLXI_6249/data_out_225" BEL
+        "XLXI_6249/data_out_226" BEL "XLXI_6249/data_out_227" BEL
+        "XLXI_6249/data_out_228" BEL "XLXI_6249/data_out_229" BEL
+        "XLXI_6249/data_out_230" BEL "XLXI_6249/data_out_231" BEL
+        "XLXI_6249/data_out_232" BEL "XLXI_6249/data_out_233" BEL
+        "XLXI_6249/data_out_234" BEL "XLXI_6249/data_out_235" BEL
+        "XLXI_6249/data_out_236" BEL "XLXI_6249/data_out_237" BEL
+        "XLXI_6249/data_out_238" BEL "XLXI_6249/data_out_239" BEL
+        "XLXI_6249/data_out_240" BEL "XLXI_6249/data_out_241" BEL
+        "XLXI_6249/data_out_242" BEL "XLXI_6249/data_out_243" BEL
+        "XLXI_6249/data_out_244" BEL "XLXI_6249/data_out_245" BEL
+        "XLXI_6249/data_out_246" BEL "XLXI_6249/data_out_247" BEL
+        "XLXI_6249/data_out_248" BEL "XLXI_6249/data_out_249" BEL
+        "XLXI_6249/data_out_250" BEL "XLXI_6249/data_out_251" BEL
+        "XLXI_6249/data_out_252" BEL "XLXI_6249/data_out_253" BEL
+        "XLXI_6249/data_out_254" BEL "XLXI_6249/data_out_255" BEL
+        "XLXI_6249/out_en_sig" BEL "XLXI_6253/b_data_we" BEL
         "XLXI_6253/count_delay_0" BEL "XLXI_6253/count_delay_1" BEL
         "XLXI_6253/count_delay_2" BEL "XLXI_6299/I_Q0" BEL "XLXI_6299/I_Q1"
         BEL "XLXI_6299/I_Q2" BEL "XLXI_6299/I_Q3" BEL "XLXI_6299/I_Q4" BEL
@@ -9883,6 +9889,10 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
@@ -9898,10 +9908,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -11990,16 +11996,6 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/state_3"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
-        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_0"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_1"
@@ -12021,6 +12017,16 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_9"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_10"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
         BEL "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/busy"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/delay_count_0"
@@ -12819,6 +12825,16 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -12963,24 +12979,20 @@ TIMEGRP MASTER_CLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_3"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_GMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_FMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_4"
@@ -17802,144 +17814,144 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6185/cnt_sig_25" BEL "XLXI_6185/cnt_sig_26" BEL
         "XLXI_6185/cnt_sig_27" BEL "XLXI_6185/cnt_sig_28" BEL
         "XLXI_6185/cnt_sig_29" BEL "XLXI_6185/cnt_sig_30" BEL
-        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/out_en_sig" BEL
-        "XLXI_6249/samplesSinceTrig_0" BEL "XLXI_6249/samplesSinceTrig_1" BEL
-        "XLXI_6249/samplesSinceTrig_2" BEL "XLXI_6249/samplesSinceTrig_3" BEL
-        "XLXI_6249/samplesSinceTrig_4" BEL "XLXI_6249/samplesSinceTrig_5" BEL
-        "XLXI_6249/samplesSinceTrig_6" BEL "XLXI_6249/samplesSinceTrig_7" BEL
-        "XLXI_6249/samplesSinceTrig_8" BEL "XLXI_6249/samplesSinceTrig_9" BEL
-        "XLXI_6249/samplesSinceTrig_10" BEL "XLXI_6249/samplesSinceTrig_11"
-        BEL "XLXI_6249/samplesSinceTrig_12" BEL
-        "XLXI_6249/samplesSinceTrig_13" BEL "XLXI_6249/samplesSinceTrig_14"
-        BEL "XLXI_6249/samplesSinceTrig_15" BEL "XLXI_6249/data_out_0" BEL
-        "XLXI_6249/data_out_1" BEL "XLXI_6249/data_out_2" BEL
-        "XLXI_6249/data_out_3" BEL "XLXI_6249/data_out_4" BEL
-        "XLXI_6249/data_out_5" BEL "XLXI_6249/data_out_6" BEL
-        "XLXI_6249/data_out_7" BEL "XLXI_6249/data_out_8" BEL
-        "XLXI_6249/data_out_9" BEL "XLXI_6249/data_out_10" BEL
-        "XLXI_6249/data_out_11" BEL "XLXI_6249/data_out_12" BEL
-        "XLXI_6249/data_out_13" BEL "XLXI_6249/data_out_14" BEL
-        "XLXI_6249/data_out_15" BEL "XLXI_6249/data_out_16" BEL
-        "XLXI_6249/data_out_17" BEL "XLXI_6249/data_out_18" BEL
-        "XLXI_6249/data_out_19" BEL "XLXI_6249/data_out_20" BEL
-        "XLXI_6249/data_out_21" BEL "XLXI_6249/data_out_22" BEL
-        "XLXI_6249/data_out_23" BEL "XLXI_6249/data_out_24" BEL
-        "XLXI_6249/data_out_25" BEL "XLXI_6249/data_out_26" BEL
-        "XLXI_6249/data_out_27" BEL "XLXI_6249/data_out_28" BEL
-        "XLXI_6249/data_out_29" BEL "XLXI_6249/data_out_30" BEL
-        "XLXI_6249/data_out_31" BEL "XLXI_6249/data_out_32" BEL
-        "XLXI_6249/data_out_33" BEL "XLXI_6249/data_out_34" BEL
-        "XLXI_6249/data_out_35" BEL "XLXI_6249/data_out_36" BEL
-        "XLXI_6249/data_out_37" BEL "XLXI_6249/data_out_38" BEL
-        "XLXI_6249/data_out_39" BEL "XLXI_6249/data_out_40" BEL
-        "XLXI_6249/data_out_41" BEL "XLXI_6249/data_out_42" BEL
-        "XLXI_6249/data_out_43" BEL "XLXI_6249/data_out_44" BEL
-        "XLXI_6249/data_out_45" BEL "XLXI_6249/data_out_46" BEL
-        "XLXI_6249/data_out_47" BEL "XLXI_6249/data_out_48" BEL
-        "XLXI_6249/data_out_49" BEL "XLXI_6249/data_out_50" BEL
-        "XLXI_6249/data_out_51" BEL "XLXI_6249/data_out_52" BEL
-        "XLXI_6249/data_out_53" BEL "XLXI_6249/data_out_54" BEL
-        "XLXI_6249/data_out_55" BEL "XLXI_6249/data_out_56" BEL
-        "XLXI_6249/data_out_57" BEL "XLXI_6249/data_out_58" BEL
-        "XLXI_6249/data_out_59" BEL "XLXI_6249/data_out_60" BEL
-        "XLXI_6249/data_out_61" BEL "XLXI_6249/data_out_62" BEL
-        "XLXI_6249/data_out_63" BEL "XLXI_6249/data_out_64" BEL
-        "XLXI_6249/data_out_65" BEL "XLXI_6249/data_out_66" BEL
-        "XLXI_6249/data_out_67" BEL "XLXI_6249/data_out_68" BEL
-        "XLXI_6249/data_out_69" BEL "XLXI_6249/data_out_70" BEL
-        "XLXI_6249/data_out_71" BEL "XLXI_6249/data_out_72" BEL
-        "XLXI_6249/data_out_73" BEL "XLXI_6249/data_out_74" BEL
-        "XLXI_6249/data_out_75" BEL "XLXI_6249/data_out_76" BEL
-        "XLXI_6249/data_out_77" BEL "XLXI_6249/data_out_78" BEL
-        "XLXI_6249/data_out_79" BEL "XLXI_6249/data_out_80" BEL
-        "XLXI_6249/data_out_81" BEL "XLXI_6249/data_out_82" BEL
-        "XLXI_6249/data_out_83" BEL "XLXI_6249/data_out_84" BEL
-        "XLXI_6249/data_out_85" BEL "XLXI_6249/data_out_86" BEL
-        "XLXI_6249/data_out_87" BEL "XLXI_6249/data_out_88" BEL
-        "XLXI_6249/data_out_89" BEL "XLXI_6249/data_out_90" BEL
-        "XLXI_6249/data_out_91" BEL "XLXI_6249/data_out_92" BEL
-        "XLXI_6249/data_out_93" BEL "XLXI_6249/data_out_94" BEL
-        "XLXI_6249/data_out_95" BEL "XLXI_6249/data_out_96" BEL
-        "XLXI_6249/data_out_97" BEL "XLXI_6249/data_out_98" BEL
-        "XLXI_6249/data_out_99" BEL "XLXI_6249/data_out_100" BEL
-        "XLXI_6249/data_out_101" BEL "XLXI_6249/data_out_102" BEL
-        "XLXI_6249/data_out_103" BEL "XLXI_6249/data_out_104" BEL
-        "XLXI_6249/data_out_105" BEL "XLXI_6249/data_out_106" BEL
-        "XLXI_6249/data_out_107" BEL "XLXI_6249/data_out_108" BEL
-        "XLXI_6249/data_out_109" BEL "XLXI_6249/data_out_110" BEL
-        "XLXI_6249/data_out_111" BEL "XLXI_6249/data_out_112" BEL
-        "XLXI_6249/data_out_113" BEL "XLXI_6249/data_out_114" BEL
-        "XLXI_6249/data_out_115" BEL "XLXI_6249/data_out_116" BEL
-        "XLXI_6249/data_out_117" BEL "XLXI_6249/data_out_118" BEL
-        "XLXI_6249/data_out_119" BEL "XLXI_6249/data_out_120" BEL
-        "XLXI_6249/data_out_121" BEL "XLXI_6249/data_out_122" BEL
-        "XLXI_6249/data_out_123" BEL "XLXI_6249/data_out_124" BEL
-        "XLXI_6249/data_out_125" BEL "XLXI_6249/data_out_126" BEL
-        "XLXI_6249/data_out_127" BEL "XLXI_6249/data_out_128" BEL
-        "XLXI_6249/data_out_129" BEL "XLXI_6249/data_out_130" BEL
-        "XLXI_6249/data_out_131" BEL "XLXI_6249/data_out_132" BEL
-        "XLXI_6249/data_out_133" BEL "XLXI_6249/data_out_134" BEL
-        "XLXI_6249/data_out_135" BEL "XLXI_6249/data_out_136" BEL
-        "XLXI_6249/data_out_137" BEL "XLXI_6249/data_out_138" BEL
-        "XLXI_6249/data_out_139" BEL "XLXI_6249/data_out_140" BEL
-        "XLXI_6249/data_out_141" BEL "XLXI_6249/data_out_142" BEL
-        "XLXI_6249/data_out_143" BEL "XLXI_6249/data_out_144" BEL
-        "XLXI_6249/data_out_145" BEL "XLXI_6249/data_out_146" BEL
-        "XLXI_6249/data_out_147" BEL "XLXI_6249/data_out_148" BEL
-        "XLXI_6249/data_out_149" BEL "XLXI_6249/data_out_150" BEL
-        "XLXI_6249/data_out_151" BEL "XLXI_6249/data_out_152" BEL
-        "XLXI_6249/data_out_153" BEL "XLXI_6249/data_out_154" BEL
-        "XLXI_6249/data_out_155" BEL "XLXI_6249/data_out_156" BEL
-        "XLXI_6249/data_out_157" BEL "XLXI_6249/data_out_158" BEL
-        "XLXI_6249/data_out_159" BEL "XLXI_6249/data_out_160" BEL
-        "XLXI_6249/data_out_161" BEL "XLXI_6249/data_out_162" BEL
-        "XLXI_6249/data_out_163" BEL "XLXI_6249/data_out_164" BEL
-        "XLXI_6249/data_out_165" BEL "XLXI_6249/data_out_166" BEL
-        "XLXI_6249/data_out_167" BEL "XLXI_6249/data_out_168" BEL
-        "XLXI_6249/data_out_169" BEL "XLXI_6249/data_out_170" BEL
-        "XLXI_6249/data_out_171" BEL "XLXI_6249/data_out_172" BEL
-        "XLXI_6249/data_out_173" BEL "XLXI_6249/data_out_174" BEL
-        "XLXI_6249/data_out_175" BEL "XLXI_6249/data_out_176" BEL
-        "XLXI_6249/data_out_177" BEL "XLXI_6249/data_out_178" BEL
-        "XLXI_6249/data_out_179" BEL "XLXI_6249/data_out_180" BEL
-        "XLXI_6249/data_out_181" BEL "XLXI_6249/data_out_182" BEL
-        "XLXI_6249/data_out_183" BEL "XLXI_6249/data_out_184" BEL
-        "XLXI_6249/data_out_185" BEL "XLXI_6249/data_out_186" BEL
-        "XLXI_6249/data_out_187" BEL "XLXI_6249/data_out_188" BEL
-        "XLXI_6249/data_out_189" BEL "XLXI_6249/data_out_190" BEL
-        "XLXI_6249/data_out_191" BEL "XLXI_6249/data_out_192" BEL
-        "XLXI_6249/data_out_193" BEL "XLXI_6249/data_out_194" BEL
-        "XLXI_6249/data_out_195" BEL "XLXI_6249/data_out_196" BEL
-        "XLXI_6249/data_out_197" BEL "XLXI_6249/data_out_198" BEL
-        "XLXI_6249/data_out_199" BEL "XLXI_6249/data_out_200" BEL
-        "XLXI_6249/data_out_201" BEL "XLXI_6249/data_out_202" BEL
-        "XLXI_6249/data_out_203" BEL "XLXI_6249/data_out_204" BEL
-        "XLXI_6249/data_out_205" BEL "XLXI_6249/data_out_206" BEL
-        "XLXI_6249/data_out_207" BEL "XLXI_6249/data_out_208" BEL
-        "XLXI_6249/data_out_209" BEL "XLXI_6249/data_out_210" BEL
-        "XLXI_6249/data_out_211" BEL "XLXI_6249/data_out_212" BEL
-        "XLXI_6249/data_out_213" BEL "XLXI_6249/data_out_214" BEL
-        "XLXI_6249/data_out_215" BEL "XLXI_6249/data_out_216" BEL
-        "XLXI_6249/data_out_217" BEL "XLXI_6249/data_out_218" BEL
-        "XLXI_6249/data_out_219" BEL "XLXI_6249/data_out_220" BEL
-        "XLXI_6249/data_out_221" BEL "XLXI_6249/data_out_222" BEL
-        "XLXI_6249/data_out_223" BEL "XLXI_6249/data_out_224" BEL
-        "XLXI_6249/data_out_225" BEL "XLXI_6249/data_out_226" BEL
-        "XLXI_6249/data_out_227" BEL "XLXI_6249/data_out_228" BEL
-        "XLXI_6249/data_out_229" BEL "XLXI_6249/data_out_230" BEL
-        "XLXI_6249/data_out_231" BEL "XLXI_6249/data_out_232" BEL
-        "XLXI_6249/data_out_233" BEL "XLXI_6249/data_out_234" BEL
-        "XLXI_6249/data_out_235" BEL "XLXI_6249/data_out_236" BEL
-        "XLXI_6249/data_out_237" BEL "XLXI_6249/data_out_238" BEL
-        "XLXI_6249/data_out_239" BEL "XLXI_6249/data_out_240" BEL
-        "XLXI_6249/data_out_241" BEL "XLXI_6249/data_out_242" BEL
-        "XLXI_6249/data_out_243" BEL "XLXI_6249/data_out_244" BEL
-        "XLXI_6249/data_out_245" BEL "XLXI_6249/data_out_246" BEL
-        "XLXI_6249/data_out_247" BEL "XLXI_6249/data_out_248" BEL
-        "XLXI_6249/data_out_249" BEL "XLXI_6249/data_out_250" BEL
-        "XLXI_6249/data_out_251" BEL "XLXI_6249/data_out_252" BEL
-        "XLXI_6249/data_out_253" BEL "XLXI_6249/data_out_254" BEL
-        "XLXI_6249/data_out_255" BEL "XLXI_6253/b_data_we" BEL
+        "XLXI_6185/cnt_sig_31" BEL "XLXI_6249/samplesSinceTrig_0" BEL
+        "XLXI_6249/samplesSinceTrig_1" BEL "XLXI_6249/samplesSinceTrig_2" BEL
+        "XLXI_6249/samplesSinceTrig_3" BEL "XLXI_6249/samplesSinceTrig_4" BEL
+        "XLXI_6249/samplesSinceTrig_5" BEL "XLXI_6249/samplesSinceTrig_6" BEL
+        "XLXI_6249/samplesSinceTrig_7" BEL "XLXI_6249/samplesSinceTrig_8" BEL
+        "XLXI_6249/samplesSinceTrig_9" BEL "XLXI_6249/samplesSinceTrig_10" BEL
+        "XLXI_6249/samplesSinceTrig_11" BEL "XLXI_6249/samplesSinceTrig_12"
+        BEL "XLXI_6249/samplesSinceTrig_13" BEL
+        "XLXI_6249/samplesSinceTrig_14" BEL "XLXI_6249/samplesSinceTrig_15"
+        BEL "XLXI_6249/data_out_0" BEL "XLXI_6249/data_out_1" BEL
+        "XLXI_6249/data_out_2" BEL "XLXI_6249/data_out_3" BEL
+        "XLXI_6249/data_out_4" BEL "XLXI_6249/data_out_5" BEL
+        "XLXI_6249/data_out_6" BEL "XLXI_6249/data_out_7" BEL
+        "XLXI_6249/data_out_8" BEL "XLXI_6249/data_out_9" BEL
+        "XLXI_6249/data_out_10" BEL "XLXI_6249/data_out_11" BEL
+        "XLXI_6249/data_out_12" BEL "XLXI_6249/data_out_13" BEL
+        "XLXI_6249/data_out_14" BEL "XLXI_6249/data_out_15" BEL
+        "XLXI_6249/data_out_16" BEL "XLXI_6249/data_out_17" BEL
+        "XLXI_6249/data_out_18" BEL "XLXI_6249/data_out_19" BEL
+        "XLXI_6249/data_out_20" BEL "XLXI_6249/data_out_21" BEL
+        "XLXI_6249/data_out_22" BEL "XLXI_6249/data_out_23" BEL
+        "XLXI_6249/data_out_24" BEL "XLXI_6249/data_out_25" BEL
+        "XLXI_6249/data_out_26" BEL "XLXI_6249/data_out_27" BEL
+        "XLXI_6249/data_out_28" BEL "XLXI_6249/data_out_29" BEL
+        "XLXI_6249/data_out_30" BEL "XLXI_6249/data_out_31" BEL
+        "XLXI_6249/data_out_32" BEL "XLXI_6249/data_out_33" BEL
+        "XLXI_6249/data_out_34" BEL "XLXI_6249/data_out_35" BEL
+        "XLXI_6249/data_out_36" BEL "XLXI_6249/data_out_37" BEL
+        "XLXI_6249/data_out_38" BEL "XLXI_6249/data_out_39" BEL
+        "XLXI_6249/data_out_40" BEL "XLXI_6249/data_out_41" BEL
+        "XLXI_6249/data_out_42" BEL "XLXI_6249/data_out_43" BEL
+        "XLXI_6249/data_out_44" BEL "XLXI_6249/data_out_45" BEL
+        "XLXI_6249/data_out_46" BEL "XLXI_6249/data_out_47" BEL
+        "XLXI_6249/data_out_48" BEL "XLXI_6249/data_out_49" BEL
+        "XLXI_6249/data_out_50" BEL "XLXI_6249/data_out_51" BEL
+        "XLXI_6249/data_out_52" BEL "XLXI_6249/data_out_53" BEL
+        "XLXI_6249/data_out_54" BEL "XLXI_6249/data_out_55" BEL
+        "XLXI_6249/data_out_56" BEL "XLXI_6249/data_out_57" BEL
+        "XLXI_6249/data_out_58" BEL "XLXI_6249/data_out_59" BEL
+        "XLXI_6249/data_out_60" BEL "XLXI_6249/data_out_61" BEL
+        "XLXI_6249/data_out_62" BEL "XLXI_6249/data_out_63" BEL
+        "XLXI_6249/data_out_64" BEL "XLXI_6249/data_out_65" BEL
+        "XLXI_6249/data_out_66" BEL "XLXI_6249/data_out_67" BEL
+        "XLXI_6249/data_out_68" BEL "XLXI_6249/data_out_69" BEL
+        "XLXI_6249/data_out_70" BEL "XLXI_6249/data_out_71" BEL
+        "XLXI_6249/data_out_72" BEL "XLXI_6249/data_out_73" BEL
+        "XLXI_6249/data_out_74" BEL "XLXI_6249/data_out_75" BEL
+        "XLXI_6249/data_out_76" BEL "XLXI_6249/data_out_77" BEL
+        "XLXI_6249/data_out_78" BEL "XLXI_6249/data_out_79" BEL
+        "XLXI_6249/data_out_80" BEL "XLXI_6249/data_out_81" BEL
+        "XLXI_6249/data_out_82" BEL "XLXI_6249/data_out_83" BEL
+        "XLXI_6249/data_out_84" BEL "XLXI_6249/data_out_85" BEL
+        "XLXI_6249/data_out_86" BEL "XLXI_6249/data_out_87" BEL
+        "XLXI_6249/data_out_88" BEL "XLXI_6249/data_out_89" BEL
+        "XLXI_6249/data_out_90" BEL "XLXI_6249/data_out_91" BEL
+        "XLXI_6249/data_out_92" BEL "XLXI_6249/data_out_93" BEL
+        "XLXI_6249/data_out_94" BEL "XLXI_6249/data_out_95" BEL
+        "XLXI_6249/data_out_96" BEL "XLXI_6249/data_out_97" BEL
+        "XLXI_6249/data_out_98" BEL "XLXI_6249/data_out_99" BEL
+        "XLXI_6249/data_out_100" BEL "XLXI_6249/data_out_101" BEL
+        "XLXI_6249/data_out_102" BEL "XLXI_6249/data_out_103" BEL
+        "XLXI_6249/data_out_104" BEL "XLXI_6249/data_out_105" BEL
+        "XLXI_6249/data_out_106" BEL "XLXI_6249/data_out_107" BEL
+        "XLXI_6249/data_out_108" BEL "XLXI_6249/data_out_109" BEL
+        "XLXI_6249/data_out_110" BEL "XLXI_6249/data_out_111" BEL
+        "XLXI_6249/data_out_112" BEL "XLXI_6249/data_out_113" BEL
+        "XLXI_6249/data_out_114" BEL "XLXI_6249/data_out_115" BEL
+        "XLXI_6249/data_out_116" BEL "XLXI_6249/data_out_117" BEL
+        "XLXI_6249/data_out_118" BEL "XLXI_6249/data_out_119" BEL
+        "XLXI_6249/data_out_120" BEL "XLXI_6249/data_out_121" BEL
+        "XLXI_6249/data_out_122" BEL "XLXI_6249/data_out_123" BEL
+        "XLXI_6249/data_out_124" BEL "XLXI_6249/data_out_125" BEL
+        "XLXI_6249/data_out_126" BEL "XLXI_6249/data_out_127" BEL
+        "XLXI_6249/data_out_128" BEL "XLXI_6249/data_out_129" BEL
+        "XLXI_6249/data_out_130" BEL "XLXI_6249/data_out_131" BEL
+        "XLXI_6249/data_out_132" BEL "XLXI_6249/data_out_133" BEL
+        "XLXI_6249/data_out_134" BEL "XLXI_6249/data_out_135" BEL
+        "XLXI_6249/data_out_136" BEL "XLXI_6249/data_out_137" BEL
+        "XLXI_6249/data_out_138" BEL "XLXI_6249/data_out_139" BEL
+        "XLXI_6249/data_out_140" BEL "XLXI_6249/data_out_141" BEL
+        "XLXI_6249/data_out_142" BEL "XLXI_6249/data_out_143" BEL
+        "XLXI_6249/data_out_144" BEL "XLXI_6249/data_out_145" BEL
+        "XLXI_6249/data_out_146" BEL "XLXI_6249/data_out_147" BEL
+        "XLXI_6249/data_out_148" BEL "XLXI_6249/data_out_149" BEL
+        "XLXI_6249/data_out_150" BEL "XLXI_6249/data_out_151" BEL
+        "XLXI_6249/data_out_152" BEL "XLXI_6249/data_out_153" BEL
+        "XLXI_6249/data_out_154" BEL "XLXI_6249/data_out_155" BEL
+        "XLXI_6249/data_out_156" BEL "XLXI_6249/data_out_157" BEL
+        "XLXI_6249/data_out_158" BEL "XLXI_6249/data_out_159" BEL
+        "XLXI_6249/data_out_160" BEL "XLXI_6249/data_out_161" BEL
+        "XLXI_6249/data_out_162" BEL "XLXI_6249/data_out_163" BEL
+        "XLXI_6249/data_out_164" BEL "XLXI_6249/data_out_165" BEL
+        "XLXI_6249/data_out_166" BEL "XLXI_6249/data_out_167" BEL
+        "XLXI_6249/data_out_168" BEL "XLXI_6249/data_out_169" BEL
+        "XLXI_6249/data_out_170" BEL "XLXI_6249/data_out_171" BEL
+        "XLXI_6249/data_out_172" BEL "XLXI_6249/data_out_173" BEL
+        "XLXI_6249/data_out_174" BEL "XLXI_6249/data_out_175" BEL
+        "XLXI_6249/data_out_176" BEL "XLXI_6249/data_out_177" BEL
+        "XLXI_6249/data_out_178" BEL "XLXI_6249/data_out_179" BEL
+        "XLXI_6249/data_out_180" BEL "XLXI_6249/data_out_181" BEL
+        "XLXI_6249/data_out_182" BEL "XLXI_6249/data_out_183" BEL
+        "XLXI_6249/data_out_184" BEL "XLXI_6249/data_out_185" BEL
+        "XLXI_6249/data_out_186" BEL "XLXI_6249/data_out_187" BEL
+        "XLXI_6249/data_out_188" BEL "XLXI_6249/data_out_189" BEL
+        "XLXI_6249/data_out_190" BEL "XLXI_6249/data_out_191" BEL
+        "XLXI_6249/data_out_192" BEL "XLXI_6249/data_out_193" BEL
+        "XLXI_6249/data_out_194" BEL "XLXI_6249/data_out_195" BEL
+        "XLXI_6249/data_out_196" BEL "XLXI_6249/data_out_197" BEL
+        "XLXI_6249/data_out_198" BEL "XLXI_6249/data_out_199" BEL
+        "XLXI_6249/data_out_200" BEL "XLXI_6249/data_out_201" BEL
+        "XLXI_6249/data_out_202" BEL "XLXI_6249/data_out_203" BEL
+        "XLXI_6249/data_out_204" BEL "XLXI_6249/data_out_205" BEL
+        "XLXI_6249/data_out_206" BEL "XLXI_6249/data_out_207" BEL
+        "XLXI_6249/data_out_208" BEL "XLXI_6249/data_out_209" BEL
+        "XLXI_6249/data_out_210" BEL "XLXI_6249/data_out_211" BEL
+        "XLXI_6249/data_out_212" BEL "XLXI_6249/data_out_213" BEL
+        "XLXI_6249/data_out_214" BEL "XLXI_6249/data_out_215" BEL
+        "XLXI_6249/data_out_216" BEL "XLXI_6249/data_out_217" BEL
+        "XLXI_6249/data_out_218" BEL "XLXI_6249/data_out_219" BEL
+        "XLXI_6249/data_out_220" BEL "XLXI_6249/data_out_221" BEL
+        "XLXI_6249/data_out_222" BEL "XLXI_6249/data_out_223" BEL
+        "XLXI_6249/data_out_224" BEL "XLXI_6249/data_out_225" BEL
+        "XLXI_6249/data_out_226" BEL "XLXI_6249/data_out_227" BEL
+        "XLXI_6249/data_out_228" BEL "XLXI_6249/data_out_229" BEL
+        "XLXI_6249/data_out_230" BEL "XLXI_6249/data_out_231" BEL
+        "XLXI_6249/data_out_232" BEL "XLXI_6249/data_out_233" BEL
+        "XLXI_6249/data_out_234" BEL "XLXI_6249/data_out_235" BEL
+        "XLXI_6249/data_out_236" BEL "XLXI_6249/data_out_237" BEL
+        "XLXI_6249/data_out_238" BEL "XLXI_6249/data_out_239" BEL
+        "XLXI_6249/data_out_240" BEL "XLXI_6249/data_out_241" BEL
+        "XLXI_6249/data_out_242" BEL "XLXI_6249/data_out_243" BEL
+        "XLXI_6249/data_out_244" BEL "XLXI_6249/data_out_245" BEL
+        "XLXI_6249/data_out_246" BEL "XLXI_6249/data_out_247" BEL
+        "XLXI_6249/data_out_248" BEL "XLXI_6249/data_out_249" BEL
+        "XLXI_6249/data_out_250" BEL "XLXI_6249/data_out_251" BEL
+        "XLXI_6249/data_out_252" BEL "XLXI_6249/data_out_253" BEL
+        "XLXI_6249/data_out_254" BEL "XLXI_6249/data_out_255" BEL
+        "XLXI_6249/out_en_sig" BEL "XLXI_6253/b_data_we" BEL
         "XLXI_6253/count_delay_0" BEL "XLXI_6253/count_delay_1" BEL
         "XLXI_6253/count_delay_2" BEL "XLXI_6299/I_Q0" BEL "XLXI_6299/I_Q1"
         BEL "XLXI_6299/I_Q2" BEL "XLXI_6299/I_Q3" BEL "XLXI_6299/I_Q4" BEL
@@ -18505,6 +18517,10 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_48" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_49" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_50" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
+        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_55" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_56" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_57" BEL
@@ -18520,10 +18536,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/rx_data_fifo_rden_sig" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/Sreg0_FSM_FFd2" BEL
         "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_rden_sig" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_54" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_52" BEL
-        "XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_51" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_0" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_1" BEL
         "XLXI_6227/data_manager_blk/GEC_TX_SEQ_CTL/tx_data_3" BEL
@@ -20612,16 +20624,6 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/state_3"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
-        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_0"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_1"
@@ -20643,6 +20645,16 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_9"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_10"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_11"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_12"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_13"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_14"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/ChecksumCalcBlock/add_sig_15"
         BEL "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/busy"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/delay_count_0"
@@ -21441,6 +21453,16 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6"
         BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd1_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/four_bit_mode_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd3_1"
+        BEL
+        "XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd2_1"
+        BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_valid"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/FilterDataOutBlock/out_data_0"
@@ -21585,24 +21607,20 @@ TIMEGRP GEL_RXCLK = BEL "XLXI_5951" BEL "XLXI_5955" BEL "XLXI_5967" BEL
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_0"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_GMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_GMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1"
         BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/din_latch<4>.SLICEM_FMC15_BLACKBOX"
+        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_1.SLICEM_FMC15_BLACKBOX"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_3_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_3"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_0"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_GMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_GMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1"
-        BEL
-        "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_1.SLICEM_FMC15_BLACKBOX"
-        BEL
+        BEL "XLXI_6227/tx_ctrl_dest_mac<9>.SLICEM_FMC15_BLACKBOX" BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/Mshreg_shReg_43_4_2"
         BEL
         "XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/shReg_43_4"

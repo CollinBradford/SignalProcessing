@@ -59,7 +59,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  4130 paths analyzed, 738 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.974ns.
+ Minimum period is   9.961ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.524ns.
+ Maximum delay is   3.888ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -79,7 +79,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   0.968ns.
+ Maximum delay is   0.949ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -100,9 +100,567 @@ Timing constraint: PATH "TS_D_TO_J_path" TIG;
 Timing constraint: TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" 8 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 212229 paths analyzed, 15236 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.919ns.
+ 317362 paths analyzed, 15349 endpoints analyzed, 73 failing endpoints
+ 73 timing errors detected. (73 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.287ns.
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_6249/data_out_200 (SLICE_X51Y76.G4), 770 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.287ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_200 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.287ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_200
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y10.DOPB2   Trcko_DOPB_NC         2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.F4      net (fanout=3)        0.817   peak_finder_din<40>
+    SLICE_X45Y76.COUT    Topcyf                0.573   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X51Y76.G4      net (fanout=19)       0.598   XLXI_6249/data_out_and000011
+    SLICE_X51Y76.CLK     Tgck                  0.231   ethernet_fifo_din<200>
+                                                       XLXI_6249/data_out_200_rstpot
+                                                       XLXI_6249/data_out_200
+    -------------------------------------------------  ---------------------------
+    Total                                      8.287ns (4.188ns logic, 4.099ns route)
+                                                       (50.5% logic, 49.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.272ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_200 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.272ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_200
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y9.DOB16    Trcko_DOB_NC          2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.G4      net (fanout=3)        0.816   peak_finder_din<41>
+    SLICE_X45Y76.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X51Y76.G4      net (fanout=19)       0.598   XLXI_6249/data_out_and000011
+    SLICE_X51Y76.CLK     Tgck                  0.231   ethernet_fifo_din<200>
+                                                       XLXI_6249/data_out_200_rstpot
+                                                       XLXI_6249/data_out_200
+    -------------------------------------------------  ---------------------------
+    Total                                      8.272ns (4.174ns logic, 4.098ns route)
+                                                       (50.5% logic, 49.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.262ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_200 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.262ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_200
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y11.DOB16   Trcko_DOB_NC          2.100   ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X39Y84.G4      net (fanout=3)        0.807   peak_finder_din<169>
+    SLICE_X39Y84.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0013
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<7>
+    SLICE_X41Y84.G1      net (fanout=2)        1.164   XLXI_6249/data_out_cmp_le0013
+    SLICE_X41Y84.COUT    Topcyg                0.559   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X51Y76.G4      net (fanout=19)       0.598   XLXI_6249/data_out_and000011
+    SLICE_X51Y76.CLK     Tgck                  0.231   ethernet_fifo_din<200>
+                                                       XLXI_6249/data_out_200_rstpot
+                                                       XLXI_6249/data_out_200
+    -------------------------------------------------  ---------------------------
+    Total                                      8.262ns (4.160ns logic, 4.102ns route)
+                                                       (50.4% logic, 49.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_6249/data_out_201 (SLICE_X50Y76.G4), 770 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.282ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_201 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.282ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_201
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y10.DOPB2   Trcko_DOPB_NC         2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.F4      net (fanout=3)        0.817   peak_finder_din<40>
+    SLICE_X45Y76.COUT    Topcyf                0.573   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X50Y76.G4      net (fanout=19)       0.611   XLXI_6249/data_out_and000011
+    SLICE_X50Y76.CLK     Tgck                  0.213   ethernet_fifo_din<201>
+                                                       XLXI_6249/data_out_201_rstpot
+                                                       XLXI_6249/data_out_201
+    -------------------------------------------------  ---------------------------
+    Total                                      8.282ns (4.170ns logic, 4.112ns route)
+                                                       (50.4% logic, 49.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.267ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_201 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.267ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_201
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y9.DOB16    Trcko_DOB_NC          2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.G4      net (fanout=3)        0.816   peak_finder_din<41>
+    SLICE_X45Y76.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X50Y76.G4      net (fanout=19)       0.611   XLXI_6249/data_out_and000011
+    SLICE_X50Y76.CLK     Tgck                  0.213   ethernet_fifo_din<201>
+                                                       XLXI_6249/data_out_201_rstpot
+                                                       XLXI_6249/data_out_201
+    -------------------------------------------------  ---------------------------
+    Total                                      8.267ns (4.156ns logic, 4.111ns route)
+                                                       (50.3% logic, 49.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.257ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_201 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.257ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_201
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y11.DOB16   Trcko_DOB_NC          2.100   ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X39Y84.G4      net (fanout=3)        0.807   peak_finder_din<169>
+    SLICE_X39Y84.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0013
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<7>
+    SLICE_X41Y84.G1      net (fanout=2)        1.164   XLXI_6249/data_out_cmp_le0013
+    SLICE_X41Y84.COUT    Topcyg                0.559   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X48Y78.G4      net (fanout=15)       1.533   XLXI_6249/out_en_sig_or0001
+    SLICE_X48Y78.Y       Tilo                  0.195   ethernet_fifo_din<199>
+                                                       XLXI_6249/data_out_and00001_2
+    SLICE_X50Y76.G4      net (fanout=19)       0.611   XLXI_6249/data_out_and000011
+    SLICE_X50Y76.CLK     Tgck                  0.213   ethernet_fifo_din<201>
+                                                       XLXI_6249/data_out_201_rstpot
+                                                       XLXI_6249/data_out_201
+    -------------------------------------------------  ---------------------------
+    Total                                      8.257ns (4.142ns logic, 4.115ns route)
+                                                       (50.2% logic, 49.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_6249/data_out_136 (SLICE_X41Y58.F4), 770 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.270ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_136 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.270ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_136
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y10.DOPB2   Trcko_DOPB_NC         2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.F4      net (fanout=3)        0.817   peak_finder_din<40>
+    SLICE_X45Y76.COUT    Topcyf                0.573   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<0>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X40Y64.G2      net (fanout=15)       1.520   XLXI_6249/out_en_sig_or0001
+    SLICE_X40Y64.Y       Tilo                  0.195   ethernet_fifo_din<123>
+                                                       XLXI_6249/data_out_and00001_6
+    SLICE_X41Y58.F4      net (fanout=19)       0.590   XLXI_6249/data_out_and000015
+    SLICE_X41Y58.CLK     Tfck                  0.235   ethernet_fifo_din<136>
+                                                       XLXI_6249/data_out_136_rstpot
+                                                       XLXI_6249/data_out_136
+    -------------------------------------------------  ---------------------------
+    Total                                      8.270ns (4.192ns logic, 4.078ns route)
+                                                       (50.7% logic, 49.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.255ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_136 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.255ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_136
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X2Y9.DOB16    Trcko_DOB_NC          2.100   ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_R/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X45Y76.G4      net (fanout=3)        0.816   peak_finder_din<41>
+    SLICE_X45Y76.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<1>
+    SLICE_X45Y77.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<3>
+    SLICE_X45Y78.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0009_cy<5>
+    SLICE_X45Y79.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0009
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0009_cy<7>
+    SLICE_X41Y84.F1      net (fanout=2)        1.151   XLXI_6249/data_out_cmp_le0009
+    SLICE_X41Y84.COUT    Topcyf                0.573   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<0>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X40Y64.G2      net (fanout=15)       1.520   XLXI_6249/out_en_sig_or0001
+    SLICE_X40Y64.Y       Tilo                  0.195   ethernet_fifo_din<123>
+                                                       XLXI_6249/data_out_and00001_6
+    SLICE_X41Y58.F4      net (fanout=19)       0.590   XLXI_6249/data_out_and000015
+    SLICE_X41Y58.CLK     Tfck                  0.235   ethernet_fifo_din<136>
+                                                       XLXI_6249/data_out_136_rstpot
+                                                       XLXI_6249/data_out_136
+    -------------------------------------------------  ---------------------------
+    Total                                      8.255ns (4.178ns logic, 4.077ns route)
+                                                       (50.6% logic, 49.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:          XLXI_6249/data_out_136 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      8.245ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         GTX_CLK_0_sig rising at 0.000ns
+  Destination Clock:    GTX_CLK_0_sig rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to XLXI_6249/data_out_136
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y11.DOB16   Trcko_DOB_NC          2.100   ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+                                                       ADC_FIFO_F/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP
+    SLICE_X39Y84.G4      net (fanout=3)        0.807   peak_finder_din<169>
+    SLICE_X39Y84.COUT    Topcyg                0.559   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_lut<1>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<1>
+    SLICE_X39Y85.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<2>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<3>
+    SLICE_X39Y86.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<4>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_data_out_cmp_le0013_cy<5>
+    SLICE_X39Y87.COUT    Tbyp                  0.086   XLXI_6249/data_out_cmp_le0013
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<6>
+                                                       XLXI_6249/Mcompar_data_out_cmp_le0013_cy<7>
+    SLICE_X41Y84.G1      net (fanout=2)        1.164   XLXI_6249/data_out_cmp_le0013
+    SLICE_X41Y84.COUT    Topcyg                0.559   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_lut<1>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<1>
+    SLICE_X41Y85.COUT    Tbyp                  0.086   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<2>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<3>
+    SLICE_X41Y86.COUT    Tbyp                  0.086   threshold<5>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<4>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.CIN     net (fanout=1)        0.000   XLXI_6249/out_en_sig_or0001_wg_cy<5>
+    SLICE_X41Y87.COUT    Tbyp                  0.086   threshold<7>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<6>
+                                                       XLXI_6249/out_en_sig_or0001_wg_cy<7>
+    SLICE_X40Y64.G2      net (fanout=15)       1.520   XLXI_6249/out_en_sig_or0001
+    SLICE_X40Y64.Y       Tilo                  0.195   ethernet_fifo_din<123>
+                                                       XLXI_6249/data_out_and00001_6
+    SLICE_X41Y58.F4      net (fanout=19)       0.590   XLXI_6249/data_out_and000015
+    SLICE_X41Y58.CLK     Tfck                  0.235   ethernet_fifo_din<136>
+                                                       XLXI_6249/data_out_136_rstpot
+                                                       XLXI_6249/data_out_136
+    -------------------------------------------------  ---------------------------
+    Total                                      8.245ns (4.164ns logic, 4.081ns route)
+                                                       (50.5% logic, 49.5% route)
+
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -112,7 +670,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  1237 paths analyzed, 457 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.892ns.
+ Minimum period is  10.468ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -172,13 +730,13 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.919ns|      7.497ns|            0|            0|       212229|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      8.287ns|      7.497ns|           73|            0|       317362|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
-All constraints were met.
+1 constraint not met.
 
 
 Data Sheet report:
@@ -190,7 +748,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.919|         |         |         |
+GEL_RXCLK      |    8.287|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -198,30 +756,30 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    5.342|    4.446|    2.255|         |
+SECONDARY_CLK  |    6.157|    5.234|    2.245|         |
 ---------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+Timing errors: 73  Score: 8474  (Setup/Max: 8474, Hold: 0)
 
-Constraints cover 219081 paths, 0 nets, and 31798 connections
+Constraints cover 324214 paths, 0 nets, and 32411 connections
 
 Design statistics:
-   Minimum period:   8.974ns   (Maximum frequency: 111.433MHz)
-   Maximum path delay from/to any node:   3.524ns
+   Minimum period:  10.468ns   (Maximum frequency:  95.529MHz)
+   Maximum path delay from/to any node:   3.888ns
 
 
-Analysis completed Fri Jul 29 09:36:15 2016 
+Analysis completed Fri Jul 29 11:37:29 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 416 MB
+Peak Memory Usage: 419 MB
 
 
 
