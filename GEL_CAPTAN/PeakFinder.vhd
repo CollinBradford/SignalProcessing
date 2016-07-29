@@ -44,18 +44,22 @@ architecture Behavioral of PeakFinder is
 	signal userSamplesSinceTrig : unsigned(15 downto 0);
 	signal out_en_sig : std_logic;
 begin
+	--Take a set of rising samples
 	data(0) <= unsigned(data_in(7 downto 0));--First sample
 	data(1) <= unsigned(data_in(15 downto 8));
 	data(2) <= unsigned(data_in(23 downto 16));
 	data(3) <= unsigned(data_in(31 downto 24));
-	data(4) <= unsigned(data_in(39 downto 32));
-	data(5) <= unsigned(data_in(47 downto 40));
-	data(6) <= unsigned(data_in(55 downto 48));
-	data(7) <= unsigned(data_in(63 downto 56));--throught the 
-	data(8) <= unsigned(data_in(71 downto 64));
-	data(9) <= unsigned(data_in(79 downto 72));
-	data(10) <= unsigned(data_in(87 downto 80));
-	data(11) <= unsigned(data_in(95 downto 88));
+	--Take a set of falling samples
+	data(4) <= unsigned(data_in(71 downto 64));
+	data(5) <= unsigned(data_in(79 downto 72));
+	data(6) <= unsigned(data_in(87 downto 80));
+	data(7) <= unsigned(data_in(95 downto 88));
+	--Take a set of rising samples.
+	data(8) <= unsigned(data_in(39 downto 32));
+	data(9) <= unsigned(data_in(47 downto 40));
+	data(10) <= unsigned(data_in(55 downto 48));
+	data(11) <= unsigned(data_in(63 downto 56));--throught the 
+	--And take a set of falling samples.  
 	data(12) <= unsigned(data_in(103 downto 96));
 	data(13) <= unsigned(data_in(111 downto 104));
 	data(14) <= unsigned(data_in(119 downto 112));

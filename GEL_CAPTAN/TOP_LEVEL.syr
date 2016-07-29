@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -111,133 +111,90 @@ Cores Search Directories           : {"../ipcore_dir" "ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/params_package.vhd" in Library work.
-Package <params_package> compiled.
-Package body <params_package> compiled.
+Architecture params_package of Entity params_package is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/address_container.vhd" in Library work.
-Entity <address_container> compiled.
-Entity <address_container> (Architecture <arch>) compiled.
+Architecture arch of Entity address_container is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/arp_reply.vhd" in Library work.
-Entity <arp_reply> compiled.
-Entity <arp_reply> (Architecture <arp_reply_arch>) compiled.
+Architecture arp_reply_arch of Entity arp_reply is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/or33.vhd" in Library work.
-Entity <or33> compiled.
-Entity <or33> (Architecture <or33_arch>) compiled.
+Architecture or33_arch of Entity or33 is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/ip_checksum_calc.vhd" in Library work.
-Entity <ip_checksum_calc> compiled.
-Entity <ip_checksum_calc> (Architecture <arch>) compiled.
+Architecture arch of Entity ip_checksum_calc is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/create_packet.vhd" in Library work.
-Entity <create_packet> compiled.
-Entity <create_packet> (Architecture <create_packet_arch>) compiled.
+Architecture create_packet_arch of Entity create_packet is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/dataout_mux.vhd" in Library work.
-Entity <dataout_mux> compiled.
-Entity <dataout_mux> (Architecture <dataout_mux_arch>) compiled.
+Architecture dataout_mux_arch of Entity dataout_mux is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/decipherer.vhd" in Library work.
-Entity <decipherer> compiled.
-Entity <decipherer> (Architecture <decipherer_arch>) compiled.
+Architecture decipherer_arch of Entity decipherer is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/filter_data_out.vhd" in Library work.
-Entity <filter_data_out> compiled.
-Entity <filter_data_out> (Architecture <filter_data_out_arch>) compiled.
+Architecture filter_data_out_arch of Entity filter_data_out is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/icmp_ping_checksum_calc.vhd" in Library work.
-Entity <icmp_ping_checksum_calc> compiled.
-Entity <icmp_ping_checksum_calc> (Architecture <icmp_ping_checksum_calc_arch>) compiled.
+Architecture icmp_ping_checksum_calc_arch of Entity icmp_ping_checksum_calc is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/icmp_ping_shift_reg.vhd" in Library work.
-Entity <icmp_ping_shift_reg> compiled.
-Entity <icmp_ping_shift_reg> (Architecture <arch>) compiled.
+Architecture arch of Entity icmp_ping_shift_reg is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/udp_data_splicer.vhd" in Library work.
-Entity <udp_data_splicer> compiled.
-Entity <udp_data_splicer> (Architecture <udp_data_splicer_arch>) compiled.
+Architecture udp_data_splicer_arch of Entity udp_data_splicer is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/user_addrs_mux.vhd" in Library work.
-Entity <user_addrs_mux> compiled.
-Entity <user_addrs_mux> (Architecture <user_addrs_mux_arch>) compiled.
+Architecture user_addrs_mux_arch of Entity user_addrs_mux is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
-Entity <DATA_FIFO_0> compiled.
-Entity <DATA_FIFO_0> (Architecture <DATA_FIFO_0_a>) compiled.
+Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
-Entity <INFO_FIFO_0> compiled.
-Entity <INFO_FIFO_0> (Architecture <INFO_FIFO_0_a>) compiled.
+Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/ipcore_dir/ADDR_FIFO.vhd" in Library work.
-Entity <ADDR_FIFO> compiled.
-Entity <ADDR_FIFO> (Architecture <ADDR_FIFO_a>) compiled.
+Architecture addr_fifo_a of Entity addr_fifo is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/burst_controller_sm.vhd" in Library work.
-Entity <burst_controller_sm> compiled.
-Entity <burst_controller_sm> (Architecture <burst_controller_sm_arch>) compiled.
+Architecture burst_controller_sm_arch of Entity burst_controller_sm is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/rx_ctl.vhd" in Library work.
-Entity <rx_ctl> compiled.
-Entity <rx_ctl> (Architecture <arch>) compiled.
+Architecture arch of Entity rx_ctl is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/ram_comm_dec.vhd" in Library work.
-Entity <ram_comm_dec> compiled.
-Entity <ram_comm_dec> (Architecture <arch>) compiled.
+Architecture arch of Entity ram_comm_dec is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/tx_seq_ctl.vhd" in Library work.
-Entity <tx_seq_ctl> compiled.
-Entity <tx_seq_ctl> (Architecture <arch>) compiled.
+Architecture arch of Entity tx_seq_ctl is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/ethernet_controller.vhd" in Library work.
-Entity <ethernet_controller> compiled.
-Entity <ethernet_controller> (Architecture <arch>) compiled.
+Architecture arch of Entity ethernet_controller is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/xmii_handler.vhd" in Library work.
-Entity <MII_100_1000_handler> compiled.
-Entity <MII_100_1000_handler> (Architecture <arch>) compiled.
+Architecture arch of Entity mii_100_1000_handler is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/crc_splice.vhd" in Library work.
-Entity <crc_splice> compiled.
-Entity <crc_splice> (Architecture <arch>) compiled.
+Architecture arch of Entity crc_splice is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/ethernet_controller_wrapper.vhd" in Library work.
-Entity <ethernet_controller_wrapper> compiled.
-Entity <ethernet_controller_wrapper> (Architecture <arch>) compiled.
+Architecture arch of Entity ethernet_controller_wrapper is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/data_manager.vhd" in Library work.
-Entity <data_manager> compiled.
-Entity <data_manager> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity data_manager is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/burst_traffic_controller.vhd" in Library work.
-Entity <burst_traffic_controller> compiled.
-Entity <burst_traffic_controller> (Architecture <burst_traffic_controller_arch>) compiled.
+Architecture burst_traffic_controller_arch of Entity burst_traffic_controller is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/reset_mgr.vhd" in Library work.
-Entity <reset_mgr> compiled.
-Entity <reset_mgr> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity reset_mgr is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
-Entity <ADC_FIFO> compiled.
-Entity <ADC_FIFO> (Architecture <ADC_FIFO_a>) compiled.
+Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
-Entity <VERSION_BLK> compiled.
-Entity <VERSION_BLK> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity version_blk is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/MUX64_8.vhd" in Library work.
-Entity <MUX64_8> compiled.
-Entity <MUX64_8> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mux64_8 is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
-Entity <buffer_10bit> compiled.
-Entity <buffer_10bit> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity buffer_10bit is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
-Entity <trigger_recv_blk> compiled.
-Entity <trigger_recv_blk> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity trigger_recv_blk is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/oei/ethernet_interface.vhd" in Library work.
-Entity <ethernet_interface> compiled.
-Entity <ethernet_interface> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity ethernet_interface is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/Pulser.vhd" in Library work.
-Entity <Pulser> compiled.
-Entity <Pulser> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity pulser is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd" in Library work.
-Entity <ethernet_FIFO> compiled.
-Entity <ethernet_FIFO> (Architecture <ethernet_FIFO_a>) compiled.
+Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Entity <PeakFinder> compiled.
-Entity <PeakFinder> (Architecture <Behavioral>) compiled.
+Entity <peakfinder> compiled.
+Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/psudoData.vhd" in Library work.
-Entity <psudoData> compiled.
-Entity <psudoData> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity psudodata is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/psudo_data_allOne.vhd" in Library work.
-Entity <psudo_data_allOne> compiled.
-Entity <psudo_data_allOne> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity psudo_data_allone is up to date.
 Compiling vhdl file "D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <FD16RE_MXILINX_TOP_LEVEL> compiled.
-Entity <FD16RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8RE_MXILINX_TOP_LEVEL> compiled.
-Entity <FD8RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1_MXILINX_TOP_LEVEL> compiled.
-Entity <M2_1_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <D4_16E_MXILINX_TOP_LEVEL> compiled.
-Entity <D4_16E_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <TOP_LEVEL> compiled.
-Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -249,35 +206,35 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Pulser> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <Pulser> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <data_send> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <data_send> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <psudoData> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <psudoData> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -333,7 +290,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf" line 1236: Unconnected output port 'full' of component 'ADC_FIFO'.
 WARNING:Xst:753 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf" line 1236: Unconnected output port 'overflow' of component 'ADC_FIFO'.
 WARNING:Xst:2211 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf" line 1236: Instantiating black box module <ADC_FIFO>.
@@ -703,19 +660,19 @@ WARNING:Xst:2211 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf" line
     Set user-defined property "INIT =  0" for instance <XLXI_6325> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
-Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
 Entity <D4_16E_MXILINX_TOP_LEVEL> analyzed. Unit <D4_16E_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <VERSION_BLK> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <VERSION_BLK> in library <work> (Architecture <behavioral>).
 Entity <VERSION_BLK> analyzed. Unit <VERSION_BLK> generated.
 
-Analyzing Entity <MUX64_8> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <MUX64_8> in library <work> (Architecture <behavioral>).
 Entity <MUX64_8> analyzed. Unit <MUX64_8> generated.
 
-Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
 Entity <M2_1_MXILINX_TOP_LEVEL> analyzed. Unit <M2_1_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_TOP_LEVEL>.
@@ -734,13 +691,13 @@ Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEH
     Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_TOP_LEVEL>.
 Entity <FD16RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD16RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <buffer_10bit> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <buffer_10bit> in library <work> (Architecture <behavioral>).
 Entity <buffer_10bit> analyzed. Unit <buffer_10bit> generated.
 
-Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <behavioral>).
 Entity <trigger_recv_blk> analyzed. Unit <trigger_recv_blk> generated.
 
-Analyzing Entity <ethernet_interface> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <ethernet_interface> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "D:/cbradford/SignalProcessing/oei/ethernet_interface.vhd" line 145: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
 Entity <ethernet_interface> analyzed. Unit <ethernet_interface> generated.
 
@@ -861,10 +818,10 @@ Entity <burst_traffic_controller> analyzed. Unit <burst_traffic_controller> gene
 Analyzing Entity <reset_mgr> in library <work> (Architecture <Behavioral>).
 Entity <reset_mgr> analyzed. Unit <reset_mgr> generated.
 
-Analyzing Entity <Pulser> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <Pulser> in library <work> (Architecture <behavioral>).
 Entity <Pulser> analyzed. Unit <Pulser> generated.
 
-Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8RE_MXILINX_TOP_LEVEL>.
@@ -875,22 +832,22 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHA
     Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8RE_MXILINX_TOP_LEVEL>.
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <PeakFinder> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:819 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd" line 68: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd" line 72: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
-Analyzing Entity <data_send> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/data_send.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <empty>
 Entity <data_send> analyzed. Unit <data_send> generated.
 
-Analyzing Entity <psudoData> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <psudoData> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "D:/cbradford/SignalProcessing/GEL_CAPTAN/psudoData.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <counter>, <counter_f>, <reset>
 Entity <psudoData> analyzed. Unit <psudoData> generated.
 
-Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <behavioral>).
 Entity <psudo_data_allOne> analyzed. Unit <psudo_data_allOne> generated.
 
 
@@ -946,42 +903,42 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd".
 WARNING:Xst:647 - Input <data_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 256-bit register for signal <data_out>.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0000> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0001> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0002> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0003> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0004> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0005> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0006> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0007> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0008> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0009> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0010> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0011> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0012> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0013> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0014> created at line 77.
-    Found 8-bit comparator lessequal for signal <data_out$cmp_le0015> created at line 77.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0000> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0001> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0002> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0003> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0004> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0005> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0006> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0007> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0008> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0009> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0010> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0011> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0012> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0013> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0014> created at line 81.
+    Found 8-bit comparator lessequal for signal <data_out$cmp_le0015> created at line 81.
     Found 1-bit register for signal <out_en_sig>.
     Found 16-bit register for signal <samplesSinceTrig>.
-    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 103.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0000> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0001> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0002> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0003> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0004> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0005> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0006> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0007> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0008> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0009> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0010> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0011> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0012> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0013> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0014> created at line 77.
-    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0015> created at line 77.
-    Found 16-bit comparator less for signal <samplesSinceTrig$cmp_lt0000> created at line 96.
+    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 107.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0000> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0001> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0002> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0003> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0004> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0005> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0006> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0007> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0008> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0009> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0010> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0011> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0012> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0013> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0014> created at line 81.
+    Found 8-bit comparator greater for signal <samplesSinceTrig$cmp_gt0015> created at line 81.
+    Found 16-bit comparator less for signal <samplesSinceTrig$cmp_lt0000> created at line 100.
     Summary:
 	inferred 273 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
@@ -3057,8 +3014,8 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 74.00 secs
-Total CPU time to Xst completion: 73.36 secs
+Total REAL time to Xst completion: 72.00 secs
+Total CPU time to Xst completion: 72.28 secs
  
 --> 
 
