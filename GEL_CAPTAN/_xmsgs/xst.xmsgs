@@ -50,9 +50,6 @@
 <msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">2099</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ethernet_FIFO</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">2112</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">in_enable</arg>&apos; of component &apos;<arg fmt="%s" index="4">PeakFinder</arg>&apos;.
-</msg>
-
 <msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/SignalProcessing/oei/ethernet_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">145</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">udp_fwd_port</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernet_controller_wrapper</arg>&apos;.
 </msg>
 
@@ -312,9 +309,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">rx_addr&lt;7:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">pulse_finder_in_en</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">pulse</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.

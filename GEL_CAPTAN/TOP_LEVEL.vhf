@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/29/2016 14:40:56
+-- /___/   /\     Timestamp : 07/29/2016 15:07:08
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2118,7 +2118,7 @@ begin
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),
                 data_out(255 downto 0)=>ethernet_fifo_din(255 downto 0),
-                in_enable=>open,
+                in_enable=>pulse_finder_in_en,
                 out_enable=>ethernet_fifo_in_en);
    
    XLXI_6251 : FD16RE_MXILINX_TOP_LEVEL

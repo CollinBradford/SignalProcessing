@@ -2115,7 +2115,7 @@
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
             <blockpin signalname="ethernet_fifo_din(255:0)" name="data_out(255:0)" />
-            <blockpin name="in_enable" />
+            <blockpin signalname="pulse_finder_in_en" name="in_enable" />
         </block>
         <block symbolname="inv" name="XLXI_6290">
             <blockpin signalname="XLXN_15390" name="I" />
@@ -2645,47 +2645,46 @@
         </branch>
         <branch name="threshold(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4624" type="branch" />
-            <wire x2="3952" y1="4624" y2="4624" x1="3904" />
+            <wire x2="3920" y1="4624" y2="4624" x1="3904" />
+            <wire x2="3952" y1="4624" y2="4624" x1="3920" />
         </branch>
         <branch name="read_size(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4752" type="branch" />
-            <wire x2="3952" y1="4752" y2="4752" x1="3904" />
+            <wire x2="3920" y1="4752" y2="4752" x1="3904" />
+            <wire x2="3952" y1="4752" y2="4752" x1="3920" />
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4368" type="branch" />
-            <wire x2="3952" y1="4368" y2="4368" x1="3904" />
+            <wire x2="3920" y1="4368" y2="4368" x1="3904" />
+            <wire x2="3952" y1="4368" y2="4368" x1="3920" />
         </branch>
         <branch name="ethernet_fifo_in_en">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4368" type="branch" />
-            <wire x2="4544" y1="4368" y2="4368" x1="4480" />
+            <wire x2="4528" y1="4368" y2="4368" x1="4480" />
+            <wire x2="4544" y1="4368" y2="4368" x1="4528" />
         </branch>
         <branch name="ethernet_fifo_din(255:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4624" type="branch" />
-            <wire x2="4544" y1="4624" y2="4624" x1="4480" />
-        </branch>
-        <branch name="pulse_finder_in_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4688" type="branch" />
-            <wire x2="4544" y1="4688" y2="4688" x1="4480" />
-        </branch>
-        <instance x="3952" y="4656" name="XLXI_6249" orien="R0">
-        </instance>
-        <branch name="XLXN_15378">
-            <wire x2="3952" y1="4688" y2="4688" x1="3904" />
+            <wire x2="4528" y1="4624" y2="4624" x1="4480" />
+            <wire x2="4544" y1="4624" y2="4624" x1="4528" />
         </branch>
         <branch name="peak_finder_din(255:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4560" type="branch" />
-            <wire x2="3952" y1="4560" y2="4560" x1="3904" />
+            <wire x2="3920" y1="4560" y2="4560" x1="3904" />
+            <wire x2="3952" y1="4560" y2="4560" x1="3920" />
         </branch>
         <branch name="XLXN_15380">
-            <wire x2="3952" y1="4496" y2="4496" x1="3936" />
             <wire x2="3936" y1="4496" y2="4944" x1="3936" />
             <wire x2="4496" y1="4944" y2="4944" x1="3936" />
             <wire x2="4496" y1="4944" y2="5104" x1="4496" />
-            <wire x2="4496" y1="5104" y2="5104" x1="4320" />
+            <wire x2="3952" y1="4496" y2="4496" x1="3936" />
+            <wire x2="4336" y1="5104" y2="5104" x1="4320" />
+            <wire x2="4496" y1="5104" y2="5104" x1="4336" />
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4432" type="branch" />
-            <wire x2="3952" y1="4432" y2="4432" x1="3904" />
+            <wire x2="3920" y1="4432" y2="4432" x1="3904" />
+            <wire x2="3952" y1="4432" y2="4432" x1="3920" />
         </branch>
         <instance x="4096" y="5136" name="XLXI_6290" orien="R0" />
         <instance x="3808" y="5200" name="XLXI_6289" orien="R0" />
@@ -3028,6 +3027,15 @@
         </branch>
         <branch name="XLXN_15484(63:0)">
             <wire x2="752" y1="1088" y2="1088" x1="736" />
+        </branch>
+        <instance x="3952" y="4656" name="XLXI_6249" orien="R0">
+        </instance>
+        <branch name="XLXN_15378">
+            <wire x2="3952" y1="4688" y2="4688" x1="3904" />
+        </branch>
+        <branch name="pulse_finder_in_en">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4816" type="branch" />
+            <wire x2="4544" y1="4816" y2="4816" x1="4480" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

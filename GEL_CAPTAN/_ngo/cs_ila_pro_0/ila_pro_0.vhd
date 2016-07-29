@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : ila_pro_0.vhd
--- /___/   /\     Timestamp  : Fri Jul 29 14:46:49 Central Daylight Time 2016
+-- /___/   /\     Timestamp  : Fri Jul 29 15:12:52 Central Daylight Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
