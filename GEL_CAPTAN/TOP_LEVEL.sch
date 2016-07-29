@@ -2789,42 +2789,9 @@
         <iomarker fontsize="28" x="1232" y="208" name="U10_3" orien="R0" />
         <rect width="1416" x="20" y="16" height="268" />
         <text x="1252" y="312">For Debugging</text>
-        <instance x="768" y="1184" name="XLXI_6321" orien="R0">
-        </instance>
         <branch name="adc_data_in(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1184" y="640" type="branch" />
-            <wire x2="1184" y1="640" y2="640" x1="1152" />
-        </branch>
-        <branch name="psudo_data_attr(63:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="640" type="branch" />
-            <wire x2="768" y1="640" y2="640" x1="736" />
-        </branch>
-        <branch name="psudo_data_aio(63:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="704" type="branch" />
-            <wire x2="768" y1="704" y2="704" x1="736" />
-        </branch>
-        <branch name="psudo_data_sawtooth(63:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="768" type="branch" />
-            <wire x2="768" y1="768" y2="768" x1="736" />
-        </branch>
-        <branch name="XLXN_15479(63:0)">
-            <wire x2="768" y1="832" y2="832" x1="736" />
-        </branch>
-        <branch name="XLXN_15480(63:0)">
-            <wire x2="768" y1="896" y2="896" x1="736" />
-        </branch>
-        <branch name="XLXN_15481(63:0)">
-            <wire x2="768" y1="960" y2="960" x1="736" />
-        </branch>
-        <branch name="XLXN_15483(63:0)">
-            <wire x2="768" y1="1024" y2="1024" x1="736" />
-        </branch>
-        <branch name="XLXN_15484(63:0)">
-            <wire x2="768" y1="1088" y2="1088" x1="736" />
-        </branch>
-        <branch name="pusdo_data_select(2:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="1152" type="branch" />
-            <wire x2="768" y1="1152" y2="1152" x1="736" />
+            <wire x2="1184" y1="640" y2="640" x1="1136" />
         </branch>
         <branch name="psudo_data_attr(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="704" y="3360" type="branch" />
@@ -3029,6 +2996,39 @@
         </instance>
         <branch name="XLXN_15385">
             <wire x2="2768" y1="912" y2="912" x1="2704" />
+        </branch>
+        <branch name="pusdo_data_select(2:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="1152" type="branch" />
+            <wire x2="752" y1="1152" y2="1152" x1="736" />
+        </branch>
+        <branch name="psudo_data_sawtooth(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="768" type="branch" />
+            <wire x2="752" y1="768" y2="768" x1="736" />
+        </branch>
+        <branch name="psudo_data_aio(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="704" type="branch" />
+            <wire x2="752" y1="704" y2="704" x1="736" />
+        </branch>
+        <branch name="psudo_data_attr(63:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="640" type="branch" />
+            <wire x2="752" y1="640" y2="640" x1="736" />
+        </branch>
+        <instance x="752" y="1184" name="XLXI_6321" orien="R0">
+        </instance>
+        <branch name="XLXN_15479(63:0)">
+            <wire x2="752" y1="832" y2="832" x1="736" />
+        </branch>
+        <branch name="XLXN_15480(63:0)">
+            <wire x2="752" y1="896" y2="896" x1="736" />
+        </branch>
+        <branch name="XLXN_15481(63:0)">
+            <wire x2="752" y1="960" y2="960" x1="736" />
+        </branch>
+        <branch name="XLXN_15483(63:0)">
+            <wire x2="752" y1="1024" y2="1024" x1="736" />
+        </branch>
+        <branch name="XLXN_15484(63:0)">
+            <wire x2="752" y1="1088" y2="1088" x1="736" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
