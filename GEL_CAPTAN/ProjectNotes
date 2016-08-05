@@ -4,7 +4,7 @@ schematic design where comments are not supported very well.
 I am currently working on redesigning the test modules.  The system involves a multiplexer that selects input from a
 different source.  The address space is as follows: 
 
-Multiplexer Address:
+Multiplexer Address: 6
 
 X = data input select
 
@@ -45,3 +45,13 @@ One Is All allows you to set one number that is set for each sample.
 00000000000000XX
 
 X = Sample Value
+
+
+
+TRIG_ATTRIBUTES: 5
+
+00000000XXYYYYZZ
+
+XX = Delay time for data_send module in clocks
+YYYY = Number of samples to read after trig
+ZZ = Threshold for the Peak_Finder module.   

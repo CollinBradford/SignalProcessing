@@ -289,13 +289,11 @@
         <signal name="ethernet_fifo_din(255:0)" />
         <signal name="psudo_data_attr_map" />
         <signal name="ethernet_data_out(63:0)" />
-        <signal name="XLXN_15355" />
         <signal name="XLXN_15364" />
         <signal name="ethernet_overflow" />
         <signal name="ethernet_fifo_empty" />
         <signal name="XLXN_15378" />
         <signal name="peak_finder_din(255:0)" />
-        <signal name="XLXN_15380" />
         <signal name="XLXN_15390" />
         <signal name="XLXN_15352" />
         <signal name="peak_finder_din(255:128)" />
@@ -335,6 +333,8 @@
         <signal name="rx_data(1)" />
         <signal name="pusdo_data_select(1)" />
         <signal name="pusdo_data_select(0)" />
+        <signal name="rx_data(31:24)" />
+        <signal name="data_send_delay_time(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -811,18 +811,19 @@
             <rect width="400" x="64" y="-320" height="512" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2016-7-12T15:57:57</timestamp>
-            <rect width="256" x="64" y="-384" height="384" />
+            <timestamp>2016-8-5T18:24:18</timestamp>
+            <rect width="64" x="0" y="20" height="24" />
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-384" height="448" />
         </blockdef>
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -2096,10 +2097,10 @@
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="ethernet_fifo_empty" name="empty" />
             <blockpin signalname="b_enable" name="b_enable" />
-            <blockpin signalname="XLXN_15355" name="throttle" />
             <blockpin signalname="ethernet_data_out(63:0)" name="din(63:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="data_send_delay_time(7:0)" name="delay_time(7:0)" />
         </block>
         <block symbolname="obuf" name="XLXI_6291">
             <blockpin signalname="ethernet_overflow" name="I" />
@@ -2207,6 +2208,13 @@
             <blockpin signalname="rx_data(0)" name="D" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="pusdo_data_select(0)" name="Q" />
+        </block>
+        <block symbolname="fd8re" name="XLXI_6329">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="TRIG_ATTRIBUTES_MAP" name="CE" />
+            <blockpin signalname="rx_data(31:24)" name="D(7:0)" />
+            <blockpin signalname="reset" name="R" />
+            <blockpin signalname="data_send_delay_time(7:0)" name="Q(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2573,19 +2581,23 @@
         </instance>
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="432" type="branch" />
-            <wire x2="6400" y1="432" y2="432" x1="6352" />
+            <wire x2="6368" y1="432" y2="432" x1="6352" />
+            <wire x2="6400" y1="432" y2="432" x1="6368" />
         </branch>
         <branch name="b_enable">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6336" y="624" type="branch" />
-            <wire x2="6400" y1="624" y2="624" x1="6336" />
+            <wire x2="6352" y1="624" y2="624" x1="6336" />
+            <wire x2="6400" y1="624" y2="624" x1="6352" />
         </branch>
         <branch name="b_data(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6832" y="752" type="branch" />
-            <wire x2="6832" y1="752" y2="752" x1="6784" />
+            <wire x2="6816" y1="752" y2="752" x1="6784" />
+            <wire x2="6832" y1="752" y2="752" x1="6816" />
         </branch>
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6816" y="432" type="branch" />
-            <wire x2="6816" y1="432" y2="432" x1="6784" />
+            <wire x2="6800" y1="432" y2="432" x1="6784" />
+            <wire x2="6816" y1="432" y2="432" x1="6800" />
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5856" y="512" type="branch" />
@@ -2601,14 +2613,13 @@
         </branch>
         <branch name="ethernet_data_out(63:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="752" type="branch" />
-            <wire x2="6400" y1="752" y2="752" x1="6352" />
-        </branch>
-        <branch name="XLXN_15355">
-            <wire x2="6400" y1="688" y2="688" x1="6352" />
+            <wire x2="6368" y1="752" y2="752" x1="6352" />
+            <wire x2="6400" y1="752" y2="752" x1="6368" />
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="496" type="branch" />
-            <wire x2="6400" y1="496" y2="496" x1="6352" />
+            <wire x2="6368" y1="496" y2="496" x1="6352" />
+            <wire x2="6400" y1="496" y2="496" x1="6368" />
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
@@ -3031,6 +3042,32 @@
         <branch name="pulse_finder_in_en">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4816" type="branch" />
             <wire x2="4544" y1="4816" y2="4816" x1="4480" />
+        </branch>
+        <instance x="1536" y="5024" name="XLXI_6329" orien="R0" />
+        <branch name="rx_data(31:24)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4768" type="branch" />
+            <wire x2="1536" y1="4768" y2="4768" x1="1504" />
+        </branch>
+        <branch name="TRIG_ATTRIBUTES_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4832" type="branch" />
+            <wire x2="1536" y1="4832" y2="4832" x1="1504" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4896" type="branch" />
+            <wire x2="1536" y1="4896" y2="4896" x1="1504" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1504" y="4992" type="branch" />
+            <wire x2="1536" y1="4992" y2="4992" x1="1504" />
+        </branch>
+        <branch name="data_send_delay_time(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="4768" type="branch" />
+            <wire x2="1952" y1="4768" y2="4768" x1="1920" />
+        </branch>
+        <branch name="data_send_delay_time(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="816" type="branch" />
+            <wire x2="6368" y1="816" y2="816" x1="6320" />
+            <wire x2="6400" y1="816" y2="816" x1="6368" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
