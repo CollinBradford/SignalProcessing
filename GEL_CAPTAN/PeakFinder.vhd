@@ -43,8 +43,9 @@ architecture Behavioral of PeakFinder is
 	signal samplesSinceTrig : unsigned(15 downto 0);
 	signal userSamplesSinceTrig : unsigned(15 downto 0);
 	signal out_en_sig : std_logic;
+	signal triggered : std_logic;--sets when we have a trigger and we are reading.  
 begin
-	--This elaborate assignment block is needed because we need to 
+	--This large assignment block is needed because we need to 
 	--interpolate the data switching between rising and falling for different samples.  
 	--Take a set of rising samples
 	data(0) <= unsigned(data_in(7 downto 0));--First sample
@@ -132,7 +133,7 @@ begin
 		
 		if(reset = '0') then--reset is low
 			if(rising_edge(clk)) then--rising edge of clk and reset is low
-				if(empty = '0') then
+				if(empty = '0' and triggered = '0') then --If we aren't currently triggered, test for trigger.  
 				
 					if (data(0) > threshold
 					or data(1) > threshold
@@ -167,22 +168,32 @@ begin
 					or data(30) > threshold
 					or data(31) > threshold) then--controlls start of trigger.  
 						out_en_sig <= '1';
-					else
-						if(samplesSinceTrig >= userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
-							out_en_sig <= '0';
-							samplesSinceTrig <= (others => '0');
-						end if;
+						triggered <= '1';
+					end if;
+				else
+					if(triggered = '1' and samplesSinceTrig >= userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
+						out_en_sig <= '0';
+						samplesSinceTrig <= (others => '0');
+						triggered <= '0';
 					end if;
 					
-					if(out_en_sig = '1')then --We took another sample.  Increase the sample count
-						samplesSinceTrig <= samplesSinceTrig + 1;
+					if(triggered = '1' and empty = '0') then
+						out_en_sig <= '1';
 					end if;
 					
+					if(triggered = '1' and empty = '1') then
+						out_en_sig <= '0';
+					end if;
+				end if;
+				
+				if(out_en_sig = '1')then --We took another sample.  Increase the sample count
+					samplesSinceTrig <= samplesSinceTrig + 1;
 				end if;
 			end if;
 		else--reset is high
 			out_en_sig <= '0';
 			samplesSinceTrig <= (others => '0');
+			triggered <= '0';
 		end if;
 	end process;
 end Behavioral;

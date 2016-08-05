@@ -2108,7 +2108,7 @@
         <block symbolname="PeakFinder" name="XLXI_6249">
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="XLXN_15380" name="empty" />
+            <blockpin signalname="XLXN_15390" name="empty" />
             <blockpin signalname="XLXN_15378" name="data_valid" />
             <blockpin signalname="peak_finder_din(255:0)" name="data_in(255:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
@@ -2116,10 +2116,6 @@
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
             <blockpin signalname="ethernet_fifo_din(255:0)" name="data_out(255:0)" />
             <blockpin signalname="pulse_finder_in_en" name="in_enable" />
-        </block>
-        <block symbolname="inv" name="XLXI_6290">
-            <blockpin signalname="XLXN_15390" name="I" />
-            <blockpin signalname="XLXN_15380" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_6289">
             <blockpin signalname="adc_fifo_f_empty" name="I0" />
@@ -2624,7 +2620,8 @@
         </branch>
         <branch name="ethernet_fifo_in_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="544" type="branch" />
-            <wire x2="4992" y1="544" y2="544" x1="4944" />
+            <wire x2="4976" y1="544" y2="544" x1="4944" />
+            <wire x2="4992" y1="544" y2="544" x1="4976" />
         </branch>
         <branch name="XLXN_15364">
             <wire x2="4992" y1="736" y2="736" x1="4944" />
@@ -2673,20 +2670,11 @@
             <wire x2="3920" y1="4560" y2="4560" x1="3904" />
             <wire x2="3952" y1="4560" y2="4560" x1="3920" />
         </branch>
-        <branch name="XLXN_15380">
-            <wire x2="3936" y1="4496" y2="4944" x1="3936" />
-            <wire x2="4496" y1="4944" y2="4944" x1="3936" />
-            <wire x2="4496" y1="4944" y2="5104" x1="4496" />
-            <wire x2="3952" y1="4496" y2="4496" x1="3936" />
-            <wire x2="4336" y1="5104" y2="5104" x1="4320" />
-            <wire x2="4496" y1="5104" y2="5104" x1="4336" />
-        </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4432" type="branch" />
             <wire x2="3920" y1="4432" y2="4432" x1="3904" />
             <wire x2="3952" y1="4432" y2="4432" x1="3920" />
         </branch>
-        <instance x="4096" y="5136" name="XLXI_6290" orien="R0" />
         <instance x="3808" y="5200" name="XLXI_6289" orien="R0" />
         <branch name="adc_fifo_f_empty">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3760" y="5136" type="branch" />
@@ -2697,7 +2685,14 @@
             <wire x2="3808" y1="5072" y2="5072" x1="3760" />
         </branch>
         <branch name="XLXN_15390">
+            <wire x2="3936" y1="4496" y2="4944" x1="3936" />
+            <wire x2="4496" y1="4944" y2="4944" x1="3936" />
+            <wire x2="4496" y1="4944" y2="5104" x1="4496" />
+            <wire x2="3952" y1="4496" y2="4496" x1="3936" />
             <wire x2="4096" y1="5104" y2="5104" x1="4064" />
+            <wire x2="4320" y1="5104" y2="5104" x1="4096" />
+            <wire x2="4336" y1="5104" y2="5104" x1="4320" />
+            <wire x2="4496" y1="5104" y2="5104" x1="4336" />
         </branch>
         <branch name="clock_5mhz">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="384" type="branch" />
